@@ -3,11 +3,12 @@ import {Head} from '../assets/css/style.js';
 import {Arrow} from '../assets/css/style.js';
 import {Button} from '../assets/css/style.js';
 import {ItemTitle} from '../assets/css/style.js';
-import {Question} from '../assets/css/style.js';
+
 import {Input} from '../assets/css/style.js'; 
 import {Menu} from '../assets/css/style.js';
 import {Link} from '../assets/css/style.js';
 import {Main} from '../assets/css/style.js';
+import {FooterHome} from '../assets/css/style.js';
 
 export default class Contact extends Component {
     render() {
@@ -63,12 +64,12 @@ export default class Contact extends Component {
               <Link>
                   Ao continuar, eu declaro que li e aceito os Termos de Uso e a Política de Privacidade
               </Link>
-              <Question>
-                  ?
-              </Question>
+            <FooterHome>
+                © 2019 Wizzer, Inc. Todos os direitos reservados.
+            </FooterHome>
             </Main>
-           
-            <Menu>
+            
+          <Menu>
               <li>
                   <button> 
                       <span class="material-icons">
@@ -102,6 +103,7 @@ export default class Contact extends Component {
                   </button>
               </li>
             </Menu>
+            
           </div>
       )
     }

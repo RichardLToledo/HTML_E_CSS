@@ -8,7 +8,7 @@ export const Head = styled.div`
   justify-content: space-between;
 `
 export const Main =  styled.div`
-    height: 90vh;
+    height: 80vh;
 `;
 export const Arrow = styled.button`
     display: flex;
