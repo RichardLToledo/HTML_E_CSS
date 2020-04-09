@@ -7,6 +7,7 @@ import {Question} from '../assets/css/style.js';
 import {Input} from '../assets/css/style.js'; 
 import {Menu} from '../assets/css/style.js';
 import {Link} from '../assets/css/style.js';
+import {Main} from '../assets/css/style.js';
 
 export default class Contact extends Component {
     render() {
@@ -27,7 +28,7 @@ export default class Contact extends Component {
                 </svg>
               </button>
             </Head>
-            <div>
+            <Main>
               <Arrow>
                   <span class="material-icons">
                       keyboard_arrow_left
@@ -65,7 +66,7 @@ export default class Contact extends Component {
               <Question>
                   ?
               </Question>
-            </div>
+            </Main>
            
             <Menu>
               <li>

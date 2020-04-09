@@ -7,7 +7,9 @@ export const Head = styled.div`
   padding: 20px;
   justify-content: space-between;
 `
-
+export const Main =  styled.div`
+    height: 90vh;
+`;
 export const Arrow = styled.button`
     display: flex;
     align-items: center;
