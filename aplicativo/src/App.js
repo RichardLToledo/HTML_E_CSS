@@ -3,7 +3,7 @@ import {Switch, Route} from 'react-router-dom';
 import Home from './components/Home/Home.js';
 import Card from './components/Card/Card.js';
 import Scheduled from './components/Scheduled/Scheduled.js';
-import Contact from './components/Contact /Contact.js';
+import Contact from './components/Contact/Contact.js';
 import Map from './components/Map/Map.js';
 import Filter from './components/Map/Filter.js';
 import List from './components/List/List.js';
