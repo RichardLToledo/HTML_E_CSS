@@ -1,0 +1,194 @@
+@import "reset";
+@import "colors";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  background: #ffffff;
+  box-shadow: 0px 4px 40px rgba(53, 61, 64, 0.12);
+  padding: 20px;
+  justify-content: space-between;
+  .search-web {
+    display: none;
+    align-items: center;
+    background: #ffffff;
+    border: 1px solid #353d40;
+    box-sizing: border-box;
+    border-radius: 3px;
+    padding: 8px 18px;
+    input {
+      background: transparent;
+      border: none;
+      font-size: 1.25em;
+      outline: transparent;
+    }
+    span {
+      cursor: pointer;
+    }
+  }
+  .menu-mob {
+    span {
+      font-size: 1.6em;
+      cursor: pointer;
+    }
+  }
+}
+.header-tags {
+  display: none;
+  ul {
+    li {
+      padding: 0 16px;
+      a {
+        font-size: 1.25em;
+        cursor: pointer;
+        &:hover {
+          color: #055eff;
+          transition: 300ms;
+        }
+      }
+    }
+  }
+}
+
+.search-feedback {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  align-items: center;
+  span {
+    font-size: 110px;
+    font-weight: 500;
+    margin-bottom: 8px;
+  }
+  p {
+    font-size: 1.125em;
+    text-align: center;
+    margin-bottom: 8px;
+    strong {
+      color: #055eff;
+    }
+  }
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    .post-tag {
+      margin: 20px;
+      background: #2673ff;
+      border-radius: 3px;
+      color: #fff;
+      padding: 10px 16px;
+      font-size: 0.75em;
+    }
+  }
+}
+
+footer {
+  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+footer .main_informations {
+  display: flex;
+  padding: 30px;
+}
+footer .main_informations .brand_links {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+footer .main_informations .brand_links .brand {
+  margin-bottom: 20px;
+}
+footer .main_informations .brand_links .link_list {
+  display: flex;
+}
+footer .main_informations .brand_links .link_list ul:first-child {
+  margin-right: 40px;
+}
+footer .main_informations .brand_links .link_list ul li {
+  margin-bottom: 10px;
+}
+footer .main_informations .brand_links .link_list ul li a {
+  color: #3d3f40;
+}
+footer .main_informations .brand_links .link_list ul li a:hover {
+  color: #2693ff;
+}
+footer .main_informations .terms_links {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+footer .main_informations .terms_links small {
+  font-size: 0.9em;
+  margin-bottom: 15px;
+  color: #353d40;
+}
+footer .main_informations .terms_links p {
+  font-size: 1em;
+  margin-bottom: 15px;
+  color: #353d40;
+}
+footer .main_informations .terms_links a {
+  font-size: 1em;
+  margin-bottom: 15px;
+  color: #055eff;
+}
+footer .main_informations .terms_links strong {
+  font-size: 0.9em;
+  margin-bottom: 15px;
+  color: #3d3f40;
+  font-weight: bold;
+}
+footer .main_informations .terms_links > ul {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 30px;
+}
+footer .main_informations .terms_links > ul li {
+  margin-right: 24px;
+}
+footer .main_informations .terms_links .address_contact {
+  display: flex;
+}
+footer .main_informations .terms_links .address_contact ul:first-child {
+  padding-right: 40px;
+  border-right: 1px solid rgba(0, 0, 0, 0.24);
+  margin-right: 40px;
+}
+footer .main_informations .terms_links .address_contact ul li {
+  color: #353d40;
+  font-size: 1em;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+footer .main_informations .terms_links .address_contact ul li img {
+  margin-right: 10px;
+}
+footer .main_informations .terms_links .address_contact ul li:first-child {
+  font-weight: bold;
+  color: #353d40;
+  font-size: 1em;
+  margin-bottom: 20px;
+}
+footer .rights-reserve {
+  display: flex;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid #ccc;
+}
+footer .rights-reserve p {
+  text-align: center;
+  color: #353d40;
+  font-size: 0.9em;
+}

@@ -1,0 +1,158 @@
+@media screen and (min-width: 768px) {
+  header {
+    padding: 20px;
+    margin-bottom: 3%; }
+    header .search-web {
+      display: flex; }
+    header .menu-mob {
+      display: none; }
+
+  .bread-path a {
+    font-size: 1em; }
+  .bread-path span {
+    font-size: 1em; }
+
+  .posts {
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-direction: row; }
+    .posts .blog-post {
+      flex-direction: column;
+      align-items: flex-start;
+      width: 360px;
+      margin: 3% 5px; }
+      .posts .blog-post .blog-post-img {
+        height: 240px;
+        position: relative; }
+        .posts .blog-post .blog-post-img img {
+          width: 100%; }
+        .posts .blog-post .blog-post-img .post-tag {
+          display: flex;
+          position: absolute;
+          bottom: auto;
+          top: 20px;
+          left: 20px;
+          font-size: 0.825em; }
+      .posts .blog-post .post-details {
+        padding: 0; }
+        .posts .blog-post .post-details .post-tag {
+          display: none; }
+
+  .post-title {
+    font-size: 1em; }
+
+  .find-property .find-content span {
+    font-size: 2em; }
+    .find-property .find-content span svg {
+      width: 120px;
+      height: 30px; }
+  .find-property .find-content p {
+    font-size: 1em; }
+  .find-property .find-content button {
+    font-size: 1em;
+    padding: 10px 12px; } }
+@media screen and (min-width: 992px) {
+  header {
+    padding: 20px 75px; }
+    header svg {
+      transform: scale(1.2); }
+
+  .find-property {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between; }
+    .find-property img {
+      display: flex; } }
+@media screen and (min-width: 1200px) {
+  header .header-tags {
+    display: flex; }
+    header .header-tags ul {
+      display: flex;
+      flex-direction: row; }
+
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1140px 1fr; }
+
+  .posts {
+    margin: 0;
+    justify-content: space-between; }
+
+  .find-property {
+    display: -moz-inline-grid;
+    justify-content: space-evenly;
+    grid-template-columns: 1fr 1440px 1fr;
+    grid-column-start: 1;
+    grid-column-end: 4; }
+    .find-property .find-content {
+      grid-column-start: 2;
+      grid-column-end: 3;
+      margin: 0; }
+      .find-property .find-content p {
+        padding-bottom: 3%; }
+    .find-property .find-img {
+      grid-column-start: 3;
+      grid-column-end: 3; }
+
+  .tag-info {
+    grid-column-start: 2;
+    grid-column-end: 3; }
+    .tag-info .tag-name {
+      margin-top: 0; } }
+@media (max-width: 760px) {
+  footer .main_informations {
+    flex-direction: column; }
+
+  footer .main_informations .brand_links .link_list {
+    display: none; }
+
+  footer .main_informations .terms_links > ul li {
+    margin: 0 20px; }
+
+  footer .main_informations .brand_links .brand img {
+    width: 150px; }
+
+  footer .main_informations * {
+    text-align: center;
+    justify-content: center;
+    align-items: center; }
+
+  footer .main_informations .terms_links .address_contact ul:first-child {
+    margin: 0;
+    padding: 0; }
+
+  footer .main_informations .terms_links .address_contact ul:last-child {
+    margin-top: 20px; } }
+@media (max-width: 760px) {
+  footer .main_informations {
+    flex-direction: column; }
+
+  footer .main_informations .brand_links .link_list {
+    display: none; }
+
+  footer .main_informations .terms_links > ul li {
+    margin: 0 20px; }
+
+  footer .main_informations .brand_links .brand img {
+    width: 150px; }
+
+  footer .main_informations * {
+    text-align: center;
+    justify-content: center;
+    align-items: center; }
+
+  footer .main_informations .terms_links .address_contact ul:first-child {
+    margin: 0;
+    padding: 0; }
+
+  footer .main_informations .terms_links .address_contact ul:last-child {
+    margin-top: 20px; } }
+@media (max-width: 900px) {
+  .address_contact {
+    flex-direction: column; }
+
+  footer .main_informations .terms_links .address_contact ul:first-child {
+    margin-bottom: 20px;
+    border-right: 1px solid transparent; } }
+
+/*# sourceMappingURL=mediaquerie3.css.map */
