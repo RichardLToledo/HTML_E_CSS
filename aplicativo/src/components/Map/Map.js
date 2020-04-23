@@ -62,8 +62,8 @@ export default class Map extends Component {
               </span>
             </Input>
             <MapStyle>
-              <Button position="absolute"> 
-                <Link to="/filter">
+              <Button position="absolut"> 
+                <Link to="/filtros">
                 <span className="material-icons">
                     filter_list
                   </span>

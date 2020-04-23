@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import {Head, Menu, Input, Button, Properties, AnnounceItem, Image, AnnounceInfo, Pagination} from '../../style.js';
+import { Head, Menu, PageTitle, Camps, Select, Input, Button, CreateType, Question, OptionButton} from '../../style.js';
 import  {Link} from 'react-router-dom';
 
-export default class List extends Component {
+
+export default class CreateAnnounce extends Component {
   render() {
-    return (
-        <>
+    return <>
           <Menu>
                 <li>
                     <Link to="/imoveis"> 
@@ -40,6 +40,9 @@ export default class List extends Component {
                     </Link>
                 </li>
               </Menu>
+              <Question>
+                <Link to="/dicas-criacao"> <div></div></Link>
+              </Question>
           <Head>
                 <div className="Brand">
                   <svg width="119" height="36" viewBox="0 0 119 36" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -55,128 +58,132 @@ export default class List extends Component {
                   </svg>
                 </button>
           </Head>
-          <Input>
-                <input type="text" placeholder="Busque por cidade"/>
-                <span className="material-icons">
-                  search
-                </span>
-          </Input>
-          <Button> 
-                <Link to="/filtros">
-                <span className="material-icons">
-                    filter_list
-                  </span>
-                  Filtro
-                </Link>
-          </Button> 
-          <Properties>
-            <h3>
-              <span className="material-icons">
-                room
+          <PageTitle>
+          <span class="material-icons">
+            house
+            </span>
+            Registrar Imóvel
+          </PageTitle>
+          <Camps>
+            <small> <span class="material-icons">
+            settings
+            </span> 
+            Admistrador</small>
+            <p>Quem é o proprietário?</p>
+            <Select>
+                <input type="text" list="users" placeholder="Nome do proprietário"/>
+                <datalist id="users">
+                    <option value="Pedro Paulo" />
+                    <option value="Alex" />
+                    <option value="Marília Mendoça" />
+                    <option value="Maraia Maraísa" />
+                </datalist>
+            </Select>
+            <h5>Informações do Imóvel</h5>
+            <p>Onde fica seu imóvel?</p>
+            <Input>
+              <input type="text" placeholder="CEP"/>
+            </Input>
+            <Input>
+              <input type="text" placeholder="Bairro"/>
+            </Input>
+            <Input>
+              <input type="text" placeholder="Endereço"/>
+            </Input>
+            <Input>
+              <input type="text" placeholder="Complemento"/>
+            </Input>
+            <Input>
+              <input type="text" placeholder="Cidade"/>
+            </Input>
+            <Input>
+              <input type="text" placeholder="Estado"/>
+            </Input>
+
+           <div>
+            <p>Qual tipo da sua propriedade?</p>
+              <Select>
+                  <input type="text" list="types" placeholder="Tipo da propriedade"/>
+                  <datalist id="types">
+                      <option value="Casa" />
+                      <option value="Apartamento" />
+                      <option value="Flat" />
+                      <option value="Galpão" />
+                  </datalist>
+              </Select>
+              <Button><span class="material-icons">
+                add
               </span>
-              Imóveis em Varginha - MG
-            </h3>
-            <strong>Exibindo 238 imóveis</strong>
-            <AnnounceItem>
-              <div>
-                <span>Novo</span>
-                <Image ></Image>
-              </div>
-              <AnnounceInfo>
-                <small>Casa</small>
-                <h3>Rua Alaor Empírico, 30</h3>
-                <address>Jardim Nova Orleans, Varginha</address>
-                <h1>R$ 2.569,00 <sub>/mês</sub></h1>
-                <ul>
-                  <li>
-                    <a className="material-icons">straighten</a>
-                    80 m
-                  </li>
-                  <li>
-                    <a className="material-icons">king_bed</a>
-                    2
-                  </li>
-                  <li>
-                    <a className="material-icons">bathtub</a>
-                    2
-                  </li>
-                  <li>
-                  <a className="material-icons">time_to_leave</a>
-                   0
-                  </li>
-                </ul>
-              </AnnounceInfo>
-            </AnnounceItem>
-            <AnnounceItem>
-              <div>
-                <span>Novo</span>
-                <Image></Image>
-              </div>
-              <AnnounceInfo>
-                <small>Casa</small>
-                <h3>Rua Alaor Empírico, 30</h3>
-                <address>Jardim Nova Orleans, Varginha</address>
-                <h1>R$ 2.569,00 <sub>/mês</sub></h1>
-                <ul>
-                  <li>
-                    <a className="material-icons">straighten</a>
-                    80 m
-                  </li>
-                  <li>
-                    <a className="material-icons">king_bed</a>
-                    2
-                  </li>
-                  <li>
-                    <a className="material-icons">bathtub</a>
-                    2
-                  </li>
-                  <li>
-                  <a className="material-icons">time_to_leave</a>
-                   0
-                  </li>
-                </ul>
-              </AnnounceInfo>
-            </AnnounceItem>
-            <AnnounceItem>
-              <div>
-                <span>Novo</span>
-                <Image></Image>
-              </div>
-              <AnnounceInfo>
-                <small>Casa</small>
-                <h3>Rua Alaor Empírico, 30</h3>
-                <address>Jardim Nova Orleans, Varginha</address>
-                <h1>R$ 2.569,00 <sub>/mês</sub></h1>
-                <ul>
-                  <li>
-                    <a className="material-icons">straighten</a>
-                    80 m
-                  </li>
-                  <li>
-                    <a className="material-icons">king_bed</a>
-                    2
-                  </li>
-                  <li>
-                    <a className="material-icons">bathtub</a>
-                    2
-                  </li>
-                  <li>
-                  <a className="material-icons">time_to_leave</a>
-                   0
-                  </li>
-                </ul>
-              </AnnounceInfo>
-            </AnnounceItem>
-            <Pagination>
-         
-              <li>1</li>
-              <li>2</li>
-              <li>3</li>
-           
-          </Pagination>
-          </Properties>
-          
-        </>
-    );
+              <Link to="/criar-tipo">Adicionar tipo</Link></Button>
+           </div>
+            <Input>
+              <input type="text" placeholder="Valor do Aluguel"/>
+            </Input>
+            <Input>
+              <input type="text" placeholder="Valor do IPTU"/>
+            </Input>
+            <Input>
+              <input type="text" placeholder="Valor do Condomínio"/>
+            </Input>
+            <Input>
+              <input type="text" placeholder="Área em m²"/>
+            </Input>
+            <Input>
+              <input type="text" placeholder="Instalação da Cemig"/>
+            </Input>
+            <Select>
+                <input type="text" list="bed" placeholder="Quantos quartos?"/>
+                <datalist id="bed">
+                    <option value="1" />
+                    <option value="2" />
+                    <option value="3" />
+                    <option value="4" />
+                </datalist>
+            </Select>
+            <Select>
+                <input type="text" list="beth" placeholder="Quantos banheiros?"/>
+                <datalist id="beth">
+                    <option value="1" />
+                    <option value="2" />
+                    <option value="3" />
+                    <option value="4" />
+                </datalist>
+            </Select>
+            <Select>
+                <input type="text" list="parking" placeholder="Passui vagas na garagem?"/>
+                <datalist id="parking">
+                    <option value="1" />
+                    <option value="2" />
+                    <option value="3" />
+                    <option value="4" />
+                </datalist>
+            </Select>
+            <p>Esta propriedade permite animais?</p>
+              <OptionButton>
+                <p>Não</p>
+                <input type="checkbox" name="option"/>
+                <p>Sim</p>
+              </OptionButton>
+            <p>Tem seguro contra incêndio?</p>
+            <OptionButton>
+                <p>Não</p>
+                <input type="checkbox" name="option"/>
+                <p>Sim</p>
+              </OptionButton>
+            <p>Descrição</p>
+            <textarea name="description" id="description" cols="30" rows="10" resize="none"></textarea>
+            <label>
+              <input type="checkbox"/>
+              <span>Eu autorizo que a Wizzer Imóveis gerencie o meu imóvel</span>
+            </label>
+            <button >
+              <span class="material-icons">
+                add
+              </span>
+              Registrar imóvel
+            </button>
+          </Camps>
+
+    </>;
   }
 }

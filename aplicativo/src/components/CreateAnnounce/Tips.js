@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import {Head, Menu, Input, Button, Properties, AnnounceItem, Image, AnnounceInfo, Pagination} from '../../style.js';
+import { Head, Menu, PageTitle, Question, ItemTitle, TipsCard} from '../../style.js';
 import  {Link} from 'react-router-dom';
 
-export default class List extends Component {
+
+export default class CreateAnnounce extends Component {
   render() {
-    return (
-        <>
+    return <>
           <Menu>
                 <li>
                     <Link to="/imoveis"> 
@@ -40,6 +40,9 @@ export default class List extends Component {
                     </Link>
                 </li>
               </Menu>
+              <Question edit="true">
+                    <Link to="/criar-anuncio"><div></div></Link>
+              </Question>
           <Head>
                 <div className="Brand">
                   <svg width="119" height="36" viewBox="0 0 119 36" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -55,128 +58,46 @@ export default class List extends Component {
                   </svg>
                 </button>
           </Head>
-          <Input>
-                <input type="text" placeholder="Busque por cidade"/>
-                <span className="material-icons">
-                  search
-                </span>
-          </Input>
-          <Button> 
-                <Link to="/filtros">
-                <span className="material-icons">
-                    filter_list
-                  </span>
-                  Filtro
-                </Link>
-          </Button> 
-          <Properties>
-            <h3>
-              <span className="material-icons">
-                room
-              </span>
-              Imóveis em Varginha - MG
-            </h3>
-            <strong>Exibindo 238 imóveis</strong>
-            <AnnounceItem>
-              <div>
-                <span>Novo</span>
-                <Image ></Image>
-              </div>
-              <AnnounceInfo>
-                <small>Casa</small>
-                <h3>Rua Alaor Empírico, 30</h3>
-                <address>Jardim Nova Orleans, Varginha</address>
-                <h1>R$ 2.569,00 <sub>/mês</sub></h1>
-                <ul>
-                  <li>
-                    <a className="material-icons">straighten</a>
-                    80 m
-                  </li>
-                  <li>
-                    <a className="material-icons">king_bed</a>
-                    2
-                  </li>
-                  <li>
-                    <a className="material-icons">bathtub</a>
-                    2
-                  </li>
-                  <li>
-                  <a className="material-icons">time_to_leave</a>
-                   0
-                  </li>
-                </ul>
-              </AnnounceInfo>
-            </AnnounceItem>
-            <AnnounceItem>
-              <div>
-                <span>Novo</span>
-                <Image></Image>
-              </div>
-              <AnnounceInfo>
-                <small>Casa</small>
-                <h3>Rua Alaor Empírico, 30</h3>
-                <address>Jardim Nova Orleans, Varginha</address>
-                <h1>R$ 2.569,00 <sub>/mês</sub></h1>
-                <ul>
-                  <li>
-                    <a className="material-icons">straighten</a>
-                    80 m
-                  </li>
-                  <li>
-                    <a className="material-icons">king_bed</a>
-                    2
-                  </li>
-                  <li>
-                    <a className="material-icons">bathtub</a>
-                    2
-                  </li>
-                  <li>
-                  <a className="material-icons">time_to_leave</a>
-                   0
-                  </li>
-                </ul>
-              </AnnounceInfo>
-            </AnnounceItem>
-            <AnnounceItem>
-              <div>
-                <span>Novo</span>
-                <Image></Image>
-              </div>
-              <AnnounceInfo>
-                <small>Casa</small>
-                <h3>Rua Alaor Empírico, 30</h3>
-                <address>Jardim Nova Orleans, Varginha</address>
-                <h1>R$ 2.569,00 <sub>/mês</sub></h1>
-                <ul>
-                  <li>
-                    <a className="material-icons">straighten</a>
-                    80 m
-                  </li>
-                  <li>
-                    <a className="material-icons">king_bed</a>
-                    2
-                  </li>
-                  <li>
-                    <a className="material-icons">bathtub</a>
-                    2
-                  </li>
-                  <li>
-                  <a className="material-icons">time_to_leave</a>
-                   0
-                  </li>
-                </ul>
-              </AnnounceInfo>
-            </AnnounceItem>
-            <Pagination>
-         
-              <li>1</li>
-              <li>2</li>
-              <li>3</li>
-           
-          </Pagination>
-          </Properties>
-          
-        </>
-    );
+          <PageTitle>
+          <span class="material-icons">
+            house
+            </span>
+            Registrar Imóvel
+          </PageTitle>
+          <ItemTitle><span></span>  Dicas e Informações</ItemTitle>
+          <TipsCard>
+              <h3>Informações do Proprietário</h3>
+              <strong>Nome do Proprietário</strong>
+              <small>Pessoa Física</small>
+
+              <p><strong>Documento</strong> 0000 0000 0000 0000</p>
+              <p><strong>Número</strong> (35) 997808-1186</p>
+          </TipsCard>
+          <TipsCard>
+              <h3>Informações do Proprietário</h3>
+              <strong>Nome do Proprietário</strong>
+              <small>Pessoa Física</small>
+
+              <p><strong>Documento</strong> 0000 0000 0000 0000</p>
+              <p><strong>Número</strong> (35) 997808-1186</p>
+          </TipsCard>
+          <TipsCard>
+              <h3>Informações do Proprietário</h3>
+              <strong>Nome do Proprietário</strong>
+              <small>Pessoa Física</small>
+
+              <p><strong>Documento</strong> 0000 0000 0000 0000</p>
+              <p><strong>Número</strong> (35) 997808-1186</p>
+          </TipsCard>
+          <TipsCard>
+              <h3>Informações do Proprietário</h3>
+              <strong>Nome do Proprietário</strong>
+              <small>Pessoa Física</small>
+
+              <p><strong>Documento</strong> 0000 0000 0000 0000</p>
+              <p><strong>Número</strong> (35) 997808-1186</p>
+          </TipsCard>
+      
+    </>;
   }
 }
