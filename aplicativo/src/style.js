@@ -139,6 +139,7 @@ export const Input = styled.label`
   display: flex;
   margin-bottom: 10px;
   border: 1px solid #c7c7c8;
+  margin: ${props => props.local ? "20px" : "0px"};
   box-sizing: border-box;
   border-radius: 3px;
   justify-content: space-between;
@@ -267,7 +268,49 @@ export const MapStyle = styled.div`
   position: relative;
   display: flex;
   height: 75vh;
+    strong{
+      position: absolute;
+    padding: 16px;
+    background: rgba(139,176,242,0.39);
+    color: #055eff;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 20px 0;
+    border-radius: 6px;
+    font-weight: 400;
+    width: 84vw;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    top: 58px;
+    width: 85vw;
+    margin: 20px;
+    }
+    @media screen and (max-width: 386px) {
+      strong{
+       display: none;
+      }
+    }
 `;
+
+export const QtdProperty = styled.div`
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(267.21deg, #055EFF 35.06%, #2693FF 87.88%);
+    color: white;
+    @media screen and (min-width: 386px) {
+      div{
+        display: none;
+      }
+    }
+`;
+
+
 
 export const Marker = styled.div` 
   position: absolute;
@@ -276,7 +319,13 @@ export const Marker = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  &:hover{
+  a{
+    text-decoration: none;
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  }
+  &:hover{  
     span{
       background-color: #055eff;
       color: #fff;
@@ -304,9 +353,108 @@ export const Marker = styled.div`
     }
 `;
 
+export const FilterSelected = styled.div`
+  position: absolute;
+  background: linear-gradient(269.28deg, #055EFF 35.87%, #2693FF 97.52%);
+  border-radius: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  margin: 20px;
+  left: 100px;
+  a{
+    text-decoration: none;
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    button{
+      background-color: #fff;
+      color: #35403d;
+      border-radius: 50%;
+      margin-left: 5px;
+      display: flex;
+    }
+  }
+`;
 
 export const InfoWindow = styled.div`
-
+    position: fixed;
+    z-index: 999999;
+    bottom: 60px;
+    -webkit-transform: translate(-50%,-15%);
+    -ms-transform: translate(-50%,-15%);
+    transform: translate(-50%,-15%);
+    left: 50%;
+    width: 90vw;
+    height: 120px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 10px rgba(103,112,122,0.21);
+    border-radius: 6px;
+    display: flex;
+    div{
+      background-image: url(${foto});
+      height: 100%;
+      flex: 0 0 40%;
+      border-radius: 6px 0 0 6px;
+      background-size: cover;
+      background-position: center;
+    }
+    section{
+      display: flex;
+      flex-direction: column;
+      padding: 10px;
+      position: relative;
+      h3{
+        font-size: 0.9em;
+        color: #353d40;
+        font-weight: normal;
+        margin-bottom: 3px;
+      }
+      address{
+        font-size: 0.8em;
+        font-style: normal;
+        font-weight: 300;
+        margin-bottom: 3px;
+      }
+      h1{
+        color: #055eff;
+        font-size: 1.1em;
+        display: flex;
+        align-items: baseline;
+        margin: 5px 0;
+        sub{
+          color: #c4c4c4;
+          font-size: 0.8em;
+          font-weight: 300;
+        }
+      }
+      ul{
+        display: flex;
+        align-items: center;
+        margin: 5px 0;
+        li{
+          font-size: 0.8em;
+          display: flex;
+          align-items: center;
+          color: #3D3F40;
+          margin-right: 10px;
+          a{
+            margin-right: 10px;
+            font-size: 17px;
+          }
+        }
+      }
+    }
+    @media screen and (max-width: 386px) {
+      section{
+        justify-content: center;
+        ul{
+          display: none;
+        }
+      }
+    }
 `;
 
 //Filter
@@ -316,6 +464,11 @@ export const FilterHead = styled.div`
   align-items: center;
   justify-content: space-between;
   border-bottom: 1px solid #EBEBEB;
+  padding: 10px;
+  position: fixed;
+  background-color: #fff;
+  width: 95vw;
+  top: 0;
   a{
     margin: 20px;
     text-decoration: none;
@@ -323,11 +476,120 @@ export const FilterHead = styled.div`
   }
 `;
 
-export const Filter =  styled.section`
-  
+export const FilterBody =  styled.section`
+margin: 20px;
+padding-top: 100px;
+display: flex;
+flex-direction: column;
+margin-bottom: 100px;
 
+  strong{
+    font-size: 18px;
+    line-height: 140%;
+    /* or 25px */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+    color: #353D40;
+  }
+  small{
+    font-size: 14px;
+    line-height: 140%;
+    /* or 25px */
+    align-items: center;
+    font-weight: normal;
+    color: #353D40;
+    margin: 10px 0  ;
+    span{
+      color: #055eff;
+    }
+  }
+  section{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #EBEBEB;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    div{
+      display: flex;
+      flex-direction: column;
+      margin-right: 20px;
+     input{
+      border: 1px solid #c7c7c8;
+      padding: 20px 0 20px 10px;
+      border-radius: 3px;
+      width: 40vw;
+      &:hover, &:focus{
+        border: 1px solid #055eff;
+        box-shadow: inset 0px 0px 2px #055EFF;
+      }
 
+     }
+    }
+  }
 `; 
+export const Specifications = styled.div`
+  section{
+    flex-direction: column;
+    div{
+      justify-content: space-between;
+      margin: 10px 0;
+      display: flex;
+      flex-direction: row;
+      align-items: center;  
+      select{
+        background-color: #fff;
+        border: 1px solid #c7c7c8;
+        padding: 10px;
+        border-radius: 6px;
+        -webkit-appearance: button;
+        font-size: 1em;
+        outline: none;
+        &:hover, &:focus{
+            border: 1px solid #055eff;
+            box-shadow: inset 0px 0px 2px #055EFF;
+        }
+      }
+      p{
+        font-size: 16px;
+      }
+    }
+  }
+`;
+export const Types = styled.div`
+ display: flex;
+ flex-wrap: wrap;
+ border-bottom: 1px solid #EBEBEB;
+    padding-bottom: 20px;
+    margin: 20px 0;
+  button{
+    font-size: 16px;
+    color: #353d40;
+    padding: 15px;
+    border-radius: 6px;
+    border: 1px solid #D7D6D6;
+    box-sizing: border-box;
+    cursor: pointer;
+    width: fit-content;
+    margin: 5px;
+    &:first-child{
+      margin-right: 5px;
+      margin-left: 5px;
+    }
+    &:last-child{
+      margin-right: 0px;
+      margin-left: 5px;
+    }
+    &:hover{
+      background-color: #055eff;
+      color: white;
+      border: 1px solid transparent;
+      transition: all 300ms ease;
+    }
+  }
+
+`;
 
 //Imoveis
 export const Properties = styled.div`
@@ -369,7 +631,7 @@ export const AnnounceItem = styled.div`
     margin-bottom: 60px;
     &:hover{
       border: 2px solid #055eff;
-      border-radius: 6px;
+      border-radius: 8px;
     }
     & > div{
       position: relative;
@@ -624,6 +886,7 @@ export const CreateType = styled.div`
 export const OptionButton = styled.div`
   display: flex;
   align-items: center;
+  margin: 15px 0;
   p{
     margin-right: 15px;
   }
@@ -641,7 +904,7 @@ export const OptionButton = styled.div`
     &:checked{
       background-color: #055eff;
       &:before{
-        left: 50px;
+        left: 40px;
       }
     }
     &:before{
@@ -655,6 +918,7 @@ export const OptionButton = styled.div`
       box-shadow: 0px 0.63px 4.625px rgba(0, 0, 0, 0.25);
       transition: all 0.2s ease-in;
       left: 0px;
+      transform: translate(0px, -2px);
       
     }
   }
@@ -686,6 +950,24 @@ export const TipsCard = styled.div`
       font-weight: bold;
       color: #6D6D78;
     }
+  }
+
+`;
+
+export const FixedButton = styled.button`
+  position: fixed;
+  background-color: #055eff;
+  color: white;
+  padding: 15px 25px;
+  border-radius: 6px;
+  box-shadow: 0px 3.97858px 16.909px rgba(5, 94, 255, 0.35);
+  bottom: 10px;
+  font-size: 1em;
+  transform: translate(-50%,-50%);
+  left: 50%;
+  a{
+    text-decoration: none;
+    color: white;
   }
 
 `;

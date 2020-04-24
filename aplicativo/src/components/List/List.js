@@ -55,14 +55,14 @@ export default class List extends Component {
                   </svg>
                 </button>
           </Head>
-          <Input>
+          <Input local="20px">
                 <input type="text" placeholder="Busque por cidade"/>
                 <span className="material-icons">
                   search
                 </span>
           </Input>
-          <Button> 
-                <Link to="/filtros">
+          <Button local="20px"> 
+                <Link to="/filters">
                 <span className="material-icons">
                     filter_list
                   </span>

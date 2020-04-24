@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Head, Input, MapStyle, Button, Marker, Menu, InfoWindow} from '../../style.js';
+import {Head, Input, MapStyle, Button, Marker, Menu, InfoWindow, FilterSelected, QtdProperty} from '../../style.js';
 import  {Link} from 'react-router-dom';
 
 
@@ -61,8 +61,9 @@ export default class Map extends Component {
                 search
               </span>
             </Input>
+            <QtdProperty>Exibindo 238 imóveis</QtdProperty>
             <MapStyle>
-              <Button position="absolut" local="20px"> 
+            <Button position="absolut" local="20px"> 
                 <Link to="/filters">
                 <span className="material-icons">
                     filter_list
@@ -70,13 +71,46 @@ export default class Map extends Component {
                   Filtro
                 </Link>
               </Button>
-              <Marker>
-                <Link to="/mapa-filter">
-                  <span>R$ 2,569</span>
-                  <circle></circle>
+              <FilterSelected>
+                <Link to="/filters">
+                  1 quarto           
+                  <button>
+                    <span class="material-icons">
+                    clear
+                    </span>
+                  </button>
                 </Link>
-              </Marker>
-           
+              </FilterSelected>
+              
+                <Marker >
+                    <Link to="/mapa-filter">
+                      <span>R$ 2,569</span>
+                      <circle></circle>
+                    </Link>
+                </Marker>
+                <InfoWindow>
+                  <div></div>
+                  <section>
+                    <h3>Rua Alaor Empírico, 30</h3>
+                    <address>Jardim Nova Orleans, Varginha</address>
+                    <h1>R$ 2.569,00 <sub>/mês</sub></h1>
+                    <ul>
+                      <li>
+                        <a className="material-icons">straighten</a>
+                        80 m
+                      </li>
+                      <li>
+                        <a className="material-icons">king_bed</a>
+                        2
+                      </li>
+                      <li>
+                        <a className="material-icons">bathtub</a>
+                        2
+                      </li>
+                     
+                    </ul>
+                  </section>
+                </InfoWindow>
             </MapStyle>
     </>;
   }
