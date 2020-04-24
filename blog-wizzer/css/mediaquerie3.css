@@ -41,16 +41,18 @@
   .post-title {
     font-size: 1em; }
 
-  .find-property .find-content span {
-    font-size: 2em; }
-    .find-property .find-content span svg {
-      width: 120px;
-      height: 30px; }
-  .find-property .find-content p {
-    font-size: 1em; }
-  .find-property .find-content button {
-    font-size: 1em;
-    padding: 10px 12px; } }
+  .find-property .find-content {
+    margin: 0 20px; }
+    .find-property .find-content span {
+      font-size: 2em; }
+      .find-property .find-content span svg {
+        width: 120px;
+        height: 30px; }
+    .find-property .find-content p {
+      font-size: 1em; }
+    .find-property .find-content button {
+      font-size: 1em;
+      padding: 10px 12px; } }
 @media screen and (min-width: 992px) {
   header {
     padding: 20px 75px; }
@@ -109,31 +111,7 @@
   footer .main_informations .terms_links > ul li {
     margin: 0 20px; }
 
-  footer .main_informations .brand_links .brand img {
-    width: 150px; }
-
-  footer .main_informations * {
-    text-align: center;
-    justify-content: center;
-    align-items: center; }
-
-  footer .main_informations .terms_links .address_contact ul:first-child {
-    margin: 0;
-    padding: 0; }
-
-  footer .main_informations .terms_links .address_contact ul:last-child {
-    margin-top: 20px; } }
-@media (max-width: 760px) {
-  footer .main_informations {
-    flex-direction: column; }
-
-  footer .main_informations .brand_links .link_list {
-    display: none; }
-
-  footer .main_informations .terms_links > ul li {
-    margin: 0 20px; }
-
-  footer .main_informations .brand_links .brand img {
+  footer .main_informations .brand_links .brand #logo {
     width: 150px; }
 
   footer .main_informations * {

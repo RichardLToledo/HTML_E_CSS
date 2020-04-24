@@ -62,7 +62,7 @@
   footer .main_informations .terms_links > ul li {
     margin: 0 20px; }
 
-  footer .main_informations .brand_links .brand img {
+  footer .main_informations .brand_links .brand #logo {
     width: 150px; }
 
   footer .main_informations * {
@@ -83,43 +83,5 @@
   footer .main_informations .terms_links .address_contact ul:first-child {
     margin-bottom: 20px;
     border-right: 1px solid transparent; } }
-@media (max-width: 870px) {
-  .wizzer_regions {
-    flex-direction: column; }
-
-  .wizzer_regions .state-text * {
-    justify-content: center;
-    text-align: center; }
-
-  .selected_region {
-    flex-direction: column; }
-
-  .selected_region .img-city {
-    margin-bottom: 60px; }
-
-  .selected_region .city-text {
-    align-items: center;
-    display: flex;
-    flex-direction: column; }
-
-  .selected_region .city-text * {
-    text-align: center;
-    justify-content: center; }
-
-  .wizzer_regions .img-state svg {
-    display: none; }
-
-  .wizzer_regions .img-state img {
-    display: flex;
-    margin-bottom: 10px; }
-
-  .wizzer_regions .state-text sub {
-    display: none; }
-
-  .wizzer_regions .state-text h2 {
-    font-size: 2.5em; }
-
-  .wizzer_regions .img-state {
-    background-image: unset; } }
 
 /*# sourceMappingURL=mediaquerie2.css.map */

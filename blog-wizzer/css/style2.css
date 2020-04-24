@@ -259,7 +259,17 @@ footer .main_informations .brand_links {
   flex-direction: column; }
 
 footer .main_informations .brand_links .brand {
+  display: flex;
+  flex-direction: column;
   margin-bottom: 20px; }
+
+footer .main_informations .brand_links .brand #logo {
+  width: 280px;
+  padding-bottom: 10px; }
+
+footer .main_informations .brand_links .brand strong {
+  color: #555;
+  font-size: 2em; }
 
 footer .main_informations .brand_links .link_list {
   display: flex; }
