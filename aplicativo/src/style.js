@@ -440,6 +440,7 @@ export const InfoWindow = styled.div`
           align-items: center;
           color: #3D3F40;
           margin-right: 10px;
+          padding: 5px 0;
           a{
             margin-right: 10px;
             font-size: 17px;

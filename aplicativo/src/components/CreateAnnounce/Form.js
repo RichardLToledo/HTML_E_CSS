@@ -91,6 +91,9 @@ export default class CreateAnnounce extends Component {
               <input type="text" placeholder="Endereço"/>
             </Input>
             <Input>
+              <input type="text" placeholder="Número"/>
+            </Input>
+            <Input>
               <input type="text" placeholder="Complemento"/>
             </Input>
             <Input>
