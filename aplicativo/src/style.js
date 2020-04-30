@@ -701,7 +701,7 @@ export const AnnounceInfo = styled.div`
           display: flex;
           align-items: center;
           color: #353d40;
-          margin-right: 20px;
+          margin-right: 15px;
           a{
             margin-right: 5px
           }
