@@ -1,0 +1,103 @@
+@media screen and (min-width: 768px) {
+  main #section-home .section-home-wrap img {
+    display: flex;
+    margin: 0 auto;
+  }
+  main #section-home .section-home-wrap .section-home-text {
+    text-align: center;
+    margin: 0 60px;
+  }
+  main #section-home .section-home-wrap .section-home-text a {
+    margin: 0 auto;
+  }
+  main #section-know .section-know-wrap {
+    display: flex;
+    align-items: center;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  main #section-know .section-know-wrap img {
+    padding-top: 92px;
+    display: flex;
+  }
+  main #section-info .section-info-wrap .no-contract,
+main #section-info .section-info-wrap .no-guarantor,
+main #section-info .section-info-wrap .digital-contract {
+    flex: 0 0 30%;
+    margin: 6% 20%;
+  }
+  main #section-anounce {
+    background-image: none;
+  }
+  main #section-anounce img {
+    display: flex;
+    margin-right: 3%;
+  }
+  main #section-anounce .section-anounce-wrap {
+    text-align: left;
+    align-items: flex-start;
+  }
+}
+@media screen and (min-width: 992px) {
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1140px 1fr;
+  }
+  main #section-home {
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+  main #section-home .section-home-wrap {
+    display: flex;
+  }
+  main #section-home .section-home-wrap .section-home-text {
+    text-align: left;
+    align-items: flex-start;
+  }
+  main #section-home .section-home-wrap .section-home-text a {
+    margin: 0;
+  }
+  main #section-know {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    width: 100%;
+  }
+  main #section-know .section-know-wrap {
+    max-width: 1140px;
+  }
+  main #section-info {
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+  main #section-info .section-info-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    margin: 6% auto;
+  }
+  main #section-info .section-info-wrap .no-contract,
+main #section-info .section-info-wrap .no-guarantor,
+main #section-info .section-info-wrap .digital-contract {
+    flex: 0 0 30%;
+    padding: 20px;
+    margin: 0 auto;
+    height: 100%;
+  }
+  main #section-benefits {
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+  main #section-benefits .section-benefits-overflow > img {
+    display: none;
+  }
+  main #section-benefits .section-benefits-overflow .dots {
+    display: flex;
+    justify-content: center;
+  }
+  main #section-anounce {
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+}
+
+/*# sourceMappingURL=mediaquerie.css.map */

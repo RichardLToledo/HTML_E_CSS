@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/mediaquerie.css">
+  <title>LP Inquilino</title>
+</head>
+
+<body>
+  <header>
+    <div id="logo">
+      <img src="assets/wizzer.svg" alt="">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#">Seja Proprietário</a></li>
+        <li><a href="#">Seja Inquilino</a></li>
+        <li><a href="#">Entrar</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div id="section-home">
+      <div class="section-home-wrap">
+        <img src="assets/coach.svg" alt="Aluguel de um jeito simples, rápido e inteligente">
+        <div class="section-home-text">
+          <h2>Aluguel de um jeito <span>simples</span>, <span>rápido</span> e <span>inteligente</span></h2>
+          <p>A Wizzer é a casa da sua casa: uma plataforma segura para você procurar imóveis e pagar seu aluguel com
+            muita comodidade, sem complicações.</p>
+          <a href="#">Encontre seu imóvel</a>
+        </div>
+      </div>
+    </div>
+    <div id="section-know">
+      <div class="section-know-wrap">
+        <img src="assets/know-wizzer.svg" alt="Conheça a Wizzer">
+        <div class="section-know-text">
+          <h2>Conheça a Wizzer</h2>
+          <p>Temos o propósito de facilitar os processos de divulgação, negociação e administração de imóveis para quem
+            quer cumprir esta tarefa sem dores de cabeça.</p>
+          <a href="#">Saiba mais</a>
+        </div>
+      </div>
+    </div>
+    <div id="section-info">
+      <div class="section-info-wrap">
+        <div class="no-contract">
+          <img src="assets/no-contract.svg" alt="Menos Burocracia">
+          <h2>Menos burocracias</h2>
+          <p>Sem papelada e sem processos demorados. Sem idas a cartórios, bancos, imobiliária e sem longas listas de
+            documentos e requisitos para preencher.</p>
+        </div>
+        <div class="no-guarantor">
+          <img src="assets/High-5.svg" alt="Sem fiador">
+          <h2>Sem fiador</h2>
+          <p>Encontrar um fiador é difícil pois envolve muitas regras. Com a Wizzer, alugue com segurança, porque nós
+            garantimos a fiança do aluguel.</p>
+        </div>
+        <div class="digital-contract">
+          <img src="assets/digital.svg" alt="Contrato digital">
+          <h2>Contrato digital</h2>
+          <p>Tem a mesma validade jurídica do que o contrato em papel. Ou seja, fecha-se o acordo mantendo a integridade
+            entre as partes, mas de um jeito simples e rápido.</p>
+        </div>
+      </div>
+    </div>
+    <div id="section-benefits">
+      <div class="section-benefits-overflow">
+        <div class="slides">
+          <div id="slide-1" class="mySlides animation">
+            <img src="assets/match.svg" alt="Deu Match!">
+            <h3>Deu Match!</h3>
+            <p>Procurar um imóvel é uma tarefa que leva muito tempo e paciência, certo? Com a Wizzer, é diferente. É
+              interativo, é leve, é divertido. Online, nós te guiamos até o imóvel certo para você se apaixonar na hora
+              de visitar o local.</p>
+          </div>
+          <div id="slide-2" class="mySlides animation">
+            <img src="assets/new-home.svg" alt="Visualize seu novo lar">
+            <h3>Visualize seu novo lar</h3>
+            <p>Tornamos a sua experiência de pesquisar imóveis a mais confortável possível. Você tem acesso a fotos
+              profissionais e detalhes dos ambientes sem sair de casa, o que te permite analisar se este é o lugar
+              perfeito para você.</p>
+          </div>
+          <div id="slide-3" class="mySlides animation">
+            <img src="assets/messages.svg" alt="Chama a Wizzer!">
+            <h3>Chama a Wizzer!</h3>
+            <p>Além de toda empatia dos nossos atendentes, você pode contar com um suporte técnico online para
+              esclarecer suas dúvidas a qualquer momento. Despreocupa, que a Wizzer te ajuda.</p>
+          </div>
+        </div>
+        <img src="assets/swipe.svg" alt="Deslizar">
+        <div class="dots">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+      </div>
+    </div>
+    <div id="section-anounce">
+      <img src="assets/richard-opacity.svg" alt="E se eu quiser anúnciar?">
+      <div class="section-anounce-wrap">
+        <h2>E se eu quiser anúnciar?</h2>
+        <p>
+          O número de pessoas na internet aumentou exponencialmente, essa talvez seja a maior vantagem de um anúncio
+          online.
+        </p>
+        <p>
+          Agora imagina ter toda essa vantagem da internet no seu anúncio gratuitamente. Isso mesmo, na Wizzer você não
+          paga nada para anunciar.
+        </p>
+        <p>
+          O que está esperando para fazer parte dessa revolução digital?
+        </p>
+        <a href="#">Quero anunciar</a>
+      </div>
+    </div>
+  </main>
+  <footer>
+
+  </footer>
+  <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      var i;
+      var x = window.matchMedia("(min-width: 992px)")
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) { slideIndex = 1 }
+      if (n < 1) { slideIndex = slides.length }
+      if (x.matches) {
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "flex";
+        dots[slideIndex - 1].className += " active";
+      } else {
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "flex";
+        }
+      }
+    }
+  </script>
+</body>
+
+</html>
