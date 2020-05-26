@@ -235,6 +235,7 @@ main {
 main #section-fixed-mob {
   display: flex;
   z-index: 9999;
+  background: #fff;
   align-items: center;
   justify-content: space-between;
   position: fixed;
@@ -304,6 +305,7 @@ main #section-job-details {
   grid-column-start: 2;
   grid-column-end: 3;
   position: relative;
+  z-index: -9999;
 }
 main #section-job-details #section-fixed-desk {
   display: none;

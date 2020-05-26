@@ -41,7 +41,7 @@ main #section-info .section-info-wrap .digital-contract {
 @media screen and (min-width: 992px) {
   main {
     display: grid;
-    grid-template-columns: 1fr 1140px 1fr;
+    grid-template-columns: 1fr 992px 1fr;
   }
   main #section-home {
     grid-column-start: 2;
@@ -97,6 +97,56 @@ main #section-info .section-info-wrap .digital-contract {
   main #section-anounce {
     grid-column-start: 2;
     grid-column-end: 3;
+  }
+}
+@media screen and (max-width: 768px) {
+  .footer .content {
+    padding: 30px;
+  }
+
+  .logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .footer .content .wizzer {
+    flex-direction: column;
+  }
+
+  .footer .content .wizzer .network ul {
+    margin: 0;
+  }
+
+  .footer .content .wizzer .network {
+    margin-bottom: 20px;
+  }
+
+  .footer .content .infos {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer .content .infos .contact {
+    margin-right: 0;
+  }
+
+  footer #search_footer #search {
+    width: 400px;
+  }
+
+  footer #search_footer #search {
+    width: 300px;
+  }
+}
+@media screen and (max-width: 960px) {
+  nav #header_links {
+    display: none;
+  }
+
+  #headerwizzer nav #menu {
+    display: flex;
   }
 }
 
