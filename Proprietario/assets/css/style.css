@@ -1,7 +1,6 @@
 @import "reset.css ";
 @import "header.css ";
 @import "footer.css";
-
 .main {
     grid-template-columns: 1fr 1140px 1fr;
     display: grid;
@@ -400,49 +399,39 @@ section h1 {}
         display: flex;
         flex-direction: column;
     }
-
     .main>.container #tenant {
         margin-top: 50px;
     }
-
     .tenant_content img {
         display: none;
     }
-
     #benefits_box {
         justify-content: center;
         grid-template-columns: 300px 300px;
     }
-
     .box {
         display: flex;
         justify-content: center;
         align-items: center;
     }
-
     .benefits {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column-reverse;
     }
-
     .benefits .text {
         align-items: center;
     }
-
     .benefits .text p {
         text-align: center;
     }
-
-
 }
 
 @media screen and (max-width: 768px) {
     .box {
         display: none;
     }
-
     #benefits {
         justify-content: center;
         display: flex;
@@ -451,25 +440,19 @@ section h1 {}
         padding: 0px 60px;
         margin-top: 30px;
     }
-
     #benefits_box {
         grid-template-columns: 1fr;
-
     }
-
     #about_wizzer .img_wizzer {
         display: none;
     }
-
     #about_wizzer {
         justify-content: center;
         align-items: center;
     }
-
     #about_wizzer .wizzer_text {
         flex: 0 0 65%;
     }
-
     #about_wizzer .wizzer_text p {
         width: auto;
     }
@@ -481,36 +464,31 @@ section h1 {}
         justify-content: center;
         align-items: center;
     }
-
-    .benefits_item p,
-    #benefits h1 {
+    .benefits_item p, #benefits h1 {
         text-align: center;
     }
-
     #benefits {
-
         padding: 0px 30px;
-
     }
-
     #tenant h1 {
         text-align: center;
     }
-
     #tenant strong {
         text-align: center;
     }
-
     #form {
         width: 100%;
     }
-
     .tenant_content {
-        padding: o
+        padding: 0;
     }
-
     #box h1 {
         text-align: center;
     }
-
+    .footer .content .infos .about * {
+        margin: 16px 0;
+    }
+    .footer .terms p {
+        text-align: center;
+    }
 }
