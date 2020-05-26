@@ -1,9 +1,8 @@
 @import "reset.css";
 
-
 #headerwizzer {
     height: 96px;
-    border: 1px solid #E0E0E0;
+    border: 1px solid #e0e0e0;
     box-sizing: border-box;
     display: flex;
     align-items: center;
@@ -45,7 +44,6 @@ nav #header_links {
     display: flex;
 }
 
-
 nav ul li {
     height: 100%;
     display: flex;
@@ -58,7 +56,7 @@ nav ul li {
 }
 
 nav ul li::before {
-    content: '';
+    content: "";
     height: 4px;
     position: absolute;
     border-radius: 3px 3px 0px 0px;
@@ -99,8 +97,8 @@ nav ul li a {
     flex-direction: column;
     align-items: flex-end;
     cursor: pointer;
+    background: transparent;
 }
-
 
 #menu span {
     width: 35px;
@@ -122,5 +120,4 @@ nav ul li a {
     #headerwizzer nav #menu {
         display: flex;
     }
-
 }
