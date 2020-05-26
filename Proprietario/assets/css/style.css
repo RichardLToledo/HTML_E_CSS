@@ -1,3 +1,7 @@
+@import "reset.css ";
+@import "header.css ";
+@import "footer.css";
+
 .main {
     grid-template-columns: 1fr 1140px 1fr;
     display: grid;
@@ -56,6 +60,7 @@
     box-shadow: 0px 4px 51px rgba(0, 0, 0, 0.15);
     border-radius: 6px;
     max-width: 400px;
+    width: 400px;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -88,7 +93,7 @@
 }
 
 #form input[type=email] {
-    margin-bottom: 15px!important;
+    margin-bottom: 15px !important;
 }
 
 #form button {
@@ -175,9 +180,12 @@
     grid-column-end: 3;
     padding-top: 60px;
     background: #FFFFFF;
+}
+
+#benefits_box {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 90px auto auto;
+    grid-template-rows: auto auto;
 }
 
 #benefits h1 {
@@ -226,10 +234,7 @@
     color: #353D40;
 }
 
-main {
-    display: flex;
-    flex-direction: column;
-}
+section h1 {}
 
 .box {
     display: grid;
@@ -370,4 +375,142 @@ main {
 
 .benefits img {
     padding: 20px;
+}
+
+#box {
+    padding-top: 60px;
+}
+
+#box h1 {
+    font-size: 32px;
+    font-weight: 900;
+    color: #353d40;
+    margin-bottom: 8px;
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    display: flex;
+    line-height: 140%;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 1140px) {
+    .main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main>.container #tenant {
+        margin-top: 50px;
+    }
+
+    .tenant_content img {
+        display: none;
+    }
+
+    #benefits_box {
+        justify-content: center;
+        grid-template-columns: 300px 300px;
+    }
+
+    .box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .benefits {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+
+    .benefits .text {
+        align-items: center;
+    }
+
+    .benefits .text p {
+        text-align: center;
+    }
+
+
+}
+
+@media screen and (max-width: 768px) {
+    .box {
+        display: none;
+    }
+
+    #benefits {
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px 60px;
+        margin-top: 30px;
+    }
+
+    #benefits_box {
+        grid-template-columns: 1fr;
+
+    }
+
+    #about_wizzer .img_wizzer {
+        display: none;
+    }
+
+    #about_wizzer {
+        justify-content: center;
+        align-items: center;
+    }
+
+    #about_wizzer .wizzer_text {
+        flex: 0 0 65%;
+    }
+
+    #about_wizzer .wizzer_text p {
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .benefits_item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .benefits_item p,
+    #benefits h1 {
+        text-align: center;
+    }
+
+    #benefits {
+
+        padding: 0px 30px;
+
+    }
+
+    #tenant h1 {
+        text-align: center;
+    }
+
+    #tenant strong {
+        text-align: center;
+    }
+
+    #form {
+        width: 100%;
+    }
+
+    .tenant_content {
+        padding: o
+    }
+
+    #box h1 {
+        text-align: center;
+    }
+
 }

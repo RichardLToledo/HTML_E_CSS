@@ -5,6 +5,7 @@
 main {
     display: flex;
     flex-direction: column;
+    padding-top: 96px;
 }
 
 main .container {
@@ -172,7 +173,7 @@ main .container .form {
     margin-right: 16px;
 }
 
-.new_horizons .content .text span {
+.new_horizons .content .text div {
     flex: 0 0 70%;
     display: flex;
     flex-direction: column;
@@ -221,10 +222,8 @@ main .container .form {
 #broker {
     display: grid;
     grid-template-columns: 1fr 570px 570px 1fr;
-
     position: relative;
     margin: 40px 0;
-
     align-items: center;
 }
 
