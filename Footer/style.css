@@ -1,283 +1,205 @@
-* {
-  padding: 0;
-  margin: 0;
-}
-
-body {
-  height: 100vh;
-  width: 100vw;
-  font-family: "Roboto", sans-serif;
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5 {
-  margin: 0;
-  padding: 0;
-  color: #3d3f40;
-}
-
-p,
-small,
-a,
-ul,
-li,
-sub {
-  margin: 0;
-  padding: 0;
-  color: #3d3f40;
-  font-family: "Roboto", sans-serif;
-}
-
-input {
-  outline: none;
-  font-family: "Roboto", sans-serif;
-}
-
-button {
-  border: none;
-  background: transparent;
-  outline: none;
-  font-family: "Roboto", sans-serif;
-  cursor: pointer;
-}
-
-ul {
-  list-style-type: none;
-}
-
-a {
-  text-decoration: none;
-}
+@import 'reset.css';
 
 footer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 60px;
+}
+
+footer #search_footer {
+  padding: 40px;
   background-color: #f9f9f9;
   display: flex;
+  justify-content: center;
   flex-direction: column;
+  align-items: center;
+}
+
+footer #search_footer h2 {
+  color: #353d40;
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+footer #search_footer #search {
+  background-color: white;
+  border: 1px solid #C7C7C7;
+  border-radius: 6px;
+  height: 45px;
+  width: 600px;
+  display: flex;
   justify-content: space-between;
 }
-footer .main_informations {
-  display: flex;
-  padding: 30px;
+
+footer #search_footer #search input {
+  height: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid transparent;
+  color: #353d40;
 }
-footer .main_informations .brand_links {
-  flex: 1;
+
+footer #search_footer #search button {
+  height: 100%;
+  background-color: #055eff;
+  padding: 0 16px;
+  color: #fff;
+  border-radius: 0 6px 6px 0;
+}
+
+footer #search_footer #search input::placeholder {
+  font-size: 14px;
+}
+
+.footer {
+  background-color: #353d40;
   display: flex;
   flex-direction: column;
 }
-footer .main_informations .brand_links .brand {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 20px;
-}
-footer .main_informations .brand_links .brand #logo {
-  width: 280px;
-  padding-bottom: 10px;
-}
-footer .main_informations .brand_links .brand strong {
-  color: #555;
-  font-size: 2em;
-}
-footer .main_informations .brand_links .link_list {
-  display: flex;
-}
-footer .main_informations .brand_links .link_list ul:first-child {
-  margin-right: 40px;
-}
-footer .main_informations .brand_links .link_list ul li {
-  margin-bottom: 10px;
-}
-footer .main_informations .brand_links .link_list ul li a {
-  color: #3d3f40;
-}
-footer .main_informations .brand_links .link_list ul li a:hover {
-  color: #2693ff;
-}
-footer .main_informations .terms_links {
-  flex: 1;
+
+.footer .content {
+  padding: 50px;
   display: flex;
   flex-direction: column;
 }
-footer .main_informations .terms_links small {
-  font-size: 0.9em;
-  margin-bottom: 15px;
-  color: #353d40;
-}
-footer .main_informations .terms_links p {
-  font-size: 1em;
-  margin-bottom: 15px;
-  color: #353d40;
-}
-footer .main_informations .terms_links a {
-  font-size: 1em;
-  margin-bottom: 15px;
-  color: #055eff;
-}
-footer .main_informations .terms_links strong {
-  font-size: 0.9em;
-  margin-bottom: 15px;
-  color: #3d3f40;
-  font-weight: bold;
-}
-footer .main_informations .terms_links > ul {
+
+.footer .content .wizzer {
   display: flex;
-  flex-direction: row;
-  margin-bottom: 30px;
-}
-footer .main_informations .terms_links > ul li {
-  margin-right: 24px;
-}
-footer .main_informations .terms_links .address_contact {
-  display: flex;
-}
-footer .main_informations .terms_links .address_contact ul:first-child {
-  padding-right: 40px;
-  border-right: 1px solid rgba(0, 0, 0, 0.24);
-  margin-right: 40px;
-}
-footer .main_informations .terms_links .address_contact ul li {
-  color: #353d40;
-  font-size: 1em;
-  display: flex;
+  justify-content: space-between;
   align-items: center;
-  margin-bottom: 10px;
 }
-footer .main_informations .terms_links .address_contact ul li img {
-  margin-right: 10px;
-}
-footer .main_informations .terms_links .address_contact ul li:first-child {
-  font-weight: bold;
-  color: #353d40;
-  font-size: 1em;
-  margin-bottom: 20px;
-}
-footer .rights-reserve {
+
+.footer .content .wizzer .network ul {
   display: flex;
-  padding: 20px;
+  margin-right: 100px;
+}
+
+.footer .content .wizzer .network ul li {
+  padding: 0 16px;
+}
+
+.footer .content .wizzer .network ul li img {
+  width: 20px;
+  height: 20px;
+}
+
+.footer .content .wizzer .logo h2 {
+  color: #fff;
+  font-weight: 300;
+  font-size: 24px;
+  margin: 20px 0;
+}
+
+.footer .content .infos ul li:first-child {
+  color: #fff;
+  margin: 16px 0;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.footer .content .infos {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer .content .infos ul {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.footer .content .infos ul li {
+  color: #fff;
+  margin: 10px 0;
+}
+
+.footer .content .infos ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer .content .infos .contact {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  flex: 1;
+  margin-right: 20px;
+}
+
+.footer .terms {
+  border-top: 1px solid #FFFFFF;
+  padding: 16px;
+  display: flex;
   justify-content: center;
-  align-items: center;
-  border-top: 1px solid #ccc;
-}
-footer .rights-reserve p {
-  text-align: center;
-  color: #353d40;
-  font-size: 0.9em;
 }
 
-@media (max-width: 760px) {
-  footer .main_informations {
+.footer .terms p {
+  color: #fff;
+  font-size: 14px;
+}
+
+.footer .content .infos .about {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+  flex: 1;
+}
+
+.footer .content .infos .about small {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  margin: 10px 0;
+}
+
+.footer .content .infos .about a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  margin: 10px 0;
+}
+
+@media screen and (max-width: 768px) {
+
+  .footer .content {
+    padding: 30px;
+  }
+
+  .logo {
+    display: flex;
     flex-direction: column;
-  }
-
-  footer .main_informations .brand_links .link_list {
-    display: none;
-  }
-
-  footer .main_informations .terms_links > ul li {
-    margin: 0 20px;
-  }
-
-  footer .main_informations .brand_links .brand #logo {
-    width: 150px;
-  }
-
-  footer .main_informations * {
-    text-align: center;
-    justify-content: center;
     align-items: center;
-  }
-
-  footer .main_informations .terms_links .address_contact ul:first-child {
-    margin: 0;
-    padding: 0;
-  }
-
-  footer .main_informations .terms_links .address_contact ul:last-child {
-    margin-top: 20px;
-  }
-}
-
-@media (max-width: 900px) {
-  .address_contact {
-    flex-direction: column;
-  }
-
-  footer .main_informations .terms_links .address_contact ul:first-child {
     margin-bottom: 20px;
-    border-right: 1px solid transparent;
-  }
-}
-@media (min-width: 870px) {
-  #menu {
-    display: flex;
   }
 
-  #menu_mobile {
-    display: none;
-  }
-}
-@media (max-width: 870px) {
-  header {
-    box-shadow: none;
-  }
-  header #menu {
-    display: none;
-  }
-  header #menu_mobile {
-    display: flex;
-  }
-
-  .wizzer_regions {
+  .footer .content .wizzer {
     flex-direction: column;
   }
 
-  .wizzer_regions .state-text * {
-    justify-content: center;
+  .footer .content .wizzer .network ul {
+    margin: 0;
+  }
+
+  .footer .content .wizzer .network {
+    margin-bottom: 20px;
+  }
+
+  .footer .content .infos {
+    flex-direction: column;
     text-align: center;
   }
 
-  .selected_region {
-    flex-direction: column;
+  footer #search_footer #search {
+    width: 400px;
   }
 
-  .selected_region .img-city {
-    margin-bottom: 60px;
-  }
-
-  .selected_region .city-text {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .selected_region .city-text * {
-    text-align: center;
-    justify-content: center;
-  }
-
-  .wizzer_regions .img-state svg {
-    display: none;
-  }
-
-  .wizzer_regions .img-state img {
-    display: flex;
-    margin-bottom: 10px;
-  }
-
-  .wizzer_regions .state-text sub {
-    display: none;
-  }
-
-  .wizzer_regions .state-text h2 {
-    font-size: 2.5em;
-  }
-
-  .wizzer_regions .img-state {
-    background-image: unset;
+  footer #search_footer #search {
+    width: 300px;
   }
 }
