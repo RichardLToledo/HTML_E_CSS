@@ -72,14 +72,15 @@ main {
   grid-template-columns: 20px 1fr 20px;
   #section-fixed-mob {
     display: flex;
+    z-index: 9999;
     align-items: center;
     justify-content: space-between;
     position: fixed;
-    width: -webkit-fill-available;
     bottom: 0;
+    right: 0;
+    left: 0;
     top: auto;
     padding: 12px 20px;
-    height: 60px;
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
     span {
       font-size: 18px;
@@ -93,7 +94,8 @@ main {
     background: #055eff;
     grid-column-start: 1;
     grid-column-end: 4;
-    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25); 
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+    z-index: -1;
     .section-header-wrap {
       margin: 3% 20px;
       a {
@@ -105,6 +107,7 @@ main {
         background: #fff;
         font-size: 1em;
         margin: 20px 0;
+        cursor: pointer;
         span {
           font-size: 1em;
         }
@@ -126,6 +129,94 @@ main {
           font-size: 18px;
           padding-right: 8px;
         }
+      }
+    }
+  }
+  #section-job-details {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    position: relative;
+    #section-fixed-desk {
+      display: none;
+      position: fixed;
+      top: 288px;
+      left: auto;
+      right: 20px;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+      width: 232px;
+      border: 1px solid #cccccc;
+      box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.16);
+      border-radius: 6px;
+      padding: 26px;
+      background: #fff;
+      h4 {
+        font-weight: 500;
+        font-size: 24px;
+      }
+      span {
+        color: #8f989b;
+        margin: 30px 0;
+      }
+      a {
+        @include button;
+      }
+    }
+    .job-description {
+      h2 {
+        font-weight: 500;
+        font-size: 24px;
+        margin: 30px 0;
+      }
+      .job-schedule,
+      .description,
+      .requirements {
+        display: flex;
+        align-items: baseline;
+        h3 {
+          padding-right: 12px;
+          font-weight: 500;
+          font-size: 18px;
+        }
+      }
+    }
+    .description,
+    .requirements {
+      flex-direction: column;
+      justify-content: flex-start;
+      margin: 30px 0;
+      h3 {
+        padding-bottom: 12px;
+      }
+    }
+    .requirements {
+      ul {
+        margin-left: 20px;
+        list-style: initial;
+        li {
+          margin-bottom: 30px;
+        }
+      }
+    }
+  }
+  #section-about-wizzer {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    .work-wizzer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-top: 1px solid #353d40;
+      border-bottom: 1px solid #353d40;
+      padding: 30px 0;
+      cursor: pointer;
+      h2 {
+        font-weight: 500;
+        font-size: 24px;
+      }
+      span {
+        font-size: 24px;
       }
     }
   }

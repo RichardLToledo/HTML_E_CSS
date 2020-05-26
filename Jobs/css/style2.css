@@ -234,14 +234,15 @@ main {
 }
 main #section-fixed-mob {
   display: flex;
+  z-index: 9999;
   align-items: center;
   justify-content: space-between;
   position: fixed;
-  width: -webkit-fill-available;
   bottom: 0;
+  right: 0;
+  left: 0;
   top: auto;
   padding: 12px 20px;
-  height: 60px;
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
 }
 main #section-fixed-mob span {
@@ -262,6 +263,7 @@ main #section-header {
   grid-column-start: 1;
   grid-column-end: 4;
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+  z-index: -1;
 }
 main #section-header .section-header-wrap {
   margin: 3% 20px;
@@ -275,6 +277,7 @@ main #section-header .section-header-wrap a {
   background: #fff;
   font-size: 1em;
   margin: 20px 0;
+  cursor: pointer;
 }
 main #section-header .section-header-wrap a span {
   font-size: 1em;
@@ -296,6 +299,99 @@ main #section-header .section-header-wrap .job-location span {
   color: #fff;
   font-size: 18px;
   padding-right: 8px;
+}
+main #section-job-details {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  position: relative;
+}
+main #section-job-details #section-fixed-desk {
+  display: none;
+  position: fixed;
+  top: 288px;
+  left: auto;
+  right: 20px;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  width: 232px;
+  border: 1px solid #cccccc;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.16);
+  border-radius: 6px;
+  padding: 26px;
+  background: #fff;
+}
+main #section-job-details #section-fixed-desk h4 {
+  font-weight: 500;
+  font-size: 24px;
+}
+main #section-job-details #section-fixed-desk span {
+  color: #8f989b;
+  margin: 30px 0;
+}
+main #section-job-details #section-fixed-desk a {
+  color: #fff;
+  padding: 14px 16px;
+  font-size: 1em;
+  background-color: #055eff;
+  cursor: pointer;
+  border-radius: 6px;
+  width: fit-content;
+}
+main #section-job-details .job-description h2 {
+  font-weight: 500;
+  font-size: 24px;
+  margin: 30px 0;
+}
+main #section-job-details .job-description .job-schedule,
+main #section-job-details .job-description .description,
+main #section-job-details .job-description .requirements {
+  display: flex;
+  align-items: baseline;
+}
+main #section-job-details .job-description .job-schedule h3,
+main #section-job-details .job-description .description h3,
+main #section-job-details .job-description .requirements h3 {
+  padding-right: 12px;
+  font-weight: 500;
+  font-size: 18px;
+}
+main #section-job-details .description,
+main #section-job-details .requirements {
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 30px 0;
+}
+main #section-job-details .description h3,
+main #section-job-details .requirements h3 {
+  padding-bottom: 12px;
+}
+main #section-job-details .requirements ul {
+  margin-left: 20px;
+  list-style: initial;
+}
+main #section-job-details .requirements ul li {
+  margin-bottom: 30px;
+}
+main #section-about-wizzer {
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+main #section-about-wizzer .work-wizzer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #353d40;
+  border-bottom: 1px solid #353d40;
+  padding: 30px 0;
+  cursor: pointer;
+}
+main #section-about-wizzer .work-wizzer h2 {
+  font-weight: 500;
+  font-size: 24px;
+}
+main #section-about-wizzer .work-wizzer span {
+  font-size: 24px;
 }
 
 /*# sourceMappingURL=style2.css.map */
