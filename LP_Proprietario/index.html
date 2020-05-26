@@ -1,41 +1,147 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
     <title>Seja Proprietário</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="assets\css\footer.css">
+    <link rel="stylesheet" href="assets\css\reset.css">
+    <link rel="stylesheet" href="assets\css\header.css">
+    <link rel="stylesheet" href="assets\css\imports.css">
+    <link rel="stylesheet" href="assets\css\style.css">
 </head>
+
 <body>
-    <header>
-        <div id="logo">
-            <img src="assets/images/wizzer.svg" alt="logo">
-        </div>
+    <header id="headerwizzer">
         <nav>
-           <ul>
+            <div id="logo">
+                <img src="assets\image\logo.svg" alt="Logo da Wizzer">
+            </div>
+            <div id="header_links">
+                <ul>
+                    <li>
+                        <a href="#">Trabalhe Conosco</a>
+                    </li>
+                    <li>
+                        <a href="#">Seja Corretor</a>
+                    </li>
+                    <li>
+                        <a href="#">Seja Inquilino</a>
+                    </li>
+                    <li>
+                        <a href="#">Seja Proprietário</a>
+                    </li>
+                    <li>
+                        <a href="#">Entrar Agora</a>
+                    </li>
+                </ul>
+            </div>
+            <div id="menu">
+                <button>
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            </div>
+        </nav>
+        <div id="mobile_links">
+            <ul>
                 <li>
-                    <a href="#">Seja Corretor</a>
+                    <a href="#">Trabalhe Conosco</a>
                 </li>
                 <li>
-                    <a href="#">Seja Proprietário</a>
+                    <a href="#">Seja Corretor</a>
                 </li>
                 <li>
                     <a href="#">Seja Inquilino</a>
                 </li>
                 <li>
-                    <a href="#">Entrar</a>
+                    <a href="#">Seja Proprietário</a>
                 </li>
-           </ul>
-        </nav>
+                <li>
+                    <a href="#">Entrar Agora</a>
+                </li>
+            </ul>
+        </div>
     </header>
-    <main>
+    <main class="main">
         <div class="container">
+            <section id="tenant">
+                <h1>Anuncie seus imóveis com a <span>Wizzer</span></h1>
+                <strong>Um jeito fácil de anunciar e alcançar seus clientes! </strong>
+                <div class="tenant_content">
+                    <img src="assets\image\Ilustr-Prop.svg" alt="Proprietario">
+                    <div id="form">
+                        <strong>Anuncie seu imóvel gratuitamente!</strong>
+                        <small>Envie suas informações e entraremos em contato com você, se preferir, adicione o endereço de seu imóvel!</small>
+                        <input type="text" placeholder="CEP">
+                        <input type="text" placeholder="Nome completo">
+                        <input type="text" placeholder="Telefone">
+                        <input type="email" placeholder="Email">
+                        <button>Quero Anunciar</button>
+                        <p>Ao continuar, eu declaro que li e aceito os
+                            <a href="#">Termos de Uso</a> e a
+                            <a href="#">Política de Privacidade</a>
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <section id="about_wizzer">
+            <div class="img_wizzer">
+                <img src="assets\image\Ilustr-Wizzer.svg" alt="Conheça a Wizzer">
+            </div>
+            <div class="wizzer_text">
+                <h1>Conheça a Wizzer</h1>
+                <p>Temos o propósito de facilitar os processos de divulgação, negociação e administração de imóveis para quem quer cumprir esta tarefa sem dores de cabeça.</p>
+                <button>Saiba mais</button>
+            </div>
+        </section>
+        <section id="benefits">
+            <h1>Vantagens de anúnciar na Wizzer Imóveis</h1>
+            <div class="benefits_item">
+                <img src="assets\image\processo_digital.svg" alt="Processo 100% digital">
+                <strong>Processo 100% digital</strong>
+                <p>Excelente para proprietários, incrível para inquilinos. Acesse nosso site e aplicativo de onde estiver e tenha praticidade no aluguel como você nunca viu.</p>
+            </div>
+            <div class="benefits_item">
+                <img src="assets\image\contrato.svg" alt="Sem Burocracia">
+                <strong>Sem Burocracia</strong>
+                <p>Sem papelada e sem processos demorados. Sem idas a cartórios, bancos, imobiliária e sem longas listas de documentos e requisitos para preencher.</p>
+            </div>
+            <div class="benefits_item">
+                <img src="assets\image\contrato_digital.svg" alt="Contrato Digital">
+                <strong>Contrato Digital</strong>
+                <p>Tem a mesma validade jurídica do que o contrato em papel. Ou seja, fecha-se o acordo mantendo a integridade entre as partes, mas de um jeito simples e rápido.</p>
+            </div>
+            <div class="benefits_item">
+                <img src="assets\image\suporte.svg" alt="Negociação Online">
+                <strong>Negociação Online</strong>
+                <p>A Wizzer conecta o inquilino certo ao imóvel ideal. As negociações são por nossa conta e você acompanha sem sair de casa. </p>
+            </div>
+            <div class="benefits_item">
+                <img src="assets\image\fotografia.svg" alt="Fotos profissionais">
+                <strong>Fotos profissionais</strong>
+                <p>Chega de fotos que só mostram só uma parte do lugar. Fazemos imagens completas e em alta resolução para que os detalhes possam ser vistos de maneira realista. </p>
+            </div>
+            <div class="benefits_item">
+                <img src="assets\image\alugase.svg" alt="Anúncie rápido">
+                <strong>Anúncie rápido</strong>
+                <p>É só completar os dados necessários na plataforma e pronto, seu imóvel estará no ar esperando para ser alugado.</p>
+            </div>
+        </section>
+    </main>
+    <main>
+        <div class="box">
             <div class="mockup">
                 <div class="phone">
-                    <img src="assets/images/mockup1.png" alt="Mockup">
+                    <img src="assets/image/mockup1.png" alt="Mockup">
                     <div class="interation">
-                        <img src="assets/images/lamp.svg" alt="LAMP">
+                        <img src="assets/image/lamp.svg" alt="LAMP">
                         <button>Avançar</button>
                     </div>
                 </div>
@@ -44,23 +150,23 @@
                 <ul>
                     <li>
                         <span>1</span>
-                        <p><a href="file:///Users/devw.digital/Desktop/HTML_E_CSS%2013.53.57/LP_Proprietario/index.html">Diga-nos onde está localizado o seu imóvel.</a></p>
+                        <p><a href="/index.html">Diga-nos onde está localizado o seu imóvel.</a></p>
                     </li>
                     <li>
                         <span>2</span>
-                        <p><a href="file:///Users/devw.digital/Desktop/HTML_E_CSS%2013.53.57/LP_Proprietario/index.1.html">Marque a localização dele no mapa.</a> </p>
+                        <p><a href="/index.1.html">Marque a localização dele no mapa.</a> </p>
                     </li>
-                     <li>
+                    <li>
                         <span>3</span>
-                        <p><a href="file:///Users/devw.digital/Desktop/HTML_E_CSS%2013.53.57/LP_Proprietario/index.2.html">Adicione as especificiações do seu imóvel.</a></p>
+                        <p><a href="/index.2.html">Adicione as especificiações do seu imóvel.</a></p>
                     </li>
-                      <li>
+                    <li>
                         <span>4</span>
-                        <p><a href="file:///Users/devw.digital/Desktop/HTML_E_CSS%2013.53.57/LP_Proprietario/index.3.html">Diga-nos o que tem no seu imóvel.</a></p>
+                        <p><a href="/index.3.html">Diga-nos o que tem no seu imóvel.</a></p>
                     </li>
-                     <li>
+                    <li>
                         <span>5</span>
-                        <p><a href="file:///Users/devw.digital/Desktop/HTML_E_CSS%2013.53.57/LP_Proprietario/index.4.html">Por fim agende uma visita do nosso fotógrafo ao seu imóvel.</a></p>
+                        <p><a href="/index.4.html">Por fim agende uma visita do nosso fotógrafo ao seu imóvel.</a></p>
                     </li>
                 </ul>
             </div>
@@ -70,10 +176,94 @@
                 <strong>Tudo em um só lugar</strong>
                 <p>Seus anúncios ficam expostos de um jeito funcional e atraente. Nele podem conter informações detalhadas do imóvel, fotos profissionais e a descrição de características decisivas para o processo de compra</p>
             </div>
-            <img src="assets/images/tudo.svg" alt="Tudo em um só lugar">
+            <img src="assets/image/tudo.svg" alt="Tudo em um só lugar">
         </div>
-         
-
     </main>
+    <footer>
+        <div id="search_footer">
+            <h2>Ajudando seu cliente a encontrar a casa perfeita!</h2>
+            <div id="search">
+                <input type="text" placeholder="Pesquise por cidade">
+                <button>Pesquisar</button>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="content">
+                <div class="wizzer">
+                    <div class="logo">
+                        <img src="assets\images\wizzer_imoveis.svg" alt="wizzer_imoveis">
+                        <h2>Viva o aluguel fácil!</h2>
+                    </div>
+                    <div class="network">
+                        <ul>
+                            <li>
+                                <a href="#"><img src="assets\images\facebook.svg" alt="Facebook Wizzer"></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="assets\images\linkedin.svg" alt="Linkedin"></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="assets\images\instagram.svg" alt="Instagram"></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="assets\images\whatsapp.svg" alt="Whatsapp"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="infos">
+                    <ul>
+                        <li>Explore</li>
+                        <li>
+                            <a href="#">Seja Corretor</a>
+                        </li>
+                        <li>
+                            <a href="#">Seja Inquilino</a>
+                        </li>
+                        <li>
+                            <a href="#">Seja Proprietário</a>
+                        </li>
+                        <li>
+                            <a href="#">Regiões Atendidas </a>
+                        </li>
+                        <li>
+                            <a href="#">Trabalhe Conosco</a>
+                        </li>
+                        <li>
+                            <a href="#">Conheça a Wizzer</a>
+                        </li>
+                        <li>
+                            <a href="#">Blog</a>
+                        </li>
+                    </ul>
+                    <div class="contact">
+                        <ul>
+                            <li>Contato</li>
+                            <li>(35) 99708-1186</li>
+                            <li>suporte@wizzer.com.br</li>
+                        </ul>
+                        <ul>
+                            <li>Endereço</li>
+                            <li>Av. Princesa do Sul - 890, Varginha - MG</li>
+                        </ul>
+                    </div>
+                    <div class="about">
+                        <small>
+                            Acreditamos em poder modernizar a vida 
+                            de milhares que estão em 
+                            um processo de decisão de comprar sua nova moradia, seu lar.
+                        </small>
+                        <p>W.Digital Serviços de Internet LTDA, - 31.822.245/0001-28 CRECI - 6410</p>
+                        <a href="#">Termos de Uso e Política de Privacidade</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="terms">
+                <p>© 2020 Wizzer, Inc. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
 </body>
+
 </html>

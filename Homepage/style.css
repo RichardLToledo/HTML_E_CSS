@@ -1,99 +1,721 @@
-@import "header.css";
-@import "reset.css";
-
-main {
-    display: grid;
-    grid-template-columns: 1fr 1140px 1fr;
-}
-
-main .container {
-    grid-column-start: 1;
-    grid-column-end: 4;
-    background-image: url('assets/images/fundo.jpg');
-    height: 70vh;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    display: grid;
-    grid-template-columns: 1fr 1140px 1fr;
-}
-
-main .container #search {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    padding: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    position: relative;
-}
-
-main .container #search h1 {
-    font-weight: 900;
-    font-size: 60px;
-    line-height: 140%;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    color: #FFFFFF;
-    text-shadow: 0px 0px 9.5px #D0CEC1, 0px 4.75px 4.75px rgba(0, 0, 0, 0.25), 0px 4.75px 4.75px rgba(0, 0, 0, 0.25);
-    margin-bottom: 16px;
-}
-
-#search #search_camp {
-    background-color: white;
-    padding: 10px;
-    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
-    border-radius: 6px;
-    display: flex;
-    align-items: center;
-
-}
-
-#search_camp button:first-child {
-    padding: 36px;
-    color: #055eff;
-    align-items: center;
-    display: flex;
-    cursor: pointer;
-}
-
-#search_camp button:first-child img {
-    margin-right: 10px;
-}
-
-#search_camp input {
-    height: 100%;
-    font-size: 18px;
-    color: #353d40;
-    width: 400px;
-}
-
-#search_camp button:last-child {
-    padding: 24px;
-    background-color: #055eff;
-    border-radius: 6px;
-    height: 100%;
-    color: white;
-    cursor: pointer;
-    font-size: 16px;
-}
-
-#search_camp button:last-child:hover {
-    background-color: rgb(43, 96, 194);
-    transition: all 500ms ease-in;
-}
-
-.map_link {
-    position: absolute;
-    bottom: 64px;
-    padding: 16px;
-    border-radius: 32px;
-    color: #353d40;
-    cursor: pointer;
-    background: #FFFFFF;
-    box-shadow: 0px 0px 21px rgba(0, 0, 0, 0.25);
-    font-weight: 500;
-
-}
+    @import "header.css";
+    @import "reset.css";
+    @import "footer.css";
+    @import "mediaquerie";
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1140px 1fr;
+    }
+    
+    main .container {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        background-image: url('assets/images/fundo.jpg');
+        height: 70vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        display: grid;
+        grid-template-columns: 1fr 1080px 1fr;
+    }
+    
+    main .container #search {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        padding: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        position: relative;
+    }
+    
+    main .container #search h1 {
+        font-weight: 900;
+        font-size: 60px;
+        line-height: 140%;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: #FFFFFF;
+        text-shadow: 0px 0px 9.5px #D0CEC1, 0px 4.75px 4.75px rgba(0, 0, 0, 0.25), 0px 4.75px 4.75px rgba(0, 0, 0, 0.25);
+        margin-bottom: 16px;
+    }
+    
+    #search #search_camp {
+        background-color: white;
+        padding: 10px;
+        box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+        border-radius: 6px;
+        display: flex;
+        align-items: center;
+    }
+    
+    #search_camp button:first-child {
+        padding: 20px;
+        color: #055eff;
+        align-items: center;
+        display: flex;
+        cursor: pointer;
+        background-color: #FFFFFF;
+    }
+    
+    #search_camp button:first-child img {
+        margin-right: 10px;
+    }
+    
+    #search_camp input {
+        height: 100%;
+        font-size: 18px;
+        color: #353d40;
+        width: 400px;
+    }
+    
+    #search_camp button:last-child {
+        padding: 24px;
+        background-color: #055eff;
+        border-radius: 6px;
+        height: 100%;
+        color: white;
+        cursor: pointer;
+        font-size: 16px;
+    }
+    
+    #search_camp button:last-child:hover {
+        background-color: rgb(43, 96, 194);
+        transition: all 500ms ease-in;
+    }
+    
+    .map_link {
+        margin: 30px;
+        bottom: 64px;
+        padding: 16px;
+        border-radius: 32px;
+        color: #353d40;
+        cursor: pointer;
+        background: #FFFFFF;
+        box-shadow: 0px 0px 21px rgba(0, 0, 0, 0.25);
+        font-weight: 500;
+    }
+    
+    #new {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        margin: 60px 0;
+    }
+    
+    #new>h1 {
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 150%;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: #353D40;
+        margin: 0 30px;
+    }
+    
+    #new>p {
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 150%;
+        display: flex;
+        align-items: center;
+        color: #353D40;
+        margin: 0 0 24px 30px;
+    }
+    
+    .properties {
+        display: grid;
+        grid-template-columns: 240px 240px 240px 240px;
+        grid-gap: 24px;
+        justify-content: center;
+    }
+    
+    .property {
+        display: flex;
+        flex-direction: column;
+        background-color: #FFFFFF;
+        border: 1px solid #C4C4C4;
+        border-radius: 6px;
+    }
+    
+    .property .media {
+        width: 100%;
+        height: 190px;
+        display: flex;
+        align-items: center;
+        white-space: nowrap;
+        position: relative;
+        overflow: hidden;
+        border-radius: 4.23056px 4.93566px 0px 0px;
+        overflow-x: scroll;
+        counter-reset: item;
+        scroll-behavior: smooth;
+        scroll-snap-type: x mandatory;
+    }
+    
+    .media::after {
+        box-shadow: inset 1px 2px 61px rgba(0, 0, 0, 0.459);
+        content: '';
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        z-index: 9999;
+        border-radius: 4.23056px 4.93566px 0px 0px;
+    }
+    
+    .media span {
+        z-index: 99999;
+        font-weight: 900;
+        font-size: 14px;
+        line-height: 150%;
+        color: #FFFFFF;
+        text-shadow: 2px 0px 13px #353d40c4;
+        top: 16px;
+        left: 16px;
+        position: absolute;
+    }
+    
+    .media .arrows {
+        position: absolute;
+        z-index: 99999999999999999;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+    }
+    
+    .media .arrows button {
+        padding: 7px;
+        background-color: rgba(255, 255, 255, 0.137);
+        border-radius: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+    
+    .media .arrows button:hover {
+        background-color: rgba(255, 255, 255, 0.678);
+        transition: all 300ms ease-in;
+    }
+    
+    .media .arrows button img {
+        width: 15px;
+        height: 15px;
+        cursor: pointer;
+        border-radius: 6px;
+    }
+    
+    .media::-webkit-scrollbar {
+        width: 0;
+        height: 0;
+    }
+    
+    .media::-webkit-scrollbar-track {
+        background: transparent;
+    }
+    
+    .media-webkit-scrollbar-thumb {
+        background: transparent;
+        border: none;
+    }
+    
+    .property .media>img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 4.23056px 4.93566px 0px 0px;
+        position: relative;
+    }
+    
+    .property .information {
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .property .information small {
+        font-weight: bold;
+        color: #055eff;
+        font-size: 14px;
+        margin: 12px 0;
+    }
+    
+    .property .information address {
+        font-weight: 500;
+        color: #353d40;
+        font-size: 14px;
+        margin-bottom: 3px;
+    }
+    
+    .property .information h2 {
+        font-weight: 300;
+        color: #353d40;
+        font-size: 14px;
+    }
+    
+    .property .information h1 {
+        font-weight: bold;
+        color: #353d40;
+        font-size: 16px;
+        display: flex;
+        align-items: baseline;
+        margin: 13px 0;
+    }
+    
+    .property .information sub {
+        font-weight: 300;
+        color: #C4C4C4;
+        font-size: 14px;
+    }
+    
+    .property .information ul {
+        display: flex;
+        align-items: center;
+        margin: 5px 0;
+    }
+    
+    .property .information ul li {
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+        font-weight: 500;
+        color: #353d40;
+        margin-right: 10px;
+    }
+    
+    .property .information ul li img {
+        margin-right: 3px;
+    }
+    
+    #tenant {
+        height: 300px;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        display: grid;
+        grid-template-columns: 1fr 1140px 1fr;
+        background: #3371E6;
+    }
+    
+    #tenant .content {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        padding: 0 40px;
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+    
+    #happy_girl {
+        position: absolute;
+        bottom: -20px;
+    }
+    
+    #gato {
+        position: absolute;
+        bottom: 0px;
+        left: 250px;
+    }
+    
+    #wizzer_girl {
+        position: absolute;
+        right: 15px;
+        bottom: -21px;
+    }
+    
+    #tenant .content .text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    
+    #tenant .content .text strong {
+        font-size: 24px;
+        font-weight: bold;
+        color: #fff;
+        text-align: center;
+        width: 60%;
+    }
+    
+    #tenant .content .text p {
+        font-size: 16px;
+        font-weight: normal;
+        color: #fff;
+        text-align: center;
+        margin: 20px;
+        width: 40%;
+    }
+    
+    #tenant .content .text button {
+        padding: 16px;
+        color: #055eff;
+        background-color: white;
+        border-radius: 6px;
+        font-weight: 500;
+        cursor: pointer;
+        border: 2px solid transparent;
+    }
+    
+    #tenant .content .text button:hover {
+        padding: 16px;
+        color: white;
+        background-color: #3371E6;
+        border-radius: 6px;
+        font-weight: 500;
+        cursor: pointer;
+        border: 2px solid white;
+    }
+    
+    #owner {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        display: flex;
+        position: relative;
+        margin: 40px 0;
+        align-items: center;
+    }
+    
+    #owner .for_owner {
+        height: 400px;
+        flex: 1;
+        background-image: url('assets/images/proprietários.jpg');
+        background-repeat: no-repeat;
+        position: relative;
+        background-size: cover;
+    }
+    
+    #owner .for_owner strong {
+        position: absolute;
+        color: white;
+        font-weight: bold;
+        font-size: 32px;
+        z-index: 99999999999;
+        bottom: 25px;
+        left: 25px;
+    }
+    
+    #owner .for_owner::after {
+        background: linear-gradient(1.11deg, rgba(0, 0, 0, 0.62) 1.06%, rgba(196, 196, 196, 0) 99.13%);
+        border-radius: 6px;
+        content: '';
+        width: 100%;
+        height: 100%;
+        position: absolute;
+    }
+    
+    #owner .text {
+        flex: 1;
+        padding: 46px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #owner .text h1 {
+        font-weight: bold;
+        font-size: 32px;
+        color: #353d40;
+        line-height: 140%;
+    }
+    
+    #owner .text strong {
+        font-weight: bold;
+        font-size: 20px;
+        color: #353d40;
+        margin-bottom: 16px;
+    }
+    
+    #owner .text p {
+        font-size: 16px;
+        color: #353d40;
+        margin-bottom: 16px;
+        line-height: 150%;
+    }
+    
+    #owner .text button {
+        padding: 16px;
+        background-color: #055eff;
+        color: white;
+        border-radius: 3px;
+        width: fit-content;
+        cursor: pointer;
+    }
+    
+    #owner .text button:hover {
+        background-color: #3371E6;
+        transition: 200ms ease-in;
+    }
+    
+    #neighborhoods {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        display: flex;
+        position: relative;
+        flex-direction: column;
+    }
+    
+    #neighborhoods h1 {
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 150%;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: #353D40;
+    }
+    
+    #neighborhoods>p {
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 150%;
+        display: flex;
+        align-items: center;
+        color: #353D40;
+    }
+    
+    .list_neighborhood {
+        display: grid;
+        grid-template-columns: 354px 354px 354px;
+        grid-gap: 30px;
+        padding: 10px 0;
+    }
+    
+    .list_neighborhood .neighborhood {
+        border-radius: 6px;
+        height: 120px;
+        position: relative;
+        cursor: pointer;
+        border: 2px solid transparent;
+        overflow: hidden;
+    }
+    
+    .list_neighborhood .neighborhood:hover img {
+        width: 100%;
+        height: 100%;
+        transform: scale(1.1);
+        transition: all 300ms ease-in;
+    }
+    
+    .list_neighborhood .neighborhood:active {
+        border: 2px solid #055eff;
+        transition: all 300ms ease-in;
+    }
+    
+    .list_neighborhood .neighborhood::after {
+        background: linear-gradient(0.39deg, rgba(0, 0, 0, 0.62) 1.06%, rgba(196, 196, 196, 0) 99.13%);
+        border-radius: 6px;
+        content: '';
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: 999999999;
+        left: 0;
+    }
+    
+    .list_neighborhood .neighborhood img {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .address {
+        position: absolute;
+        z-index: 9999999999;
+        left: 20px;
+        bottom: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .address strong {
+        font-weight: bold;
+        color: #fff;
+        margin-bottom: 5px;
+        font-size: 24px;
+    }
+    
+    .address p {
+        color: #fff;
+        margin-bottom: 5px;
+        font-size: 16px;
+    }
+    
+    #broker {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        display: flex;
+        position: relative;
+        margin: 40px 0;
+        align-items: center;
+    }
+    
+    #broker .for_broker {
+        height: 450px;
+        flex: 1;
+        background-image: url('assets/images/Geraldo.jpg');
+        background-repeat: no-repeat;
+        position: relative;
+        background-size: cover;
+    }
+    
+    #broker .for_broker::after {
+        background: linear-gradient(1.11deg, rgba(0, 0, 0, 0.62) 1.06%, rgba(196, 196, 196, 0) 99.13%);
+        border-radius: 6px;
+        content: '';
+        width: 100%;
+        height: 100%;
+        position: absolute;
+    }
+    
+    #broker .text {
+        flex: 1;
+        padding: 46px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #broker .text h1 {
+        font-weight: bold;
+        font-size: 32px;
+        color: #353d40;
+        line-height: 140%;
+    }
+    
+    #broker .text strong {
+        font-weight: bold;
+        font-size: 20px;
+        color: #353d40;
+        margin-bottom: 16px;
+    }
+    
+    #broker .text p {
+        font-size: 16px;
+        color: #353d40;
+        margin-bottom: 16px;
+        line-height: 150%;
+    }
+    
+    #broker .text button {
+        padding: 16px;
+        background-color: #055eff;
+        color: white;
+        border-radius: 3px;
+        width: fit-content;
+        cursor: pointer;
+    }
+    
+    #broker .text button:hover {
+        background-color: #3371E6;
+        transition: 200ms ease-in;
+    }
+    
+    .geraldo {
+        position: absolute;
+        bottom: 25px;
+        left: 25px;
+        z-index: 99999999999;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #broker .for_broker strong {
+        color: white;
+        font-weight: bold;
+        font-size: 32px;
+        z-index: 99999999999;
+        bottom: 25px;
+        margin-bottom: 10px;
+    }
+    
+    #broker .for_broker p {
+        color: white;
+        font-weight: 500;
+        font-size: 20px;
+        z-index: 99999999999;
+        bottom: 25px;
+        left: 25px;
+        line-height: 140%;
+    }
+    
+    #broker .for_broker small {
+        color: white;
+        font-weight: 300;
+        font-size: 14px;
+        z-index: 99999999999;
+        bottom: 25px;
+        left: 25px;
+        line-height: 140%;
+        font-style: italic;
+    }
+    
+    @media screen and (max-width: 1160px) {
+        main {
+            display: flex;
+            flex-direction: column;
+        }
+        main .container {
+            display: flex;
+            flex-direction: column;
+        }
+        #new .properties {
+            grid-template-columns: 240px 240px;
+        }
+        .content img {
+            display: none;
+        }
+        .tenant {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .for_owner {
+            display: none;
+        }
+        #neighborhoods {
+            margin: 40px;
+        }
+        .list_neighborhood {
+            overflow: hidden;
+            overflow-x: auto;
+            white-space: nowrap;
+        }
+        #owner {
+            margin: 0;
+        }
+        #broker .for_broker {
+            display: none;
+        }
+        #broker {
+            margin: 0;
+        }
+        #tenant {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .list_neighborhood {
+            grid-template-columns: 254px 254px;
+        }
+    }
+    
+    @media screen and (max-width: 710px) {
+        nav ul li a {
+            font-size: 12px;
+        }
+        #search_camp button:last-child {
+            padding: 18px;
+        }
+        #search_camp button:first-child {
+            padding: 15px;
+        }
+        #search_camp input {
+            width: 290px;
+        }
+    }
