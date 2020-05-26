@@ -1,3 +1,5 @@
+@import "reset.css";
+
 footer {
     display: flex;
     flex-direction: column;
@@ -24,7 +26,7 @@ footer #search_footer h2 {
 
 footer #search_footer #search {
     background-color: white;
-    border: 1px solid #C7C7C7;
+    border: 1px solid #c7c7c7;
     border-radius: 6px;
     height: 45px;
     width: 600px;
@@ -95,7 +97,7 @@ footer #search_footer #search input::placeholder {
     color: #fff;
     margin: 16px 0;
     font-weight: bold;
-    font-weight: 18px;
+    font-size: 18px;
 }
 
 .footer .content .infos {
@@ -105,30 +107,29 @@ footer #search_footer #search input::placeholder {
 
 .footer .content .infos ul {
     flex: 1;
-    margin-right: 20px;
 }
 
 .footer .content .infos ul li {
     color: #fff;
-    margin: 10px 0;
+    margin: 20px 0;
 }
 
 .footer .content .infos ul li a {
     color: #fff;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 1em;
 }
 
 .footer .content .infos .contact {
     color: #fff;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 1em;
     flex: 1;
     margin-right: 20px;
 }
 
 .footer .terms {
-    border-top: 1px solid #FFFFFF;
+    border-top: 1px solid #ffffff;
     padding: 16px;
     display: flex;
     justify-content: center;
@@ -136,7 +137,7 @@ footer #search_footer #search input::placeholder {
 
 .footer .terms p {
     color: #fff;
-    font-size: 14px;
+    font-size: 1em;
 }
 
 .footer .content .infos .about {
@@ -145,20 +146,61 @@ footer #search_footer #search input::placeholder {
     font-size: 16px;
     display: flex;
     flex-direction: column;
-    margin-right: 20px;
     flex: 1;
 }
 
 .footer .content .infos .about small {
     color: #fff;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 1em;
     margin: 10px 0;
 }
 
 .footer .content .infos .about a {
     color: #fff;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 1em;
     margin: 10px 0;
+}
+
+@media screen and (max-width: 768px) {
+    .footer .content {
+        padding: 30px;
+    }
+
+    .logo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .footer .content .wizzer {
+        flex-direction: column;
+    }
+
+    .footer .content .wizzer .network ul {
+        margin: 0;
+    }
+
+    .footer .content .wizzer .network {
+        margin-bottom: 20px;
+    }
+
+    .footer .content .infos {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer .content .infos .contact {
+        margin-right: 0;
+    }
+
+    footer #search_footer #search {
+        width: 400px;
+    }
+
+    footer #search_footer #search {
+        width: 300px;
+    }
 }

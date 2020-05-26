@@ -11,6 +11,8 @@
     padding: 0 24px;
     position: fixed;
     width: 100%;
+    background-color: #fff;
+    z-index: 9999999999;
 }
 
 #headerwizzer nav {
@@ -90,6 +92,28 @@ nav ul li a {
     display: none;
 }
 
+#menu button {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    cursor: pointer;
+}
+
+
+#menu span {
+    width: 35px;
+    height: 4px;
+    background-color: #055eff;
+    border-radius: 3px;
+    margin-bottom: 7px;
+}
+
+#menu span:nth-child(2) {
+    width: 30px;
+}
+
 @media screen and (max-width: 960px) {
     nav #header_links {
         display: none;
@@ -98,4 +122,5 @@ nav ul li a {
     #headerwizzer nav #menu {
         display: flex;
     }
+
 }
