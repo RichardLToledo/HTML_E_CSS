@@ -685,7 +685,7 @@
             grid-template-columns: 240px 240px;
         }
 
-        .content img {
+        #tenant .content img {
             display: none;
         }
 
