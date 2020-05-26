@@ -1,0 +1,31 @@
+@media screen and (min-width: 768px) {
+  main #section-title h1 {
+    font-size: 2.5em;
+  }
+  main #section-jobs .jobs {
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 728px;
+    margin: 0 auto;
+  }
+  main #section-jobs .jobs .job-card {
+    margin: 30px;
+  }
+}
+@media screen and (min-width: 992px) {
+  main {
+    grid-template-columns: 1fr 1140px 1fr;
+  }
+  main #section-title {
+    width: 100%;
+    max-width: 955px;
+  }
+  main #section-title h1 {
+    font-size: 3.5em;
+  }
+  main #section-jobs .jobs {
+    max-width: 1140px;
+  }
+}
+
+/*# sourceMappingURL=mediaquerie.css.map */

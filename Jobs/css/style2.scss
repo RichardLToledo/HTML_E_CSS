@@ -1,0 +1,132 @@
+@import "reset";
+@import "colors";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import "keyframe";
+@import "mixin";
+
+// Header
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 32px;
+  left: 0;
+  right: 0;
+  height: 80px;
+  position: fixed;
+  border-bottom: 1px solid gray;
+  background-color: #fff;
+  z-index: 9999;
+  nav {
+    display: contents;
+    width: 100%;
+    height: 100%;
+  }
+  ul {
+    display: flex;
+    height: 100%;
+    li {
+      display: flex;
+      position: relative;
+      margin-left: 16px;
+      padding: 0 16px;
+      height: 100%;
+      justify-content: center;
+      &::before {
+        content: "";
+        height: 3px;
+        width: 10%;
+        position: absolute;
+        bottom: 0;
+        background: $blue;
+        border-radius: 3px 0 0 3px;
+        opacity: 0;
+      }
+      &:hover::before {
+        width: 100%;
+        opacity: 1;
+        transition: all 200ms ease-in;
+      }
+      &:hover {
+        a {
+          color: $blue;
+          transition: color 200ms ease-in;
+        }
+      }
+      a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+      }
+    }
+  }
+}
+
+// Main
+
+main {
+  padding-top: 80px;
+  display: grid;
+  grid-template-columns: 20px 1fr 20px;
+  #section-fixed-mob {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    width: -webkit-fill-available;
+    bottom: 0;
+    top: auto;
+    padding: 12px 20px;
+    height: 60px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+    span {
+      font-size: 18px;
+      font-weight: 500;
+    }
+    a {
+      @include button;
+    }
+  }
+  #section-header {
+    background: #055eff;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25); 
+    .section-header-wrap {
+      margin: 3% 20px;
+      a {
+        display: flex;
+        align-items: center;
+        border-radius: 6px;
+        padding: 8px 18px;
+        width: fit-content;
+        background: #fff;
+        font-size: 1em;
+        margin: 20px 0;
+        span {
+          font-size: 1em;
+        }
+      }
+      .job-title {
+        font-size: 2em;
+        color: #fff;
+        font-weight: 500;
+        margin: 30px 0;
+      }
+      .job-location {
+        font-size: 18px;
+        display: flex;
+        color: #fff;
+        align-items: center;
+        margin-bottom: 40px;
+        span {
+          color: #fff;
+          font-size: 18px;
+          padding-right: 8px;
+        }
+      }
+    }
+  }
+}
