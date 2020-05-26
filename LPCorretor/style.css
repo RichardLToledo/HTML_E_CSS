@@ -1,6 +1,6 @@
 @import "header.css";
 @import "reset.css";
-
+@import "footer.css";
 main {
     display: flex;
     flex-direction: column;
@@ -71,8 +71,6 @@ main .container .about_broker p {
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-
-
 main .container .form {
     grid-column-start: 2;
     grid-column-end: 4;
@@ -128,7 +126,6 @@ main .container .form {
 #broker_form input:focus {
     border: 1px solid #055eff;
     transition: all 500ms ease-in;
-
 }
 
 #broker_form input::placeholder {
@@ -200,7 +197,6 @@ main .container .form {
     border-radius: 0px 6px 6px 0px;
 }
 
-
 .bottom_footer {
     display: flex;
     justify-content: center;
@@ -221,6 +217,116 @@ main .container .form {
     align-items: unset;
 }
 
+#broker {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    display: flex;
+    position: relative;
+    margin: 40px 0;
+    padding: 0 150px;
+    align-items: center;
+}
+
+#broker .for_broker {
+    height: 450px;
+    flex: 1;
+    background-image: url('assets/images/Geraldo.jpg');
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: cover;
+    border-radius: 6px;
+}
+
+#broker .for_broker::after {
+    background: linear-gradient(1.11deg, rgba(0, 0, 0, 0.62) 1.06%, rgba(196, 196, 196, 0) 99.13%);
+    border-radius: 6px;
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+#broker .text {
+    flex: 1;
+    padding: 46px;
+    display: flex;
+    flex-direction: column;
+}
+
+#broker .text h1 {
+    font-weight: bold;
+    font-size: 32px;
+    color: #353d40;
+    line-height: 140%;
+}
+
+#broker .text strong {
+    font-weight: bold;
+    font-size: 20px;
+    color: #353d40;
+    margin-bottom: 16px;
+}
+
+#broker .text p {
+    font-size: 16px;
+    color: #353d40;
+    margin-bottom: 16px;
+    line-height: 150%;
+}
+
+#broker .text button {
+    padding: 16px;
+    background-color: #055eff;
+    color: white;
+    border-radius: 3px;
+    width: fit-content;
+    cursor: pointer;
+}
+
+#broker .text button:hover {
+    background-color: #3371E6;
+    transition: 200ms ease-in;
+}
+
+.geraldo {
+    position: absolute;
+    bottom: 25px;
+    left: 25px;
+    z-index: 99999999999;
+    display: flex;
+    flex-direction: column;
+}
+
+#broker .for_broker strong {
+    color: white;
+    font-weight: bold;
+    font-size: 32px;
+    z-index: 99999999999;
+    bottom: 25px;
+    margin-bottom: 10px;
+}
+
+#broker .for_broker p {
+    color: white;
+    font-weight: 500;
+    font-size: 20px;
+    z-index: 99999999999;
+    bottom: 25px;
+    left: 25px;
+    line-height: 140%;
+}
+
+#broker .for_broker small {
+    color: white;
+    font-weight: 300;
+    font-size: 14px;
+    z-index: 99999999999;
+    bottom: 25px;
+    left: 25px;
+    line-height: 140%;
+    font-style: italic;
+}
+
 @media screen and (max-width: 1170px) {
     .new_horizons {
         display: flex;
@@ -232,65 +338,50 @@ main .container .form {
         display: flex;
         margin: 0;
     }
-
     main .container {
         display: flex;
         height: 65vh;
     }
-
     #broker_form {
         align-items: unset;
     }
-
     #broker_form h1 {
         margin: 0;
     }
-
     #broker_form strong {
         display: flex;
     }
-
     main .container .about_broker {
         display: none;
     }
-
     .form {
         width: 100%;
     }
-
     .about_horizon {
         display: none;
     }
-
     .new_horizons .content .text {
-
         width: 100%;
         margin: 0;
         flex: unset;
         border-radius: 0;
     }
-
     .bottom_footer {
         display: none;
     }
-
     nav {
         display: none;
     }
 }
 
-
 @media screen and (max-width: 425px) {
     #broker_form {
         padding: 30px;
     }
-
     #broker_form h1 {
         font-size: 28px;
     }
-
     #broker_form input {
         width: 100%;
     }
-
 }
