@@ -1,6 +1,7 @@
 @import "header.css";
 @import "reset.css";
 @import "footer.css";
+
 main {
     display: flex;
     flex-direction: column;
@@ -218,12 +219,12 @@ main .container .form {
 }
 
 #broker {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 570px 570px 1fr;
+
     position: relative;
     margin: 40px 0;
-    padding: 0 150px;
+
     align-items: center;
 }
 
@@ -234,6 +235,8 @@ main .container .form {
     background-repeat: no-repeat;
     position: relative;
     background-size: cover;
+    grid-column-start: 2;
+    grid-column-end: 3;
     border-radius: 6px;
 }
 
@@ -338,50 +341,69 @@ main .container .form {
         display: flex;
         margin: 0;
     }
+
     main .container {
         display: flex;
         height: 65vh;
     }
+
     #broker_form {
         align-items: unset;
     }
+
     #broker_form h1 {
         margin: 0;
     }
+
     #broker_form strong {
         display: flex;
     }
+
     main .container .about_broker {
         display: none;
     }
+
     .form {
         width: 100%;
     }
+
     .about_horizon {
         display: none;
     }
+
     .new_horizons .content .text {
         width: 100%;
         margin: 0;
         flex: unset;
         border-radius: 0;
     }
+
     .bottom_footer {
         display: none;
     }
+
     nav {
         display: none;
     }
-}
 
-@media screen and (max-width: 425px) {
-    #broker_form {
-        padding: 30px;
+    #broker {
+        display: flex;
     }
-    #broker_form h1 {
-        font-size: 28px;
+
+    .for_broker {
+        display: none;
     }
-    #broker_form input {
-        width: 100%;
+
+    @media screen and (max-width: 425px) {
+        #broker_form {
+            padding: 30px;
+        }
+
+        #broker_form h1 {
+            font-size: 28px;
+        }
+
+        #broker_form input {
+            width: 100%;
+        }
     }
-}
