@@ -65,6 +65,15 @@ main #section-info .section-info-wrap .digital-contract {
     grid-column-end: 4;
     width: 100%;
   }
+  main #section-know h1 {
+    font-size: 2em;
+  }
+  main #section-know span {
+    font-size: 24px;
+  }
+  main #section-know h1, main #section-know span {
+    width: 50%;
+  }
   main #section-know .section-know-wrap {
     max-width: 1140px;
   }
