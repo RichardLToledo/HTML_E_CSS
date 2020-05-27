@@ -26,7 +26,7 @@ $breakpoint-extra-large: 1200px;
 
 @media screen and (min-width: $breakpoint-large) {
   main {
-    grid-template-columns: 1fr 1140px 1fr;
+    grid-template-columns: 1fr 992px 1fr;
     #section-title {
       width: 100%;
       max-width: 955px;
@@ -34,10 +34,25 @@ $breakpoint-extra-large: 1200px;
         font-size: 3.5em;
       }
     }
+  }
+}
+
+@media screen and (min-width: $breakpoint-extra-large) {
+  main {
     #section-jobs {
       .jobs {
         max-width: 1140px;
       }
     }
+  }
+}
+
+@media screen and (max-width: 960px) {
+  nav #header_links {
+    display: none;
+  }
+
+  #headerwizzer nav #menu {
+    display: flex;
   }
 }

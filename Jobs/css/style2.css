@@ -171,60 +171,280 @@ button {
     right: 40px;
   }
 }
-header {
+#headerwizzer {
+  height: 96px;
+  border: 1px solid #e0e0e0;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+  position: fixed;
+  width: 100%;
+  background-color: #fff;
+  z-index: 9999999999;
+}
+
+#headerwizzer nav {
+  height: 100%;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#headerwizzer nav #menu {
+  display: none;
+}
+
+#headerwizzer nav ul {
+  height: 100%;
+  list-style-type: none;
+  display: flex;
+}
+
+nav #header_links {
+  height: 100%;
+  list-style-type: none;
+  display: flex;
+}
+
+#header_links ul li a {
+  height: 100%;
+  list-style-type: none;
+  display: flex;
+}
+
+nav ul li {
+  height: 100%;
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+  align-items: center;
+  padding: 0 16px;
+  margin-left: 10px;
+  position: relative;
+}
+
+nav ul li::before {
+  content: "";
+  height: 4px;
+  position: absolute;
+  border-radius: 3px 3px 0px 0px;
+  width: 10%;
+  opacity: 0;
+  bottom: 0;
+  background-color: #055eff;
+}
+
+nav ul li:hover::before {
+  width: 100%;
+  opacity: 1;
+  transition: all 300ms ease-in;
+}
+
+nav ul li:hover a {
+  color: #055eff;
+}
+
+nav ul li a {
+  height: 100%;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #353d40;
+}
+
+#mobile_links {
+  display: none;
+}
+
+#menu button {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  cursor: pointer;
+  background: transparent;
+}
+
+#menu span {
+  width: 35px;
+  height: 4px;
+  background-color: #055eff;
+  border-radius: 3px;
+  margin-bottom: 7px;
+}
+
+#menu span:nth-child(2) {
+  width: 30px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 60px;
+  padding-bottom: 80px;
+}
+
+footer #search_footer {
+  padding: 40px;
+  background-color: #f9f9f9;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer #search_footer h2 {
+  color: #353d40;
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+footer #search_footer #search {
+  background-color: white;
+  border: 1px solid #c7c7c7;
+  border-radius: 6px;
+  height: 45px;
+  width: 600px;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer #search_footer #search input {
+  height: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid transparent;
+  color: #353d40;
+}
+
+footer #search_footer #search button {
+  height: 100%;
+  background-color: #055eff;
+  padding: 0 16px;
+  color: #fff;
+  border-radius: 0 6px 6px 0;
+}
+
+footer #search_footer #search input::placeholder {
+  font-size: 14px;
+}
+
+.footer {
+  background-color: #353d40;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer .content {
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer .content .wizzer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 32px;
-  left: 0;
-  right: 0;
-  height: 80px;
-  position: fixed;
-  border-bottom: 1px solid gray;
-  background-color: #fff;
-  z-index: 9999;
 }
-header nav {
-  display: contents;
-  width: 100%;
-  height: 100%;
-}
-header ul {
+
+.footer .content .wizzer .network ul {
   display: flex;
-  height: 100%;
+  margin-right: 100px;
 }
-header ul li {
-  display: flex;
-  position: relative;
-  margin-left: 16px;
+
+.footer .content .wizzer .network ul li {
   padding: 0 16px;
-  height: 100%;
-  justify-content: center;
 }
-header ul li::before {
-  content: "";
-  height: 3px;
-  width: 10%;
-  position: absolute;
-  bottom: 0;
-  background: #055eff;
-  border-radius: 3px 0 0 3px;
-  opacity: 0;
+
+.footer .content .wizzer .network ul li img {
+  width: 20px;
+  height: 20px;
 }
-header ul li:hover::before {
-  width: 100%;
-  opacity: 1;
-  transition: all 200ms ease-in;
+
+.footer .content .wizzer .logo h2 {
+  color: #fff;
+  font-weight: 300;
+  font-size: 24px;
+  margin: 20px 0;
 }
-header ul li:hover a {
-  color: #055eff;
-  transition: color 200ms ease-in;
+
+.footer .content .infos ul li:first-child {
+  color: #fff;
+  margin: 16px 0;
+  font-weight: bold;
+  font-size: 18px;
 }
-header ul li a {
+
+.footer .content .infos {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer .content .infos ul {
+  flex: 1;
+}
+
+.footer .content .infos ul li {
+  color: #fff;
+  margin: 20px 0;
+}
+
+.footer .content .infos ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1em;
+}
+
+.footer .content .infos .contact {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1em;
+  flex: 1;
+  margin-right: 20px;
+}
+
+.footer .terms {
+  border-top: 1px solid #ffffff;
+  padding: 16px;
   display: flex;
   justify-content: center;
-  align-items: center;
-  height: 100%;
+}
+
+.footer .terms p {
+  color: #fff;
+  font-size: 1em;
+}
+
+.footer .content .infos .about {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.footer .content .infos .about small {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1em;
+  margin: 10px 0;
+}
+
+.footer .content .infos .about a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1em;
+  margin: 10px 0;
 }
 
 main {
@@ -264,9 +484,12 @@ main #section-header {
   grid-column-start: 1;
   grid-column-end: 4;
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
-  z-index: -1;
+  z-index: -9999;
 }
 main #section-header .section-header-wrap {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
   margin: 3% 20px;
 }
 main #section-header .section-header-wrap a {
@@ -378,6 +601,7 @@ main #section-job-details .requirements ul li {
 main #section-about-wizzer {
   grid-column-start: 2;
   grid-column-end: 3;
+  z-index: -10000;
 }
 main #section-about-wizzer .work-wizzer {
   display: flex;
@@ -387,6 +611,7 @@ main #section-about-wizzer .work-wizzer {
   border-bottom: 1px solid #353d40;
   padding: 30px 0;
   cursor: pointer;
+  max-width: 600px;
 }
 main #section-about-wizzer .work-wizzer h2 {
   font-weight: 500;

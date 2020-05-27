@@ -1,0 +1,119 @@
+$breakpoint-small: 576px;
+$breakpoint-medium: 768px;
+$breakpoint-large: 992px;
+$breakpoint-extra-large: 1200px;
+
+@media screen and (min-width: $breakpoint-medium) {
+  main {
+    display: grid;
+    grid-template-columns: 1fr 768px 1fr;
+    #section-job-details {
+      .job-description {
+        max-width: 600px;
+      }
+    }
+    #section-header {
+      .section-header-wrap {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: $breakpoint-large) {
+  main {
+    #section-job-details {
+      #section-fixed-desk {
+        display: flex;
+        z-index: 9999;
+      }
+    }
+    #section-fixed-mob {
+      display: none;
+    }
+  }
+  footer {
+    padding-bottom: 0;
+  }
+}
+
+@media screen and (min-width: $breakpoint-extra-large) {
+  main {
+    grid-template-columns: 1fr 1140px 1fr;
+    #section-header {
+      .section-header-wrap {
+        max-width: 450px;
+        margin: 3% 8%;
+      }
+    }
+    #section-job-details {
+      .job-description {
+        max-width: 800px;
+      }
+      #section-fixed-desk {
+        display: flex;
+        z-index: 9999;
+        right: 140px;
+      }
+    }
+    #section-about-wizzer {
+      .work-wizzer {
+        max-width: 800px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 960px) {
+  nav #header_links {
+    display: none;
+  }
+
+  #headerwizzer nav #menu {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer .content {
+    padding: 30px;
+  }
+
+  .logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .footer .content .wizzer {
+    flex-direction: column;
+  }
+
+  .footer .content .wizzer .network ul {
+    margin: 0;
+  }
+
+  .footer .content .wizzer .network {
+    margin-bottom: 20px;
+  }
+
+  .footer .content .infos {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer .content .infos .contact {
+    margin-right: 0;
+  }
+
+  footer #search_footer #search {
+    width: 400px;
+  }
+
+  footer #search_footer #search {
+    width: 300px;
+  }
+}
