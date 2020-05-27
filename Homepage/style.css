@@ -40,7 +40,7 @@
         align-items: center;
         text-align: center;
         color: #FFFFFF;
-        text-shadow: 0px 0px 9.5px #D0CEC1, 0px 4.75px 4.75px rgba(0, 0, 0, 0.25), 0px 4.75px 4.75px rgba(0, 0, 0, 0.25);
+        text-shadow: 4px -1px 9.5px #D0CEC1, -3px -2px 20px rgba(0, 0, 0, 0.25), -4px -1px 4.75px rgba(0, 0, 0, 0.48);
         margin-bottom: 16px;
     }
 
@@ -84,7 +84,6 @@
     }
 
     #search_camp button:last-child span {
-
         color: white;
         cursor: pointer;
         font-size: 16px;
@@ -93,7 +92,6 @@
     #search_camp button:last-child img {
         display: none;
     }
-
 
     #search_camp button:last-child:hover {
         background-color: rgb(43, 96, 194);
@@ -110,7 +108,15 @@
         background: #FFFFFF;
         box-shadow: 0px 0px 21px rgba(0, 0, 0, 0.25);
         font-weight: 500;
+        display: flex;
+        align-items: center;
     }
+
+    .map_link img {
+        margin-left: 10px;
+    }
+
+
 
     #new {
         grid-column-start: 2;
@@ -127,7 +133,6 @@
         line-height: 150%;
         display: flex;
         align-items: center;
-
         color: #353D40;
         margin: 0 30px;
     }
@@ -482,7 +487,7 @@
         line-height: 150%;
         display: flex;
         align-items: center;
-        text-align: center;
+
         color: #353D40;
     }
 
@@ -669,6 +674,10 @@
         font-style: italic;
     }
 
+    footer #search_footer #search button img {
+        display: none;
+    }
+
     @media screen and (max-width: 1160px) {
         main {
             display: flex;
@@ -789,10 +798,20 @@
             display: none;
         }
 
+
     }
 
-
     @media screen and (max-width: 390px) {
+        .map_link {
+            width: 100%;
+            font-size: 0.8em;
+            width: 100%;
+            font-size: 0.8em;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+        }
+
         #new .properties {
             padding: 0 60px;
             grid-template-columns: 1fr;
@@ -810,4 +829,30 @@
             height: 55vh;
         }
 
+        footer #search_footer #search {
+            width: 100%;
+        }
+
+        footer #search_footer #search button img {
+            display: flex;
+        }
+
+        footer #search_footer #search button span {
+            display: none;
+        }
+
+        footer #search_footer {
+            padding: 25px;
+        }
+
+        #owner .text h1,
+        #broker .text h1,
+        footer #search_footer h2,
+        #neighborhoods h1,
+        #new>h1 {
+            font-weight: bold;
+            font-size: 30px;
+            color: #353d40;
+            line-height: 140%;
+        }
     }

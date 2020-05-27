@@ -163,6 +163,10 @@ footer #search_footer #search input::placeholder {
     margin: 10px 0;
 }
 
+.footer .terms p {
+    text-align: center;
+}
+
 @media screen and (max-width: 768px) {
     .footer .content {
         padding: 30px;
