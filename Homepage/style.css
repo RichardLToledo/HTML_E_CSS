@@ -798,6 +798,10 @@
             display: none;
         }
 
+        #new>p {
+            margin: 30px;
+        }
+
 
     }
 

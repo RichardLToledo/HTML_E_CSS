@@ -343,7 +343,6 @@ main .container .form {
 
     main .container {
         display: flex;
-        height: 65vh;
     }
 
     #broker_form {
