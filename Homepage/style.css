@@ -830,7 +830,7 @@
         }
 
         main .container {
-            height: 55vh;
+            height: auto;
         }
 
         footer #search_footer #search {
