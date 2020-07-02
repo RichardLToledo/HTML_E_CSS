@@ -323,5 +323,7 @@ map {
         display: none;
     }
 
-    body
+    body {
+        background-color: #151515;
+    }
 }
