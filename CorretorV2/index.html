@@ -32,27 +32,28 @@
     </header>
     <main>
         <section id="partnership">
-              <video autoplay loop>
+            <video autoplay loop>
                 <source src="./assets/video/video_corretor.mp4" type="video/mp4">
-            </video> 
-            <div class="partnership-text show-on-scroll">
+            </video>
+            <div class="partnership-text show-on-scroll main_text">
                 <h1 class="heading title">Seja nosso parceiro</h1>
-                <div class="line heading"></div>
+                <div class="line heading"></div>  
                 <h3 class="heading">Trabalhe em uma plataforma moderna e segura!</h3>
             </div>
-            <button>Inscreva-se agora <img src="./assets/arrow.svg" alt="Arrow"></button>
+            <button class="sub">Inscreva-se agora <img src="./assets/arrow.svg" alt="Arrow"></button>
         </section>
-        <section id="new_horizon">
-            <div class="text">
-                <h1>Um novo horizonte para o corretor de imóveis</h1>
-                <p>Nós queremos uma parceria com você! Te ajudaremos com uma plataforma mordena e planejada para acabar
+        <section id="new_horizon" class="partnership-text show-on-scroll">
+            <div class="text" >
+                <h1 class="heading" >Um novo horizonte para o corretor de imóveis</h1>
+                
+                <p class="heading">Nós queremos uma parceria com você! Te ajudaremos com uma plataforma mordena e planejada para acabar
                     com os empicilhos arcáicos das imobiliárias tradicionais. Toda parte complicada do processo do
                     aluguel fica conosco, e garatiremos pra você um faturamento recorrente em cima dos alugueis. </p>
-                <p> O papel do corretor é basicamente a capitação de novos imóveis e cliente para a platarforma. Esse
+                <p class="heading"> O papel do corretor é basicamente a capitação de novos imóveis e cliente para a platarforma. Esse
                     dados podem ser cadastrados atráves do <a href="#">aplicativo da wizzer</a> para corretores. Quando
                     clientes e imóveis forem cadastrados entra o nosso papel. Excutaremos o resto do processo de aluguel
                     e repassaremos os devidos valores para você corretor.</p>
-                <button>Me inscrever agora <img src="./assets/arrow_white.svg" alt="Arrow"></button>
+                <button class="sub2 heading">Me inscrever agora <img src="./assets/arrow_white.svg" alt="Arrow"></button>
             </div>
             <div class="img">
                 <img src="./assets/men.png" alt="Imagem">
@@ -61,26 +62,29 @@
         <section id="target_audience">
             <div class="text show-on-scroll">
                 <h1 class="heading"><img src="./assets/Para_Quem.svg" alt="target"></h1>
-                <p>Para você que é corretor imobiliário e ocupa a maior parte do seu tempo com vendas e não possui tempo
+                <p class="heading">Para você que é corretor imobiliário e ocupa a maior parte do seu tempo com vendas e não possui tempo
                     e estrutura para executar as oportunidades de negócio de aluguel de imóveis, a nós fornecemos a
                     solução perfeita para você.</p>
-                <img src="./assets/BUILDS.svg" alt="cidade" class="city">
+                <img  src="./assets/BUILDS.svg" alt="cidade" class="city">
 
             </div>
         </section>
-      
-         <section id="app">
+
+        <section id="app">
             <div class="info">
                 <h1>Sobre aplicativo</h1>
-                <p>O aplicativo para corretores imobiliários foi pensado estratégimente para atender as suas necessidades. Todo o cadastro de cliente e imóveis é feito diretamente por ele, você contatar o nosso time de suporte sempre que quiser. E sempre estaremos trabalhando em atualizações para melhorar a qualidade da sua experiência.</p>
+                <p>O aplicativo para corretores imobiliários foi pensado estratégimente para atender as suas
+                    necessidades. Todo o cadastro de cliente e imóveis é feito diretamente por ele, você contatar o
+                    nosso time de suporte sempre que quiser. E sempre estaremos trabalhando em atualizações para
+                    melhorar a qualidade da sua experiência.</p>
                 <button>BAIXAR AGORA VERSÃO BETA <img src="./assets/download.svg" alt="baixar app"></button>
             </div>
-           <div class="text">
+            <div class="text">
                 <sub>VERSÃO BETA</sub>
                 <h1>Aplicativo para Corretores Imobiliários</h1>
                 <img src="./assets/Wizzer_Broker.jpg" alt="Broker" class="city">
                 <img src="./assets/Wizzer_Broker2.png" alt="Broker">
-           </div>
+            </div>
 
         </section>
         <section id="responsive">
@@ -103,24 +107,24 @@
                     </ul>
                 </div>
             </div>
-          
+
 
             <p>“Construa uma carteira de aluguel em nossa plataforma e garanta um faturamento de forma recorrente, seja
                 um Wizzer Broker.”</p>
         </section>
-      
+
         <section id="subscribe">
-          <div class="content">
+            <div class="content">
                 <h1>Inscreva-se</h1>
                 <p>Inscrivendo-se com suas informações nossa equipe entrará em contato com você</p>
                 <form action="#">
-                        <input type="text" name="name" placeholder="Seu nome">
-                        <input type="email" name="email" placeholder="Seu email">
-                        <input type="phone" name="telefone" placeholder="Seu telefone">
-                        <input type="text" name="creci" placeholder="Seu CRECI">
-                        <button>INSCREVER AGORA <img src="./assets/arrow.svg" alt="Seta"></button>
+                    <input type="text" name="name" placeholder="Seu nome">
+                    <input type="email" name="email" placeholder="Seu email">
+                    <input type="phone" name="telefone" placeholder="Seu telefone">
+                    <input type="text" name="creci" placeholder="Seu CRECI">
+                    <button>INSCREVER AGORA <img src="./assets/arrow.svg" alt="Seta"></button>
                 </form>
-          </div>
+            </div>
 
         </section>
     </main>
@@ -210,6 +214,7 @@
         </div>
     </footer>
     <script src="./app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 </body>
 
 </html>

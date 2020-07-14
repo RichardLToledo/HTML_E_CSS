@@ -129,6 +129,21 @@ main #partnership h1 {
     text-align: center;
     text-shadow: 0px 0px 4.42px rgba(0, 0, 0, 0.25);
     z-index: 999999;
+    position: relative;
+
+}
+
+.line {
+    background-color: #fff;
+    height: 1px;
+    border-radius: 2px;
+    display: flex;
+    margin-bottom: 20px;
+    width: 100%;
+    z-index: 999999;
+    transition: all 300ms ease-in;
+    width: 10%;
+    opacity: 0;
 }
 
 main #partnership .partnership-text h3 {
@@ -139,6 +154,7 @@ main #partnership .partnership-text h3 {
     text-align: center;
     text-shadow: 0px 0px 4.42px rgba(0, 0, 0, 0.25);
     z-index: 999999;
+    margin-top: 14px;
 }
 
 main #partnership button {
@@ -153,6 +169,7 @@ main #partnership button {
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
 
 main #partnership button img {
@@ -422,60 +439,6 @@ main #gerald .geraldo .network ul li {
     cursor: pointer;
 }
 
-main #gerald .info {
-    padding: 12px;
-    background-color: #151515;
-    bottom: -16px;
-    left: 73px;
-    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
-    width: fit-content;
-}
-
-main #gerald .info strong {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 140%;
-    /* identical to box height, or 24px */
-
-    letter-spacing: 0.24em;
-    color: #ffffff;
-}
-
-main #gerald .info strong::after {
-    content: "";
-    height: 2px;
-    background-color: #fff;
-    display: flex;
-    border-radius: 2 px;
-    margin-right: 70%;
-    margin-top: 10px;
-    box-sizing: border-box;
-    margin-bottom: 12px;
-}
-
-main #gerald .info small {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 13px;
-    line-height: 140%;
-    /* or 22px */
-    color: #ffffff;
-    margin-top: 12px;
-}
-
-main #gerald .info small {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 13px;
-    line-height: 140%;
-    color: #FFFFFF;
-    margin-top: 12px;
-}
-
 main #gerald p {
     font-family: Roboto;
     font-style: italic;
@@ -516,18 +479,7 @@ main #subscribe h1 {
     margin-top: 10px;
 }
 
-main #subscribe h1::after {
-    content: "";
-    height: 2px;
-    background-color: #fff;
-    display: flex;
-    border-radius: 2 px;
-    margin-right: 30%;
-    margin-left: 30%;
-    margin-top: 10px;
-    box-sizing: border-box;
-    margin-bottom: 12px;
-}
+
 
 main #subscribe p {
     font-family: Roboto;

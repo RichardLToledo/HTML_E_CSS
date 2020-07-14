@@ -121,8 +121,6 @@
         left: 330px;
     }
 
-
-
 }
 
 @media screen and (min-width: 1024px) {
@@ -225,6 +223,7 @@
         grid-column-start: 2;
         grid-column-end: 3;
         width: fit-content;
+
     }
 
     main #app {
@@ -266,6 +265,31 @@
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+
+    main #target_audience {
+        display: grid;
+        grid-template-columns: 1fr 570px 570px 1fr;
+        position: relative;
+        height: 70vh
+    }
+
+    main #target_audience .text {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        width: fit-content;
+        margin-top: 5%;
+        padding: 0;
+    }
+
+    main #target_audience .text p {
+        width: fit-content;
+    }
+
+    main #target_audience .text .city {
+        position: absolute;
+        bottom: 0;
+        right: 300px;
     }
 
 
