@@ -42,6 +42,43 @@ header #menu span:nth-child(3) {
     width: 90%;
 }
 
+header nav {
+    display: none;
+    height: 100%;
+}
+
+header nav a {
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 0 12px;
+    margin: 0 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 0px 0px 5.95467px rgba(0, 0, 0, 0.25);
+    font-weight: 500;
+    position: relative;
+}
+
+header nav a:hover::after {
+    width: 100%;
+    opacity: 1;
+}
+
+header nav a::after {
+    content: "";
+    height: 3px;
+    display: flex;
+    width: 100%;
+    background-color: #FFFFFF;
+    position: absolute;
+    bottom: 0;
+    border-radius: 3px 3px 0 0;
+    width: 10%;
+    opacity: 0;
+    transition: all 500ms ease-in;
+}
+
 /*Estilos referentes ao corpo*/
 
 main {
@@ -243,6 +280,67 @@ main #app .text h1 {
     margin-bottom: 30px;
 }
 
+main #app .info {
+    display: none;
+    flex-direction: column;
+    color: #fff;
+}
+
+main #app .info h1 {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 40px;
+    /* or 121% */
+    color: #fff;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+main #app .info h1::after {
+    content: "";
+    height: 2px;
+    background-color: #fff;
+    display: flex;
+    border-radius: 2 px;
+    margin-right: 70%;
+    margin-top: 10px;
+    width: 60px;
+    box-sizing: border-box;
+}
+
+main #app .info p {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 140%;
+    width: 60%;
+    /* or 22px */
+    color: #fff;
+    margin: 16px 0;
+}
+
+main #app .info button {
+    padding: 20px;
+    color: #151515;
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    width: fit-content;
+    margin-top: 25px;
+}
+
+main #app .info button img {
+    margin-left: 12px;
+}
+
+main #app .text img:last-child {
+    display: none;
+}
+
 main #responsive {
     padding: 32px;
     display: flex;
@@ -291,6 +389,8 @@ main #responsive button {
     align-items: center;
     cursor: pointer;
     margin-top: 25px;
+    justify-content: center;
+    width: fit-content;
 }
 
 main #responsive button img {
@@ -301,6 +401,8 @@ main #gerald {
     padding: 32px;
     display: flex;
     flex-direction: column;
+    position: relative;
+
 }
 
 main #gerald .geraldo {
@@ -326,6 +428,7 @@ main #gerald .info {
     bottom: -16px;
     left: 73px;
     box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+    width: fit-content;
 }
 
 main #gerald .info strong {
@@ -369,29 +472,37 @@ main #gerald .info small {
     font-weight: bold;
     font-size: 13px;
     line-height: 140%;
-    /* or 22px */
-    color: #ffffff;
+    color: #FFFFFF;
     margin-top: 12px;
 }
 
 main #gerald p {
     font-family: Roboto;
     font-style: italic;
-    font-weight: normal;
-    font-size: 16px;
+    font-weight: 300;
+    font-size: 24px;
     line-height: 140%;
-    /* or 22px */
     color: #151515;
     margin: 24px 0;
 }
 
 main #subscribe {
     padding: 32px;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr 400px 1fr;
     background-color: #151515;
     justify-content: center;
     align-content: center;
+}
+
+main .content {
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+
+main #target_audience .img {
+    display: none;
 }
 
 main #subscribe h1 {

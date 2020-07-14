@@ -1,0 +1,273 @@
+@media screen and (max-width: 375px) {
+    main #subscribe {
+        grid-template-columns: 1fr 250px 1fr;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    main #app .text img {
+        width: 220px;
+    }
+
+    main #gerald .geraldo>img {
+        width: 75%;
+        height: 50%;
+    }
+
+
+}
+
+@media screen and (min-width: 425px) {
+    main #app .text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main #app .text h1 {
+        text-align: center;
+    }
+
+    main #gerald .geraldo>img {
+        width: 75%;
+        height: 50%;
+    }
+}
+
+@media screen and (min-width: 425px) {
+
+    main #gerald .geraldo>img {
+        width: 75%;
+        height: 50%;
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+    header {
+        background: transparent;
+        position: absolute;
+        top: 0;
+        height: 100px;
+        z-index: 99999;
+        width: 100%;
+        border: none;
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+    }
+
+    header #menu {
+        display: none;
+    }
+
+    header #brand img {
+        width: 220px;
+    }
+
+    header #brand img:first-child {
+        display: none;
+    }
+
+    header nav {
+        display: flex;
+    }
+
+    main #partnership {
+        height: 90vh;
+    }
+
+    main #partnership button {
+        transform: scale(1.1);
+    }
+
+    main #partnership h1 {
+        width: 50%;
+        font-size: 64px;
+    }
+
+    main #target_audience .text p {
+        width: 61%;
+    }
+
+    main #target_audience .text .city {
+        height: 300px;
+        margin-top: 5%;
+    }
+
+    main #target_audience .text h1 img {
+        width: 300px;
+    }
+
+    main #target_audience .text h1 {
+        width: 200px;
+    }
+
+    main #gerald .geraldo>img {
+        width: 475px;
+        height: 430px;
+        margin-right: 60px;
+    }
+
+    main #gerald .geraldo {
+        justify-content: unset;
+        margin-bottom: 40px;
+        margin-right: 36px;
+    }
+
+    main #gerald .info {
+        position: absolute;
+        bottom: 100px;
+        left: 330px;
+    }
+
+
+
+}
+
+@media screen and (min-width: 1024px) {
+    main #new_horizon {
+        background-image: url(./assets/men.png);
+        background-color: #f9f9f9;
+        background-size: 100%;
+        height: 90vh;
+        background-position: center bottom;
+        padding: 60px;
+        background-repeat: no-repeat;
+    }
+
+    main #new_horizon .text {
+        width: 50%;
+    }
+
+    main #new_horizon .text p {
+        font-size: 14px;
+    }
+
+    main #new_horizon .text h1 {
+        margin-bottom: 36px;
+    }
+
+    main #target_audience .text p {
+        width: 38%;
+    }
+
+    main #target_audience {
+        padding: 60px 0px 0 60px;
+    }
+
+    main #app .text sub,
+    main #app .text h1 {
+        display: none;
+    }
+
+    main #app {
+        display: flex;
+        height: 80vh;
+        padding: 60px 60px 0 60px;
+    }
+
+    main #app .info {
+        display: flex;
+        align-self: center;
+    }
+
+    main #app .text {
+        display: flex;
+        align-self: flex-end;
+    }
+
+    main #responsive {
+        display: none;
+    }
+
+    main #gerald {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 60px;
+    }
+
+    main #gerald p {
+        width: 35%;
+    }
+
+
+    main #app .text img:last-child {
+        display: block;
+        width: 400px;
+        margin-bottom: -4px;
+    }
+
+    main #app .text .city {
+        display: none;
+    }
+
+
+}
+
+@media screen and (min-width: 1140px) {
+
+    main #new_horizon {
+        display: grid;
+        grid-template-columns: 1fr 570px 570px 1fr;
+        padding: 0px;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        justify-items: center;
+    }
+
+
+
+    main #new_horizon .text {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        width: fit-content;
+    }
+
+    main #app {
+        display: grid;
+        grid-template-columns: 1fr 570px 570px 1fr;
+        padding: 0px;
+        justify-content: center;
+
+        align-items: center;
+        justify-items: center;
+    }
+
+    main #app .info {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        width: fit-content;
+    }
+
+    main #app .info p {
+        width: fit-content;
+    }
+
+    main #gerald {
+        display: grid;
+        grid-template-columns: 1fr 570px 570px 1fr;
+    }
+
+    main #gerald .geraldo {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        width: fit-content;
+    }
+
+    main #gerald p {
+        grid-column-start: 3;
+        grid-column-end: 4;
+        width: fit-content;
+        padding: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+
+}
