@@ -4,7 +4,6 @@ footer {
     display: flex;
     flex-direction: column;
     width: 100%;
-    margin-top: 60px;
 }
 
 footer #search_footer {
@@ -39,7 +38,7 @@ footer #search_footer #search input {
     padding: 10px;
     border-radius: 6px;
     border: 1px solid transparent;
-    color: #fff;
+    color: #151515;
 }
 
 footer #search_footer #search button {
