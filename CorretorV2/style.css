@@ -48,7 +48,7 @@ header nav {
 }
 
 header nav a {
-    color: #FFFFFF;
+    color: #ffffff;
     text-decoration: none;
     padding: 0 12px;
     margin: 0 6px;
@@ -70,7 +70,7 @@ header nav a::after {
     height: 3px;
     display: flex;
     width: 100%;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     position: absolute;
     bottom: 0;
     border-radius: 3px 3px 0 0;
@@ -139,10 +139,15 @@ main #partnership .partnership-text h3 {
     text-align: center;
     text-shadow: 0px 0px 4.42px rgba(0, 0, 0, 0.25);
     z-index: 999999;
+    letter-spacing: 0.8px;
 }
 
+/* Botões */
+
+/* Seção Partner */
+
 main #partnership button {
-    background-color: #fff;
+    background: #fff;
     color: #151515;
     font-size: 18px;
     padding: 20px;
@@ -153,11 +158,103 @@ main #partnership button {
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
 }
 
-main #partnership button img {
+main #partnership button::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+main #partnership button::after {
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    background: #151515;
+}
+
+main #partnership button:hover::after {
+    height: 100%;
+}
+
+main #partnership button:hover {
+    color: #fff;
+}
+
+main #partnership button:hover svg path {
+    fill: #fff;
+}
+
+main #partnership button svg {
     margin-left: 10px;
 }
+
+/* Fim da Seção Partner */
+
+/* Seção New Horizon */
+
+main #new_horizon button {
+    padding: 20px;
+    position: absolute;
+    font-size: 18px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    width: 230px;
+    justify-content: space-between;
+    background-color: #151515;
+    cursor: pointer;
+    margin-top: 30px;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+    z-index: 1;
+}
+
+main #new_horizon button::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+main #new_horizon button::after {
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+}
+
+main #new_horizon button:hover::after {
+    height: 100%;
+}
+
+main #new_horizon button:hover {
+    color: #151515;
+}
+
+main #new_horizon button:hover svg path {
+    fill: #151515;
+}
+
+main #new_horizon button svg {
+    margin-left: 10px;
+}
+
+/* Fim da Seção New Horizon */
+
+/* Fim dos Botões */
 
 main #new_horizon {
     display: flex;
@@ -199,19 +296,6 @@ main #new_horizon .text p {
 
 main #new_horizon .text p:last-child {
     margin-bottom: 48px;
-}
-
-main #new_horizon button {
-    padding: 20px;
-    font-size: 18px;
-    color: white;
-    display: flex;
-    align-items: center;
-    width: 230px;
-    justify-content: space-between;
-    background-color: #151515;
-    cursor: pointer;
-    margin-top: 30px;
 }
 
 main #new_horizon .img {
@@ -324,7 +408,7 @@ main #app .info p {
 main #app .info button {
     padding: 20px;
     color: #151515;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
     display: flex;
     align-items: center;
@@ -402,7 +486,6 @@ main #gerald {
     display: flex;
     flex-direction: column;
     position: relative;
-
 }
 
 main #gerald .geraldo {
@@ -472,7 +555,7 @@ main #gerald .info small {
     font-weight: bold;
     font-size: 13px;
     line-height: 140%;
-    color: #FFFFFF;
+    color: #ffffff;
     margin-top: 12px;
 }
 
@@ -499,7 +582,6 @@ main .content {
     grid-column-start: 2;
     grid-column-end: 3;
 }
-
 
 main #target_audience .img {
     display: none;
