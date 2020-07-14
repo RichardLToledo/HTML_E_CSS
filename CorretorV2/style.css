@@ -5,7 +5,7 @@ header {
     background-color: #fff;
     background-position: fixed;
     top: 0;
-    border: 1px solid #DFE0E3;
+    border: 1px solid #dfe0e3;
     box-sizing: border-box;
     display: flex;
     align-items: center;
@@ -42,7 +42,6 @@ header #menu span:nth-child(3) {
     width: 90%;
 }
 
-
 /*Estilos referentes ao corpo*/
 
 main {
@@ -51,18 +50,22 @@ main {
 }
 
 main #partnership {
-    background-image: url("./assets/FUNDO.png");
-    height: 70vh;
+    height: 80vh;
     width: 100%;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
     position: relative;
     transition: all 300ms ease-in-out;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+}
+
+main #partnership video {
+    display: flex;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    z-index: -99999;
 }
 
 main #partnership::before {
@@ -72,6 +75,12 @@ main #partnership::before {
     width: 100%;
     background: rgba(21, 21, 21, 0.55);
     z-index: 0;
+}
+
+main #partnership .partnership-text {
+    position: absolute;
+    top: 50%;
+    left: auto;
 }
 
 main #partnership h1 {
@@ -85,17 +94,7 @@ main #partnership h1 {
     z-index: 999999;
 }
 
-main #partnership h1::after {
-    content: "";
-    height: 2px;
-    background-color: #fff;
-    display: flex;
-    border-radius: 1px;
-    margin: 30px 30% 10px 30%;
-    box-sizing: border-box;
-}
-
-main #partnership strong {
+main #partnership .partnership-text h3 {
     color: #fff;
     font-style: normal;
     font-weight: 900;
@@ -104,7 +103,6 @@ main #partnership strong {
     text-shadow: 0px 0px 4.42px rgba(0, 0, 0, 0.25);
     z-index: 999999;
 }
-
 
 main #partnership button {
     background-color: #fff;
@@ -120,7 +118,6 @@ main #partnership button {
     justify-content: center;
 }
 
-
 main #partnership button img {
     margin-left: 10px;
 }
@@ -129,7 +126,6 @@ main #new_horizon {
     display: flex;
     flex-direction: column;
     padding: 48px 32px;
-
 }
 
 main #new_horizon .text h1 {
@@ -179,7 +175,6 @@ main #new_horizon button {
     background-color: #151515;
     cursor: pointer;
     margin-top: 30px;
-
 }
 
 main #new_horizon .img {
@@ -234,7 +229,7 @@ main #app .text sub {
     font-size: 22.2928px;
     line-height: 27px;
     /* identical to box height, or 121% */
-    color: #FFFFFF;
+    color: #ffffff;
 }
 
 main #app .text h1 {
@@ -243,11 +238,10 @@ main #app .text h1 {
     font-size: 36px;
     line-height: 40px;
     /* or 121% */
-    color: #FFFFFF;
+    color: #ffffff;
     margin-top: 10px;
     margin-bottom: 30px;
 }
-
 
 main #responsive {
     padding: 32px;
@@ -277,7 +271,6 @@ main #responsive h1::after {
     box-sizing: border-box;
 }
 
-
 main #responsive p {
     font-family: Roboto;
     font-style: normal;
@@ -292,7 +285,7 @@ main #responsive p {
 main #responsive button {
     padding: 20px;
     color: #151515;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
     display: flex;
     align-items: center;
@@ -308,7 +301,6 @@ main #gerald {
     padding: 32px;
     display: flex;
     flex-direction: column;
-
 }
 
 main #gerald .geraldo {
@@ -316,7 +308,6 @@ main #gerald .geraldo {
     align-items: flex-start;
     justify-content: space-between;
 }
-
 
 main #gerald .geraldo .network ul {
     display: flex;
@@ -346,7 +337,7 @@ main #gerald .info strong {
     /* identical to box height, or 24px */
 
     letter-spacing: 0.24em;
-    color: #FFFFFF;
+    color: #ffffff;
 }
 
 main #gerald .info strong::after {
@@ -368,7 +359,7 @@ main #gerald .info small {
     font-size: 13px;
     line-height: 140%;
     /* or 22px */
-    color: #FFFFFF;
+    color: #ffffff;
     margin-top: 12px;
 }
 
@@ -379,7 +370,7 @@ main #gerald .info small {
     font-size: 13px;
     line-height: 140%;
     /* or 22px */
-    color: #FFFFFF;
+    color: #ffffff;
     margin-top: 12px;
 }
 
@@ -412,7 +403,6 @@ main #subscribe h1 {
     color: #fff;
     text-align: center;
     margin-top: 10px;
-
 }
 
 main #subscribe h1::after {
@@ -460,7 +450,7 @@ main #subscribe form input::placeholder {
 }
 
 main #subscribe form input:focus {
-    border: 1px solid #FFFFFF;
+    border: 1px solid #ffffff;
 }
 
 main #subscribe form button {
