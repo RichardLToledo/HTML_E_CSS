@@ -271,7 +271,8 @@
         display: grid;
         grid-template-columns: 1fr 570px 570px 1fr;
         position: relative;
-        height: 70vh
+        height: 70vh;
+        padding: 60px 0px;
     }
 
     main #target_audience .text {
