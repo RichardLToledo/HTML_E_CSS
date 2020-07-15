@@ -9,12 +9,10 @@
         width: 220px;
     }
 
-    main #gerald .geraldo>img {
+    main #gerald .geraldo > img {
         width: 75%;
         height: 50%;
     }
-
-
 }
 
 @media screen and (min-width: 425px) {
@@ -28,19 +26,17 @@
         text-align: center;
     }
 
-    main #gerald .geraldo>img {
+    main #gerald .geraldo > img {
         width: 75%;
         height: 50%;
     }
 }
 
 @media screen and (min-width: 425px) {
-
-    main #gerald .geraldo>img {
+    main #gerald .geraldo > img {
         width: 75%;
         height: 50%;
     }
-
 }
 
 @media screen and (min-width: 768px) {
@@ -82,7 +78,6 @@
     }
 
     main #partnership h1 {
-
         font-size: 64px;
     }
 
@@ -103,7 +98,7 @@
         width: 200px;
     }
 
-    main #gerald .geraldo>img {
+    main #gerald .geraldo > img {
         width: 475px;
         height: 430px;
         margin-right: 60px;
@@ -120,7 +115,6 @@
         bottom: 100px;
         left: 330px;
     }
-
 }
 
 @media screen and (min-width: 1024px) {
@@ -130,7 +124,6 @@
         background-size: 100%;
         height: 90vh;
         background-position: center bottom;
-        padding: 60px;
         background-repeat: no-repeat;
     }
 
@@ -191,7 +184,6 @@
         width: 35%;
     }
 
-
     main #app .text img:last-child {
         display: block;
         width: 400px;
@@ -201,29 +193,25 @@
     main #app .text .city {
         display: none;
     }
-
-
 }
 
 @media screen and (min-width: 1140px) {
-
     main #new_horizon {
         display: grid;
         grid-template-columns: 1fr 570px 570px 1fr;
         padding: 0px;
+        background-size: 1140px;
+        background-position: bottom right;
         justify-content: center;
         align-content: center;
         align-items: center;
         justify-items: center;
     }
 
-
-
     main #new_horizon .text {
         grid-column-start: 2;
         grid-column-end: 3;
         width: fit-content;
-
     }
 
     main #app {
@@ -292,7 +280,4 @@
         bottom: 0;
         right: 300px;
     }
-
-
-
 }
