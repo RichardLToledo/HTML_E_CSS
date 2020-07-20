@@ -35,9 +35,9 @@ function isElementInViewport(el) {
 //Scroll
 
 document.querySelector(".sub").addEventListener("click", function () {
-  window.scrollTo(0, 3400);
+  window.scrollTo(0, 3000);
 });
 
 document.querySelector(".sub2").addEventListener("click", function () {
-  window.scrollTo(0, 3400);
+  window.scrollTo(0, 3000);
 });
