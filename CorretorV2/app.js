@@ -41,3 +41,7 @@ document.querySelector(".sub").addEventListener("click", function () {
 document.querySelector(".sub2").addEventListener("click", function () {
   window.scrollTo(0, 3000);
 });
+
+document.querySelector(".sub3").addEventListener("click", function () {
+  window.scrollTo(0, 2000);
+});

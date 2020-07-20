@@ -59,7 +59,7 @@ $breakpoint-extra-large: 1200px;
   }
 
   main #new_horizon {
-    margin: 112px 0;
+    padding: 112px 0;
   }
 
   main #target_audience .text p {
@@ -174,13 +174,45 @@ $breakpoint-extra-large: 1200px;
   main #broker h2 {
     width: 60%;
   }
+
+  main #target_audience {
+    padding-top: 42px;
+  }
+
   main #target_audience .text p {
     font-size: 18px;
   }
+
+
   main #new_horizon .text p {
     font-size: 18px;
   }
+
   main #new_horizon .text p:nth-child(3) {
     margin-bottom: 16px;
+  }
+
+}
+
+@media screen and (min-width: 1200px) {
+
+  main #new_horizon {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    padding: 12%;
+    background-image: url("./assets/background.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+  main #new_horizon .container {
+    display: grid;
+    grid-template-columns: 1fr 1100px 1fr;
+  }
+
+  main #new_horizon .text {
+    width: 55%;
+    grid-column-start: 2;
+    grid-column-end: 3;
   }
 }
