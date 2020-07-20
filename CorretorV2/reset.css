@@ -60,3 +60,9 @@ table {
     padding: 0;
     text-rendering: optimizeLegibility;
 }
+
+button {
+    outline: none;
+    background-color: transparent;
+    border: transparent;
+}
