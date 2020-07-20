@@ -7,7 +7,7 @@ footer {
 }
 
 footer #search_footer {
-    padding: 40px;
+    padding: 20px;
     background-color: #f9f9f9;
     display: flex;
     justify-content: center;
@@ -28,7 +28,7 @@ footer #search_footer #search {
     border: 1px solid #c7c7c7;
     border-radius: 6px;
     height: 45px;
-    width: 600px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
 }
@@ -197,13 +197,5 @@ footer #search_footer #search input::placeholder {
 
     .footer .content .infos .contact {
         margin-right: 0;
-    }
-
-    footer #search_footer #search {
-        width: 400px;
-    }
-
-    footer #search_footer #search {
-        width: 300px;
     }
 }
