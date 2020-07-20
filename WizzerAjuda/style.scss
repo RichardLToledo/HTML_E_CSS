@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
 
 * {
   margin: 0;
@@ -17,7 +17,7 @@ html {
 
 body {
   line-height: 1;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 ol,
@@ -34,7 +34,7 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: '';
+  content: "";
   content: none;
 }
 
@@ -66,7 +66,6 @@ button {
   border: none;
 }
 
-
 #headerwizzer {
   height: 96px;
   border: 1px solid #e0e0e0;
@@ -84,7 +83,6 @@ button {
 #headerwizzer nav #logo img {
   width: 200px;
 }
-
 
 #headerwizzer nav {
   height: 100%;
@@ -172,7 +170,6 @@ nav ul li a {
   background: transparent;
 }
 
-
 #menu span {
   width: 35px;
   height: 10px;
@@ -207,15 +204,13 @@ nav ul li a {
 }
 
 #search div {
-  background: #FFFFFF;
+  background: #ffffff;
   box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.25);
   border-radius: 3px;
   padding: 32px;
   flex: 1;
   display: flex;
   position: relative;
-
-
 
   input {
     flex: 1;
@@ -224,10 +219,9 @@ nav ul li a {
 
     &::placeholder {
       font-size: 16px;
-      color: #989BA1;
+      color: #989ba1;
     }
   }
-
 
   button {
     color: #055eff;
@@ -236,19 +230,18 @@ nav ul li a {
   }
 }
 
-#tenat,
+#tenant,
 #owner,
 #broker,
 #results,
-
-.sigle_posts {
+.single_posts {
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
   padding: 7%;
   margin-bottom: 24px;
 
   div {
-    flex: 1
+    flex: 1;
   }
 
   div:first-child {
@@ -286,13 +279,12 @@ nav ul li a {
       margin-top: 16px;
       color: #353d40;
       line-height: 120%;
-
     }
 
     p {
       margin: 12px 0;
       font-size: 16px;
-      color: #989BA1;
+      color: #989ba1;
       line-height: 140%;
 
       a {
@@ -311,7 +303,6 @@ nav ul li a {
       font-size: 24px;
       font-weight: 300;
       color: #353d40;
-
     }
 
     ul {
@@ -334,7 +325,7 @@ nav ul li a {
 
           a {
             outline: none;
-            color: #FFFFFF;
+            color: #ffffff;
             cursor: pointer;
           }
 
@@ -348,7 +339,6 @@ nav ul li a {
           text-decoration: none;
           line-height: 140%;
         }
-
       }
 
       #update {
@@ -360,32 +350,36 @@ nav ul li a {
           height: 6px;
           width: 6px;
           position: absolute;
-          background-color: #D8010E;
+          background-color: #d8010e;
           border-radius: 6px;
           top: 8px;
         }
 
-        a {
-          color: #151515;
-
+        &:hover {
+          background-color: #151515;
+          a {
+            color: #fff;
+          }
         }
 
+        a {
+          color: #151515;
+        }
       }
     }
   }
 
   #sidebar {
+    h2 {
+      font-size: 24px;
+      font-weight: bold;
+      margin-top: 16px;
+      color: #353d40;
+      line-height: 120%;
+      margin-bottom: 16px;
+    }
+
     ul {
-
-      li:first-child {
-        font-size: 24px;
-        color: #353d40;
-        font-weight: 600;
-        margin-bottom: 12px;
-        padding: 14px 0;
-        border: none;
-      }
-
       li {
         margin-right: 6px;
         margin-bottom: 12px;
@@ -401,7 +395,7 @@ nav ul li a {
 
           a {
             outline: none;
-            color: #FFFFFF;
+            color: #ffffff;
             cursor: pointer;
           }
 
@@ -415,7 +409,6 @@ nav ul li a {
           text-decoration: none;
           line-height: 140%;
         }
-
       }
     }
   }
@@ -452,7 +445,10 @@ nav ul li a {
       }
     }
   }
+}
 
+.single_posts {
+  flex-direction: column-reverse;
 }
 
 #results h2 {
@@ -464,7 +460,7 @@ nav ul li a {
     max-width: 700px;
   }
 
-  #tenat,
+  #tenant,
   #owner,
   #broker {
     display: flex;
@@ -497,26 +493,21 @@ nav ul li a {
         }
       }
 
-
       &:last-child {
         margin-left: 7%;
 
-
         ul {
           display: flex;
-
 
           li {
             width: fit-content;
           }
         }
-
-
       }
     }
   }
 
-  .sigle_posts {
+  .single_posts {
     flex-direction: row;
 
     div:first-child {
@@ -530,7 +521,6 @@ nav ul li a {
         flex-direction: column;
       }
 
-
       strong {
         display: none;
       }
@@ -542,14 +532,13 @@ nav ul li a {
     }
   }
 
-  .sigle_posts div:first-child ul {
+  .single_posts div:first-child ul {
     display: flex;
   }
 }
 
 @media screen and (min-width: 1200px) {
-
-  #tenat,
+  #tenant,
   #owner,
   #broker {
     display: grid;
@@ -562,9 +551,7 @@ nav ul li a {
         grid-column-gap: 3;
 
         &::after {
-
           right: 0;
-
         }
       }
 
@@ -575,7 +562,7 @@ nav ul li a {
     }
   }
 
-  .sigle_posts {
+  .single_posts {
     display: grid;
     grid-template-columns: 1fr 260px 800px 1fr;
     padding: 3% 0;
@@ -586,8 +573,6 @@ nav ul li a {
     }
   }
 }
-
-
 
 footer {
   display: flex;
@@ -753,8 +738,6 @@ footer #search_footer #search input::placeholder {
 }
 
 @media screen and (max-width: 769px) {
-
-
   .footer .content {
     padding: 30px;
   }

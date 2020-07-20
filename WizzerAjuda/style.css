@@ -198,7 +198,7 @@ nav ul li a {
 }
 
 #search div {
-  background: #FFFFFF;
+  background: #ffffff;
   box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.25);
   border-radius: 3px;
   padding: 32px;
@@ -213,7 +213,7 @@ nav ul li a {
 }
 #search div input::placeholder {
   font-size: 16px;
-  color: #989BA1;
+  color: #989ba1;
 }
 #search div button {
   color: #055eff;
@@ -221,42 +221,42 @@ nav ul li a {
   cursor: pointe;
 }
 
-#tenat,
+#tenant,
 #owner,
 #broker,
 #results,
-.sigle_posts {
+.single_posts {
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
   padding: 7%;
   margin-bottom: 24px;
 }
-#tenat div,
+#tenant div,
 #owner div,
 #broker div,
 #results div,
-.sigle_posts div {
+.single_posts div {
   flex: 1;
 }
-#tenat div:first-child,
+#tenant div:first-child,
 #owner div:first-child,
 #broker div:first-child,
 #results div:first-child,
-.sigle_posts div:first-child {
+.single_posts div:first-child {
   margin-bottom: 24px;
 }
-#tenat div:first-child img,
+#tenant div:first-child img,
 #owner div:first-child img,
 #broker div:first-child img,
 #results div:first-child img,
-.sigle_posts div:first-child img {
+.single_posts div:first-child img {
   width: 100%;
 }
-#tenat div:first-child strong,
+#tenant div:first-child strong,
 #owner div:first-child strong,
 #broker div:first-child strong,
 #results div:first-child strong,
-.sigle_posts div:first-child strong {
+.single_posts div:first-child strong {
   font-size: 18px;
   font-weight: bold;
   margin-top: 16px;
@@ -268,164 +268,178 @@ nav ul li a {
   padding: 16px;
   border-radius: 4px;
 }
-#tenat div:first-child strong img,
+#tenant div:first-child strong img,
 #owner div:first-child strong img,
 #broker div:first-child strong img,
 #results div:first-child strong img,
-.sigle_posts div:first-child strong img {
+.single_posts div:first-child strong img {
   width: 21px;
 }
-#tenat div:first-child strong a,
+#tenant div:first-child strong a,
 #owner div:first-child strong a,
 #broker div:first-child strong a,
 #results div:first-child strong a,
-.sigle_posts div:first-child strong a {
+.single_posts div:first-child strong a {
   color: #055eff;
   text-decoration: none;
 }
-#tenat div:first-child h2,
+#tenant div:first-child h2,
 #owner div:first-child h2,
 #broker div:first-child h2,
 #results div:first-child h2,
-.sigle_posts div:first-child h2 {
+.single_posts div:first-child h2 {
   font-size: 24px;
   font-weight: bold;
   margin-top: 16px;
   color: #353d40;
   line-height: 120%;
 }
-#tenat div:first-child p,
+#tenant div:first-child p,
 #owner div:first-child p,
 #broker div:first-child p,
 #results div:first-child p,
-.sigle_posts div:first-child p {
+.single_posts div:first-child p {
   margin: 12px 0;
   font-size: 16px;
-  color: #989BA1;
+  color: #989ba1;
   line-height: 140%;
 }
-#tenat div:first-child p a,
+#tenant div:first-child p a,
 #owner div:first-child p a,
 #broker div:first-child p a,
 #results div:first-child p a,
-.sigle_posts div:first-child p a {
+.single_posts div:first-child p a {
   color: #055eff;
   text-decoration: none;
 }
-#tenat div:last-child,
+#tenant div:last-child,
 #owner div:last-child,
 #broker div:last-child,
 #results div:last-child,
-.sigle_posts div:last-child {
+.single_posts div:last-child {
   display: flex;
   flex-direction: column;
 }
-#tenat div:last-child strong,
+#tenant div:last-child strong,
 #owner div:last-child strong,
 #broker div:last-child strong,
 #results div:last-child strong,
-.sigle_posts div:last-child strong {
+.single_posts div:last-child strong {
   margin-bottom: 32px;
   font-size: 24px;
   font-weight: 300;
   color: #353d40;
 }
-#tenat div:last-child ul,
+#tenant div:last-child ul,
 #owner div:last-child ul,
 #broker div:last-child ul,
 #results div:last-child ul,
-.sigle_posts div:last-child ul {
+.single_posts div:last-child ul {
   display: flex;
   flex-wrap: wrap;
   padding: 0;
   margin: 0;
 }
-#tenat div:last-child ul li,
+#tenant div:last-child ul li,
 #owner div:last-child ul li,
 #broker div:last-child ul li,
 #results div:last-child ul li,
-.sigle_posts div:last-child ul li {
+.single_posts div:last-child ul li {
   margin-right: 6px;
   margin-bottom: 12px;
   border: 1px solid #055eff;
   padding: 14px;
   border-radius: 6px;
 }
-#tenat div:last-child ul li:hover,
+#tenant div:last-child ul li:hover,
 #owner div:last-child ul li:hover,
 #broker div:last-child ul li:hover,
 #results div:last-child ul li:hover,
-.sigle_posts div:last-child ul li:hover {
+.single_posts div:last-child ul li:hover {
   border: 1px solid transparent;
   background-color: #055eff;
   cursor: pointer;
   transition: all 300ms ease-in-out;
 }
-#tenat div:last-child ul li:hover a,
+#tenant div:last-child ul li:hover a,
 #owner div:last-child ul li:hover a,
 #broker div:last-child ul li:hover a,
 #results div:last-child ul li:hover a,
-.sigle_posts div:last-child ul li:hover a {
+.single_posts div:last-child ul li:hover a {
   outline: none;
-  color: #FFFFFF;
+  color: #ffffff;
   cursor: pointer;
 }
-#tenat div:last-child ul li a,
+#tenant div:last-child ul li a,
 #owner div:last-child ul li a,
 #broker div:last-child ul li a,
 #results div:last-child ul li a,
-.sigle_posts div:last-child ul li a {
+.single_posts div:last-child ul li a {
   font-size: 16px;
   color: #055eff;
   font-weight: 500;
   text-decoration: none;
   line-height: 140%;
 }
-#tenat div:last-child ul #update,
+#tenant div:last-child ul #update,
 #owner div:last-child ul #update,
 #broker div:last-child ul #update,
 #results div:last-child ul #update,
-.sigle_posts div:last-child ul #update {
+.single_posts div:last-child ul #update {
   position: relative;
   border: 1px solid #151515;
 }
-#tenat div:last-child ul #update::after,
+#tenant div:last-child ul #update::after,
 #owner div:last-child ul #update::after,
 #broker div:last-child ul #update::after,
 #results div:last-child ul #update::after,
-.sigle_posts div:last-child ul #update::after {
+.single_posts div:last-child ul #update::after {
   content: "";
   height: 6px;
   width: 6px;
   position: absolute;
-  background-color: #D8010E;
+  background-color: #d8010e;
   border-radius: 6px;
   top: 8px;
 }
-#tenat div:last-child ul #update a,
+#tenant div:last-child ul #update:hover,
+#owner div:last-child ul #update:hover,
+#broker div:last-child ul #update:hover,
+#results div:last-child ul #update:hover,
+.single_posts div:last-child ul #update:hover {
+  background-color: #151515;
+}
+#tenant div:last-child ul #update:hover a,
+#owner div:last-child ul #update:hover a,
+#broker div:last-child ul #update:hover a,
+#results div:last-child ul #update:hover a,
+.single_posts div:last-child ul #update:hover a {
+  color: #fff;
+}
+#tenant div:last-child ul #update a,
 #owner div:last-child ul #update a,
 #broker div:last-child ul #update a,
 #results div:last-child ul #update a,
-.sigle_posts div:last-child ul #update a {
+.single_posts div:last-child ul #update a {
   color: #151515;
 }
-#tenat #sidebar ul li:first-child,
-#owner #sidebar ul li:first-child,
-#broker #sidebar ul li:first-child,
-#results #sidebar ul li:first-child,
-.sigle_posts #sidebar ul li:first-child {
+#tenant #sidebar h2,
+#owner #sidebar h2,
+#broker #sidebar h2,
+#results #sidebar h2,
+.single_posts #sidebar h2 {
   font-size: 24px;
+  font-weight: bold;
+  margin-top: 16px;
   color: #353d40;
-  font-weight: 600;
-  margin-bottom: 12px;
-  padding: 14px 0;
-  border: none;
+  line-height: 120%;
+  margin-bottom: 16px;
 }
-#tenat #sidebar ul li,
+#tenant #sidebar ul li,
 #owner #sidebar ul li,
 #broker #sidebar ul li,
 #results #sidebar ul li,
-.sigle_posts #sidebar ul li {
+.single_posts #sidebar ul li {
   margin-right: 6px;
   margin-bottom: 12px;
   border: 1px solid #055eff;
@@ -433,81 +447,85 @@ nav ul li a {
   border-radius: 6px;
   width: fit-content;
 }
-#tenat #sidebar ul li:hover,
+#tenant #sidebar ul li:hover,
 #owner #sidebar ul li:hover,
 #broker #sidebar ul li:hover,
 #results #sidebar ul li:hover,
-.sigle_posts #sidebar ul li:hover {
+.single_posts #sidebar ul li:hover {
   border: 1px solid transparent;
   background-color: #055eff;
   cursor: pointer;
   transition: all 300ms ease-in-out;
 }
-#tenat #sidebar ul li:hover a,
+#tenant #sidebar ul li:hover a,
 #owner #sidebar ul li:hover a,
 #broker #sidebar ul li:hover a,
 #results #sidebar ul li:hover a,
-.sigle_posts #sidebar ul li:hover a {
+.single_posts #sidebar ul li:hover a {
   outline: none;
-  color: #FFFFFF;
+  color: #ffffff;
   cursor: pointer;
 }
-#tenat #sidebar ul li a,
+#tenant #sidebar ul li a,
 #owner #sidebar ul li a,
 #broker #sidebar ul li a,
 #results #sidebar ul li a,
-.sigle_posts #sidebar ul li a {
+.single_posts #sidebar ul li a {
   font-size: 16px;
   color: #055eff;
   font-weight: 500;
   text-decoration: none;
   line-height: 140%;
 }
-#tenat .container_post h2,
+#tenant .container_post h2,
 #owner .container_post h2,
 #broker .container_post h2,
 #results .container_post h2,
-.sigle_posts .container_post h2 {
+.single_posts .container_post h2 {
   font-size: 32px;
   color: #055eff;
   font-weight: bold;
   line-height: 120%;
   margin-bottom: 32px;
 }
-#tenat .container_post p,
+#tenant .container_post p,
 #owner .container_post p,
 #broker .container_post p,
 #results .container_post p,
-.sigle_posts .container_post p {
+.single_posts .container_post p {
   color: #353d40;
   font-size: 16px;
   line-height: 140%;
   margin-bottom: 20px;
 }
-#tenat .container_post p a,
+#tenant .container_post p a,
 #owner .container_post p a,
 #broker .container_post p a,
 #results .container_post p a,
-.sigle_posts .container_post p a {
+.single_posts .container_post p a {
   color: #055eff;
   text-decoration: none;
 }
-#tenat .container_post small,
+#tenant .container_post small,
 #owner .container_post small,
 #broker .container_post small,
 #results .container_post small,
-.sigle_posts .container_post small {
+.single_posts .container_post small {
   font-size: 14px;
   color: #151515;
   font-weight: 500;
 }
-#tenat .container_post small strong,
+#tenant .container_post small strong,
 #owner .container_post small strong,
 #broker .container_post small strong,
 #results .container_post small strong,
-.sigle_posts .container_post small strong {
+.single_posts .container_post small strong {
   font-weight: bold;
   color: #2693ff;
+}
+
+.single_posts {
+  flex-direction: column-reverse;
 }
 
 #results h2 {
@@ -519,7 +537,7 @@ nav ul li a {
     max-width: 700px;
   }
 
-  #tenat,
+  #tenant,
 #owner,
 #broker {
     display: flex;
@@ -528,24 +546,24 @@ nav ul li a {
     padding: 3%;
     margin-bottom: 24px;
   }
-  #tenat div,
+  #tenant div,
 #owner div,
 #broker div {
     padding: 24px;
     position: relative;
   }
-  #tenat div:first-child,
+  #tenant div:first-child,
 #owner div:first-child,
 #broker div:first-child {
     margin-right: 7%;
     position: relative;
   }
-  #tenat div:first-child img,
+  #tenant div:first-child img,
 #owner div:first-child img,
 #broker div:first-child img {
     width: 320px;
   }
-  #tenat div:first-child::after,
+  #tenant div:first-child::after,
 #owner div:first-child::after,
 #broker div:first-child::after {
     content: "";
@@ -557,79 +575,79 @@ nav ul li a {
     right: -20%;
     transform: translate(0, -100%);
   }
-  #tenat div:last-child,
+  #tenant div:last-child,
 #owner div:last-child,
 #broker div:last-child {
     margin-left: 7%;
   }
-  #tenat div:last-child ul,
+  #tenant div:last-child ul,
 #owner div:last-child ul,
 #broker div:last-child ul {
     display: flex;
   }
-  #tenat div:last-child ul li,
+  #tenant div:last-child ul li,
 #owner div:last-child ul li,
 #broker div:last-child ul li {
     width: fit-content;
   }
 
-  .sigle_posts {
+  .single_posts {
     flex-direction: row;
   }
-  .sigle_posts div:first-child {
+  .single_posts div:first-child {
     flex: 1;
     padding-right: 16px;
     position: relative;
     border-right: 1px solid rgba(152, 155, 161, 0.603);
   }
-  .sigle_posts div:first-child ul {
+  .single_posts div:first-child ul {
     display: flex;
     flex-direction: column;
   }
-  .sigle_posts div:first-child strong {
+  .single_posts div:first-child strong {
     display: none;
   }
-  .sigle_posts article {
+  .single_posts article {
     flex: 45%;
     margin-left: 3%;
   }
 
-  .sigle_posts div:first-child ul {
+  .single_posts div:first-child ul {
     display: flex;
   }
 }
 @media screen and (min-width: 1200px) {
-  #tenat,
+  #tenant,
 #owner,
 #broker {
     display: grid;
     grid-template-columns: 1fr 540px 540px 1fr;
     padding: 0;
   }
-  #tenat div:first-child,
+  #tenant div:first-child,
 #owner div:first-child,
 #broker div:first-child {
     grid-column-start: 2;
     grid-column-gap: 3;
   }
-  #tenat div:first-child::after,
+  #tenant div:first-child::after,
 #owner div:first-child::after,
 #broker div:first-child::after {
     right: 0;
   }
-  #tenat div:last-child,
+  #tenant div:last-child,
 #owner div:last-child,
 #broker div:last-child {
     grid-column-start: 3;
     grid-column-end: 4;
   }
 
-  .sigle_posts {
+  .single_posts {
     display: grid;
     grid-template-columns: 1fr 260px 800px 1fr;
     padding: 3% 0;
   }
-  .sigle_posts #sidebar {
+  .single_posts #sidebar {
     grid-column-start: 2;
     grid-column-gap: 3;
   }
