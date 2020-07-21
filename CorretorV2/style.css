@@ -112,7 +112,7 @@ main #partnership::before {
     content: "";
     height: 100%;
     width: 100%;
-    background: rgba(21, 21, 21, 0.6);
+    background: rgba(21, 21, 21, 0.75);
     z-index: 0;
 }
 
@@ -222,7 +222,6 @@ main #partnership button svg {
 /* Fim da Seção Partner */
 
 /* Seção New Horizon */
-
 
 main #new_horizon .container {
     display: flex;
@@ -482,9 +481,6 @@ main #new_horizon .text p:nth-child(3) a {
     color: #055eff;
 }
 
-
-
-
 /* FIM DA SEÇÃO NEW HORIZON */
 
 /* SEÇÃO PARA QUEM */
@@ -495,7 +491,6 @@ main #target_audience {
     display: flex;
     flex-direction: column;
     position: relative;
-
 }
 
 main #target_audience .text h1::after {
@@ -658,7 +653,7 @@ main #broker .geraldo {
     flex-direction: column;
 }
 
-main #broker .geraldo>img {
+main #broker .geraldo > img {
     width: 100%;
     height: 100%;
     max-width: 360px;
