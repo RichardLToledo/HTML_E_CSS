@@ -1,0 +1,214 @@
+body {
+    background-color: #151515;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+
+
+    #m_search {
+        display: none;
+        background-color: #055eff;
+        padding: 24px;
+        color: white;
+        margin: 10px;
+        border-radius: 3px;
+        font-size: 16px;
+        cursor: pointer;
+
+        img {
+            margin-right: 10px;
+        }
+
+        &:hover {
+            animation-duration: 1.8s;
+            animation-fill-mode: forwards;
+            animation-iteration-count: infinite;
+            animation-name: placeHolderShimmer;
+            animation-timing-function: linear;
+            background: #055eff;
+            background: linear-gradient(to right, #055eff 8%, #2693ff 38%, #055eff 54%);
+            background-size: 1000px 640px;
+            position: relative;
+        }
+    }
+
+    #filter {
+        background-color: #fff;
+        border: 1px solid #E0E0E0;
+        display: flex;
+        align-items: center;
+        border-radius: 3px;
+
+        .filters {
+            padding: 24px;
+            border: 2px solid transparent;
+            border-radius: 3px;
+
+            &:first-child {
+                margin-left: 10px;
+            }
+
+            &:hover {
+                border: 2px solid #353d40;
+            }
+
+            label {
+                color: rgb(117, 120, 126);
+                font-size: 16px;
+            }
+
+            input {
+                font-size: 16px;
+                color: #353d40;
+                width: 160px;
+            }
+
+            &:nth-child(2) {
+                position: relative;
+                border-right: #E0E0E0 1px solid;
+                border-left: #E0E0E0 1px solid;
+
+                input {
+                    width: 120px;
+                }
+
+                &:hover {
+                    border-right: 2px solid #353d40;
+                    border-left: 2px solid #353d40;
+                }
+            }
+
+            &:nth-child(3) {
+                input {
+                    width: 100px;
+                }
+
+            }
+        }
+
+        #search {
+            display: flex;
+            background-color: #055eff;
+            padding: 24px;
+            color: white;
+            margin: 10px;
+            border-radius: 3px;
+
+            font-size: 20px;
+            cursor: pointer;
+
+            img {
+                margin-right: 10px;
+            }
+
+            &:hover {
+                animation-duration: 1.8s;
+                animation-fill-mode: forwards;
+                animation-iteration-count: infinite;
+                animation-name: placeHolderShimmer;
+                animation-timing-function: linear;
+                background: #055eff;
+                background: linear-gradient(to right, #055eff 8%, #2693ff 38%, #055eff 54%);
+                background-size: 1000px 640px;
+                position: relative;
+            }
+        }
+
+        .active {
+            animation-duration: 1.8s;
+            animation-fill-mode: forwards;
+            animation-iteration-count: infinite;
+            animation-name: placeHolderShimmer;
+            animation-timing-function: linear;
+            background: #055eff;
+            background: linear-gradient(to right, #055eff 8%, #2693ff 38%, #055eff 54%);
+            background-size: 1000px 640px;
+            position: relative;
+        }
+
+        @keyframes placeHolderShimmer {
+            0% {
+                background-position: -468px 0
+            }
+
+            100% {
+                background-position: 468px 0
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1140px) {
+    body #filter .filters {
+        display: flex;
+        flex-direction: column;
+
+        &:first-child {
+            margin-left: 0px;
+        }
+    }
+
+    body #filter .filters label {
+        margin-bottom: 6px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body #filter #search {
+        display: none;
+    }
+
+    body #m_search {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        padding: 24px;
+    }
+
+    body #filter {
+        width: 100%;
+        flex-direction: column;
+        align-items: baseline;
+
+
+    }
+
+    body #filter .filters {
+        padding: 16px;
+        width: 100%;
+
+
+
+        input {
+            width: 100%;
+        }
+
+    }
+
+    body #filter .filters:nth-child(2) {
+        border-bottom: #E0E0E0 1px solid;
+        border-top: #E0E0E0 1px solid;
+
+        &:hover {
+            border-bottom: 2px solid #353d40;
+            border-top: 2px solid #353d40;
+        }
+
+        width: 100%;
+
+        input {
+            width: 100%;
+        }
+    }
+
+    body #filter .filters:nth-child(3) {
+        input {
+            width: 100%;
+        }
+    }
+}

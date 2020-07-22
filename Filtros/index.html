@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="filter">
+      <div class="filters">
+        <label for="cities">Pesquise na cidade de:</label>
+        <input list="cidades" name="city" id="cities" required />
+        <datalist id="cidades">
+          <option value="Varginha" selected>Varginha</option>
+          <option value="Pouso Alegre">Pouso Alegre</option>
+        </datalist>
+      </div>
+      <div class="filters">
+        <label for="values">Valor até:</label>
+        <input list="valores" name="value" id="values" required />
+        <datalist id="valores">
+          <option value="R$ 500,00">R$ 500,00</option>
+          <option value="R$ 1000,00" selected="selected">R$ 1000,00</option>
+          <option value="R$ 2000,00">R$ 2000,00</option>
+        </datalist>
+      </div>
+      <div class="filters">
+        <label for="beds">Qtd de Quartos: </label>
+        <input list="quartos" name="bed" id="beds" required />
+        <datalist id="quartos">
+          <option value="1 quarto" selected>1 quarto</option>
+          <option value="2 quartos">2 quartos</option>
+          <option value="10 quartos">10 quartos</option>
+        </datalist>
+      </div>
+      <button id="search">
+        <img src="./magnif.svg" alt="Lupa" />
+        <span>Buscar</span>
+      </button>
+    </div>
+    <button id="m_search">
+      <img src="./magnif.svg" alt="Lupa" />
+      <span>Buscar imóvel</span>
+    </button>
+    <script src="./script.js"></script>
+  </body>
+</html>
