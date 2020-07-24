@@ -171,7 +171,7 @@ nav ul li a {
 }
 
 #menu span {
-  width: 35px;
+  width: 50px;
   height: 10px;
   background-color: #055eff;
   border-radius: 3px;
@@ -357,6 +357,7 @@ nav ul li a {
 
         &:hover {
           background-color: #151515;
+
           a {
             color: #fff;
           }
@@ -538,6 +539,7 @@ nav ul li a {
 }
 
 @media screen and (min-width: 1200px) {
+
   #tenant,
   #owner,
   #broker {
