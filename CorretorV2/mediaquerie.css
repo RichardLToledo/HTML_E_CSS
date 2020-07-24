@@ -63,12 +63,11 @@ $breakpoint-extra-large: 1200px;
   }
 
   main #target_audience .text p {
-    width: 60%;
+    width: 40%;
   }
 
   main #target_audience .text .city {
     height: 300px;
-    margin-top: 10%;
   }
 
   main #target_audience .text h1 img {
