@@ -459,7 +459,7 @@ main #new_horizon .text {
 }
 
 main #new_horizon .text h1 {
-    font-family: Archivo;
+    font-family: Archivo Black;
     line-height: 140%;
     font-weight: 900;
     font-size: 36px;
@@ -525,7 +525,6 @@ main #target_audience .text p {
 }
 
 main #target_audience .text .city {
-    margin-top: 20%;
     float: right;
     width: 100%;
     max-width: 400px;
