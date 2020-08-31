@@ -6,6 +6,7 @@ body {
   height: 100vh;
   flex-direction: column;
 }
+
 body #filter {
   background-color: #fff;
   padding: 8px;
@@ -13,14 +14,17 @@ body #filter {
   display: flex;
   align-items: center;
 }
+
 body #filter .field {
   position: relative;
   height: 70px;
 }
+
 body #filter .field:nth-child(2) {
   border-right: 1px solid #e4e4e4;
   border-left: 1px solid #e4e4e4;
 }
+
 body #filter .field .cities,
 body #filter .field .values,
 body #filter .field .rooms {
@@ -34,6 +38,7 @@ body #filter .field .rooms {
   z-index: 99999999;
   margin-top: 15px;
 }
+
 body #filter .field .cities ul li,
 body #filter .field .values ul li,
 body #filter .field .rooms ul li {
@@ -42,6 +47,7 @@ body #filter .field .rooms ul li {
   color: #353d40;
   padding: 16px;
 }
+
 body #filter .field .cities ul li:hover,
 body #filter .field .values ul li:hover,
 body #filter .field .rooms ul li:hover {
@@ -49,6 +55,7 @@ body #filter .field .rooms ul li:hover {
   cursor: pointer;
   background-color: #e4e4e4;
 }
+
 body #filter .field input {
   padding: 0px 8px;
   width: 196px;
@@ -60,15 +67,18 @@ body #filter .field input {
   border-bottom: 1px solid transparent;
   background-color: #fff;
 }
+
 body #filter .field input:hover {
   border-bottom: 2px solid #055eff;
   transition: all 300ms ease-in;
 }
+
 body #filter .field #city,
 body #filter .field #room,
 body #filter .field #value {
   position: relative;
 }
+
 body #filter button {
   padding: 24px;
   font-size: 16px;
@@ -83,35 +93,43 @@ body #filter button {
   body {
     background-color: royalblue;
   }
+
   body #filter {
     flex-direction: column;
     width: 80%;
   }
+
   body #filter button {
     width: 100%;
   }
+
   body #filter .field {
     width: 100%;
   }
+
   body #filter .field:last-child {
     margin-bottom: 12px;
   }
+
   body #filter .field .cities,
-body #filter .field .values,
-body #filter .field .rooms {
+  body #filter .field .values,
+  body #filter .field .rooms {
     right: 0;
     transform: translate(0, 0);
     margin-top: 0px;
   }
+
   body #filter .field:nth-child(2) {
     border-right: none;
     border-left: none;
     border-bottom: 1px solid #e4e4e4;
     border-top: 1px solid #e4e4e4;
   }
+
   body #filter .field input {
     width: 100%;
   }
 }
+
 
 /*# sourceMappingURL=style.css.map */
