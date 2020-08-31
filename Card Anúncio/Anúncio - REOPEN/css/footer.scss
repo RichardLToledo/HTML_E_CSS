@@ -1,0 +1,107 @@
+footer {
+  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  .main_informations {
+    display: flex;
+    padding: 30px;
+    .brand_links {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      .brand {
+        margin-bottom: 20px;
+      }
+      .link_list {
+        display: flex;
+        ul {
+          &:first-child {
+            margin-right: 40px;
+          }
+          li {
+            margin-bottom: 10px;
+            a {
+              color: $black;
+              &:hover {
+                color: #2693ff;
+              }
+            }
+          }
+        }
+      }
+    }
+    .terms_links {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      small {
+        font-size: 0.9em;
+        margin-bottom: 15px;
+        color: #353d40;
+      }
+      p {
+        font-size: 1em;
+        margin-bottom: 15px;
+        color: #353d40;
+      }
+      a {
+        font-size: 1em;
+        margin-bottom: 15px;
+        color: $blue;
+      }
+      strong {
+        font-size: 0.9em;
+        margin-bottom: 15px;
+        color: $black;
+        font-weight: bold;
+      }
+      & > ul {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 30px;
+        li {
+          margin-right: 24px;
+        }
+      }
+      .address_contact {
+        display: flex;
+        ul {
+          &:first-child {
+            padding-right: 40px;
+            border-right: 1px solid rgba(0, 0, 0, 0.24);
+            margin-right: 40px;
+          }
+          li {
+            color: #353d40;
+            font-size: 1em;
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            img {
+              margin-right: 10px;
+            }
+            &:first-child {
+              font-weight: bold;
+              color: #353d40;
+              font-size: 1em;
+              margin-bottom: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .rights-reserve {
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid #ccc;
+    p {
+      text-align: center;
+      color: #353d40;
+      font-size: 0.9em;
+    }
+  }
+}

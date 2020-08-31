@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style2.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Form - Card</title>
+</head>
+
+<body>
+    <main>
+        <div class="card-form">
+            <div class="head">
+                <div class="schedule-tab" onclick="swap(this);" data-tab="schedule">
+                    Agendar Visita
+                </div>
+                <div class="contact-tab" onclick="swap(this);" data-tab="contact">
+                    Entrar em Contato
+                </div>
+            </div>
+            <div class="form-content">
+                <div class="contact-title">
+                    <h1>Preencha os campos com suas informações para entrar em contato</h1>
+                </div>
+                <div class="form-info">
+                    <div class="name-tel">
+                        <label for="name">
+                            <input type="text" id="name" class="form-name" placeholder="Nome">
+                            <span class="material-icons">
+                                person
+                                </span>
+                        </label>
+                        <label for="phone">
+                            <input type="text" id="phone" class="form-phone" placeholder="Telefone">
+                            <span class="material-icons">
+                                call
+                                </span>
+                        </label>
+                    </div>
+                    <div class="form-email">
+                        <label for="email">
+                            <input type="text" id="email" class="form-email" placeholder="E-mail">
+                            <span class="material-icons">
+                                email
+                                </span>
+                        </label>
+                    </div>
+                </div>
+                <button>Estou Interessado</button>
+                <small>Ao continuar, eu declaro que li e aceito os <span>Termos de Uso</span> e a <span>Política de Privacidade</span></small>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

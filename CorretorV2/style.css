@@ -41,8 +41,6 @@ header nav {
     height: 100%;
 }
 
-
-
 header nav a {
     color: #ffffff;
     text-decoration: none;
@@ -863,5 +861,3 @@ main #subscribe form input::placeholder {
 main #subscribe form input:focus {
     border: 1px solid #ffffff;
 }
-
-/* FIM DA SEÇÃO FORMULÁRIO */

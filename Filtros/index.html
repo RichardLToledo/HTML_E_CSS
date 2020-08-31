@@ -6,45 +6,65 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+    <title>Filtros</title>
   </head>
   <body>
     <div id="filter">
-      <div class="filters">
-        <label for="cities">Pesquise na cidade de:</label>
-        <input list="cidades" name="city" id="cities" required />
-        <datalist id="cidades">
-          <option value="Varginha" selected>Varginha</option>
-          <option value="Pouso Alegre">Pouso Alegre</option>
-        </datalist>
+      <div class="field" id="city">
+        <input
+          type="text"
+          name="city"
+          value="Varginha"
+          placeholder="Cidade"
+          disabled
+        />
+        <div class="cities">
+          <ul>
+            <li>Pouso Alegre</li>
+            <li>Varginha</li>
+          </ul>
+        </div>
       </div>
-      <div class="filters">
-        <label for="values">Valor até:</label>
-        <input list="valores" name="value" id="values" required />
-        <datalist id="valores">
-          <option value="R$ 500,00">R$ 500,00</option>
-          <option value="R$ 1000,00" selected="selected">R$ 1000,00</option>
-          <option value="R$ 2000,00">R$ 2000,00</option>
-        </datalist>
+      <div class="field" id="value">
+        <input
+          type="text"
+          name="value"
+          value="R$ 500,00"
+          placeholder="R$ 0"
+          disabled
+        />
+        <div class="values">
+          <ul>
+            <li>R$ 500,00</li>
+            <li>R$ 1.000,00</li>
+            <li>R$ 1.500,00</li>
+            <li>R$ 2.000,00</li>
+            <li>R$ 2.500,00</li>
+          </ul>
+        </div>
       </div>
-      <div class="filters">
-        <label for="beds">Qtd de Quartos: </label>
-        <input list="quartos" name="bed" id="beds" required />
-        <datalist id="quartos">
-          <option value="1 quarto" selected>1 quarto</option>
-          <option value="2 quartos">2 quartos</option>
-          <option value="10 quartos">10 quartos</option>
-        </datalist>
+      <div class="field" id="room">
+        <input
+          type="text"
+          name="room"
+          value="6 Quartos"
+          placeholder="Qtd. de Quartos"
+          disabled
+        />
+        <div class="rooms partnership-text show-on-scroll heading">
+          <ul>
+            <li>1 Quarto</li>
+            <li>2 Quartos</li>
+            <li>3 Quartos</li>
+            <li>4 Quartos</li>
+            <li>5 Quartos</li>
+            <li>6 Quartos</li>
+          </ul>
+        </div>
       </div>
-      <button id="search">
-        <img src="./magnif.svg" alt="Lupa" />
-        <span>Buscar</span>
-      </button>
+      <button>Pesquisar Imóveis</button>
     </div>
-    <button id="m_search">
-      <img src="./magnif.svg" alt="Lupa" />
-      <span>Buscar imóvel</span>
-    </button>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script src="./script.js"></script>
   </body>
 </html>

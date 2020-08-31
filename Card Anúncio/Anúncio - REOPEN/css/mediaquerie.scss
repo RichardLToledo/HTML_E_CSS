@@ -1,0 +1,318 @@
+$breakpoint_desktop: 1140px;
+$breakpoint_mobile: 760px;
+$breakpoint_mac: 1366px;
+
+@media (min-width: $breakpoint_desktop) {
+  body {
+    main {
+      .bottom-side-content {
+        .description {
+          a {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+  body main .details_rent_desk {
+    width: 25%;
+    margin: 2% 0;
+  }
+  body main .explore .neighborhood map {
+    flex: 0 0 15%;
+  }
+  body main .fixed {
+    display: none;
+  }
+}
+
+@media (max-width: 900px) {
+  .address_contact {
+    flex-direction: column;
+  }
+  footer .main_informations .terms_links .address_contact ul:first-child {
+    margin-bottom: 20px;
+    border-right: 1px solid transparent;
+  }
+}
+
+@media (max-width: $breakpoint_desktop) {
+  body {
+    display: flex;
+    flex-direction: column;
+    header {
+      box-shadow: none;
+      padding: 25px;
+      .brand {
+        img {
+          width: 75px;
+        }
+      }
+      #menu {
+        transform: scale(0.9, 0.9);
+      }
+      #menu {
+        display: flex;
+      }
+      #login {
+        display: none;
+      }
+    }
+
+    main {
+      display: flex;
+      flex-direction: column;
+      .back-to-map {
+        display: none;
+      }
+      .property-img {
+        & > span {
+          top: 15px;
+          left: 25px;
+        }
+        & > button {
+          padding: 12px;
+          background-color: transparent;
+          color: white;
+          font-size: 0.8em;
+          display: flex;
+          align-items: center;
+          position: absolute;
+          top: 10px;
+          right: 10px;
+          div {
+            margin-right: 10px;
+            transform: scale(1.3, 1.3);
+            color: white;
+          }
+          span {
+            display: none;
+          }
+        }
+        .arrows {
+          display: none;
+        }
+        img {
+          border-radius: 0;
+          height: 300px;
+          object-fit: cover;
+        }
+      }
+      .bottom-side-content {
+        .property-info {
+          margin: 20px;
+          map {
+            flex: 0 0 24%;
+            margin: 0;
+          }
+        }
+        .form_actions {
+          display: none;
+        }
+        .description {
+          margin: 20px;
+          width: auto;
+          p {
+            overflow-y: hidden;
+            text-overflow: ellipsis;
+            max-height: 295px;
+          }
+          a {
+            display: flex;
+            margin: 13px 0;
+          }
+        }
+      }
+    }
+    footer .rights-reserve {
+      padding-bottom: 100px;
+    }
+  }
+  body .form-footer {
+    display: none;
+  }
+}
+
+@media (min-width: $breakpoint_mobile) {
+  body
+    main
+    .bottom-side-content
+    .property-info
+    .property-details
+    .mobile_price {
+    display: none;
+  }
+  body
+    main
+    .bottom-side-content
+    .property-info
+    .property-details
+    .details_rent {
+    display: none;
+  }
+  body main .benefits .btn {
+    justify-content: flex-start;
+  }
+  body main .nearby ul li map {
+    width: auto;
+  }
+}
+@media (max-width: $breakpoint_mobile) {
+  body {
+    main {
+      .bottom-side-content {
+        .property-info {
+          height: auto;
+          .property-details {
+            .price_address {
+              flex-direction: column;
+              align-items: baseline;
+              height: auto;
+              .address {
+                .street {
+                  font-size: 1.4em;
+                }
+              }
+              .price {
+                display: none;
+              }
+            }
+            .property_specification {
+              height: auto;
+              ul {
+                flex-wrap: wrap;
+                li {
+                  flex: unset;
+                  margin: 10px;
+                }
+              }
+            }
+          }
+        }
+        .location {
+          max-height: 150px;
+        }
+      }
+    }
+  }
+  body main .details_rent_desk {
+    display: none;
+  }
+  footer .main_informations {
+    flex-direction: column;
+  }
+  footer .main_informations .brand_links .link_list {
+    display: none;
+  }
+  footer .main_informations .terms_links > ul li {
+    margin: 0 20px;
+  }
+  footer .main_informations .brand_links {
+    .brand img {
+      width: 150px;
+    }
+  }
+
+  footer .main_informations * {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  footer .main_informations .terms_links .address_contact ul:first-child {
+    margin: 0;
+    padding: 0;
+  }
+  footer .main_informations .terms_links .address_contact ul:last-child {
+    margin-top: 20px;
+  }
+}
+
+@media (min-width: 500px) {
+  body {
+    main {
+      .location_mobile {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  body main .bottom-side-content .property-info map {
+    display: none;
+  }
+}
+
+@media (max-width: 375px) {
+  body main .explore .neighborhood {
+    display: flex;
+    flex-direction: column;
+  }
+  body main .explore .neighborhood map {
+    height: 120px;
+    flex: auto;
+    margin-bottom: 10px;
+  }
+  body main .bottom-side-content .property-info map {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .footer-wizzer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .lista-lp {
+    display: none;
+  }
+  .left-side .brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {
+      width: 200px;
+    }
+  }
+  .right-side h4 {
+    text-align: center;
+  }
+  .right-side {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .right-side p {
+    font-weight: normal;
+    font-size: 14px;
+    width: 100%;
+    text-align: center;
+  }
+  body .contact {
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .left-side img:nth-child(2) {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .location ul {
+    margin: 10px 0;
+  }
+
+  .number ul {
+    margin: 10px 0;
+  }
+
+  .right-side a {
+    text-align: center;
+  }
+  body .lista-lp {
+    display: none;
+  }
+}

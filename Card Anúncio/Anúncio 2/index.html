@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/mediaquerie.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Wizzer Imóveis</title>
+</head>
+
+<body>
+    <header>
+        <div class="brand">
+            <img src="./assets/wizzer.svg" alt="Wizzer">
+        </div>
+        <div id="menu">
+            <img src="./assets/lines/Line.svg" alt="Menu">
+            <img src="./assets/lines/Line-2.svg" alt="Menu">
+            <img src="./assets/lines/Line-3.svg" alt="Menu">
+        </div>
+        <button id="login">Entrar</button>
+    </header>
+
+    <main>
+        <div class="fixed">
+            <button>Entrar em Contato</button>
+            <button>Agendar Visita</button>
+        </div>
+        <div class="back-to-map">
+            <a href="#"><span class="material-icons">
+        keyboard_backspace
+        </span>Voltar aos anúncios</a>
+            <ul>
+                <li>Imóveis para Alugar </li>
+                <li>
+                    <span class="material-icons">
+                    keyboard_arrow_right
+                </span>
+                </li>
+                <li>MG</li>
+                <li>
+                    <span class="material-icons">
+                    keyboard_arrow_right
+                </span>
+                </li>
+                <li>Varginha</li>
+                <li>
+                    <span class="material-icons">
+                    keyboard_arrow_right
+                </span>
+                </li>
+                <li>Centenário</li>
+            </ul>
+        </div>
+        <div class="property-img">
+            <span>Novo</span>
+            <button>
+                <div class="material-icons">
+                    share
+                </div>
+                <span>Compartilhar</span>
+            </button>
+            <div class="arrows">
+                <span class="material-icons">
+                    keyboard_arrow_left
+                </span>
+                <span class="material-icons">
+                    keyboard_arrow_left
+                </span>
+            </div>
+            <img src="./assets/imagem.jpg" alt="imagem">
+            <div class="options-mobile">
+                <button><strong>360º</strong>Tour</button>
+                <button>
+                    <span class="material-icons">
+                    play_arrow
+                    </span> Videos
+                </button>
+                <button>
+                    <span class="material-icons">
+                        mms
+                    </span> 12 Fotos
+                </button>
+            </div>
+        </div>
+        <div class="bottom-side-content">
+            <div class="property-info">
+                <div class="property-details">
+                    <div class="price_address">
+                        <div class="address">
+                            <small>Apartamento</small>
+                            <address class="street">Rua Antenor Roquim, 54</address>
+                            <address class="neightborhood">Centenário, Varginha - MG</address>
+                        </div>
+                        <div class="price">
+                            <strong>R$1.220 <sub>/mês</sub></strong>
+                            <a href="#">Ver mais detalhes do preço</a>
+                        </div>
+                    </div>
+                    <div class="property_specification">
+                        <ul>
+                            <li>
+                                <span class="material-icons">
+                                    king_bed
+                                </span> 2 Quartos
+                            </li>
+                            <li>
+                                <span class="material-icons">
+                                straighten
+                            </span> 1.100 m2
+                            </li>
+                            <li>
+                                <span class="material-icons none">
+                                drive_eta
+                            </span> Sem Vaga
+                            </li>
+                            <li>
+                                <span class="material-icons">
+                                bathtub
+                            </span> 1 Banheiro
+                            </li>
+                            <li>
+                                <span class="material-icons">
+                                business
+                            </span> 5 andar
+                            </li>
+                            <li>
+                                <span class="material-icons none">
+                                pets
+                            </span> Aceita Pets
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="mobile_price">
+                        <strong>R$1.220 <sub>/mês</sub></strong>
+
+                    </div>
+                    <div class="details_rent">
+                        <strong>Detalhes do aluguel</strong>
+                        <ul>
+                            <li>
+                                <p><img src="./assets/Condomínio.svg" alt="Condomínio"> Condomínio</p>
+                                <p>R$ 0</p>
+                            </li>
+                            <li>
+                                <p><img src="./assets/IPTU.svg" alt="IPTU"> IPTU</i>
+                                    <p>R$ 20,00</p>
+                            </li>
+                            <li>
+                                <p> <img src="./assets/Incendio.svg" alt="Incendio"> Seguro Incendio </p>
+                                <p>R$ 100,00</p>
+                            </li>
+                            <li>
+                                <p><img src="./assets/Dinheiro.svg" alt="Dinheiro"> Aluguel</p>
+                                <p>R$ 1.100,00</p>
+                            </li>
+                            <li>
+                                <p> <img src="./assets/Cifrao.svg" alt="Total"> Total</p>
+                                <p>R$ 1.120,00</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <map class="location"></map>
+                <div class="form_actions">
+                    <div class="card-form">
+                        <div class="head">
+                            <div class="schedule-tab" onclick="swap(this);" data-tab="schedule">
+                                Agendar Visita
+                            </div>
+                            <div class="contact-tab" onclick="swap(this);" data-tab="contact">
+                                Entrar em Contato
+                            </div>
+                        </div>
+                        <div class="form-content">
+                            <div class="day">
+                                <ul>
+                                    <li>
+                                        <button>
+                                            <small>Seg</small>
+                                            <span>01</span>
+                                            <small>Fev</small>
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button>
+                                            <small>Ter</small>
+                                            <span>02</span>
+                                            <small>Fev</small>
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button>
+                                            <small>Qua</small>
+                                            <span>03</span>
+                                            <small>Fev</small>
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button>
+                                            <small>Qui</small>
+                                            <span>04</span>
+                                            <small>Fev</small>
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="hour">
+                                <ul>
+                                    <li>
+                                        <button>09:30</button>
+                                    </li>
+                                    <li>
+                                        <button>10:30</button>
+                                    </li>
+                                    <li>
+                                        <button>12:00</button>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="form-info">
+                                <div class="name-tel">
+                                    <label for="name">
+                                        <input type="text" id="name" class="form-name" placeholder="Nome">
+                                        <span class="material-icons">
+                                person
+                                </span>
+                                    </label>
+                                    <label for="phone">
+                                        <input type="text" id="phone" class="form-phone" placeholder="Telefone">
+                                        <span class="material-icons">
+                                call
+                                </span>
+                                    </label>
+                                </div>
+                                <div class="form-email">
+                                    <label for="email">
+                                        <input type="text" id="email" class="form-email" placeholder="E-mail">
+                                        <span class="material-icons">
+                                email
+                                </span>
+                                    </label>
+                                </div>
+                            </div>
+                            <button>Agendar Visita</button>
+                            <small>Ao continuar, eu declaro que li e aceito os <span>Termos de Uso</span> e a <span>Política de Privacidade</span></small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <map class="location_mobile"></map>
+            <div class="description">
+                <h1>Descrição</h1>
+                <p>This Wonderful Updated Winnetka home with an entertainers open floor plan located in a quiet family neighborhood has 4 bedrooms & 2 full baths. The home has 1988 sqft situated on a 7487 sqft lot. The spacious sunlit living room has a gorgeous floor to ceiling stacked stone fireplace with raised stacked stone and marble hearth and opens to the wonderful chef's kitchen. The family chef will love the kitchen with ample cabinets, countertop range, double self-cleaning oven, dishwasher, stainless steel vent hood, granite counters, granite back splash, refrigerator is included, laminate floors & convenient breakfast bar. The master suite has an attached sitting room, private remodeled full bathroom & mirrored closet doors. Some of the many amenities are beautifully designed drought resistant landscaping front & rear, copper plumbing, new laminate floors, central air/heat, mostly dual pane windows, water retention system, new front door, recessed lighting, Swan security system & ring door, fully remodeled designer bathrooms with Jacuzzi tub rainfall shower with multiple spray shower heads & new vanities. You'll enjoy hours of entertaining in the private backyard with a covered patio and detached garden shed. There is a 2 car attached garage with brick lined concrete oversized driveway. Close to schools, Pierce College, world class shopping at the Village in Warner Center and convenient to the Orange Line Transportation & freeways.</p>
+                <a href="#">Ler mais</a>
+            </div>
+            <div class="details_rent_desk">
+                <strong>Detalhes do aluguel</strong>
+                <ul>
+                    <li>
+                        <p><img src="./assets/Condomínio.svg" alt="Condomínio"> Condomínio</p>
+                        <p>R$ 0</p>
+                    </li>
+                    <li>
+                        <p><img src="./assets/IPTU.svg" alt="IPTU"> IPTU</i>
+                            <p>R$ 20,00</p>
+                    </li>
+                    <li>
+                        <p> <img src="./assets/Incendio.svg" alt="Incendio"> Seguro Incendio </p>
+                        <p>R$ 100,00</p>
+                    </li>
+                    <li>
+                        <p><img src="./assets/Dinheiro.svg" alt="Dinheiro"> Aluguel</p>
+                        <p>R$ 1.100,00</p>
+                    </li>
+                    <li>
+                        <p> <img src="./assets/Cifrao.svg" alt="Total"> Total</p>
+                        <p>R$ 1.120,00</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="explore">
+                <h2>Explore a Vizinhaça</h2>
+                <div class="neighborhood">
+                    <map name="map_wizzer"></map>
+                    <div class="info">
+                        <strong>Centenário</strong>
+                        <p><strong>12</strong> imóveis encontrados</p>
+                        <p><strong>Aluguel</strong>: R$ 1.220,00 ~ R$ 1.853,00</p>
+                        <a href="#">Saber sobre seu bairro</a>
+                    </div>
+                </div>
+            </div>
+            <div class="benefits">
+                <h2>Quer saber quais são os benefícios de anúnciar com a gente?</h2>
+                <ul>
+                    <li>
+                        <img src="./assets/Fiador.svg" alt="Fiador">
+                        <div class="item">
+                            <strong>Não precisa de fiador</strong>
+                            <p>Lorem Ipsum dolor si asimet COVID-19</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="./assets/Sem+Burocracia.svg" alt="Sem Burocracia">
+                        <div class="item">
+                            <strong>Sem Burocracia</strong>
+                            <p>Lorem Ipsum dolor si asimet COVID-19</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="./assets/Cheque+Caução.svg" alt="Sem Cheque Calção">
+                        <div class="item">
+                            <strong>Sem cheque calção</strong>
+                            <p>Lorem Ipsum dolor si asimet COVID-19</p>
+                        </div>
+                    </li>
+                </ul>
+                <div class="btn">
+                    <button>Saiba mais</button>
+                </div>
+            </div>
+            <div class="similar">
+                <h2>Imóveis Similares</h2>
+                <div class="list">
+                    <div class="arrows">
+                        <button><span class="material-icons">
+                        navigate_before
+                        </span></button>
+                        <button><span class="material-icons">
+                            navigate_next
+                            </span></button>
+                    </div>
+                    <div class="card">
+                        <div class="property_midia">
+                            <span>Novo</span>
+                            <img src="./assets/imovel.jpg" alt="Imagens">
+                        </div>
+                        <div class="property_info">
+                            <span>Casa</span>
+                            <strong>Rua Felipe Simas...</strong>
+                            <p>Jardim Andere, Varginha-MG</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="property_midia">
+                            <span>Novo</span>
+                            <img src="./assets/imovel.jpg" alt="Imagens">
+                        </div>
+                        <div class="property_info">
+                            <span>Casa</span>
+                            <strong>Rua Felipe Simas...</strong>
+                            <p>Jardim Andere, Varginha-MG</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="property_midia">
+                            <span>Novo</span>
+                            <img src="./assets/imovel.jpg" alt="Imagens">
+                        </div>
+                        <div class="property_info">
+                            <span>Casa</span>
+                            <strong>Rua Felipe Simas...</strong>
+                            <p>Jardim Andere, Varginha-MG</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="property_midia">
+                            <span>Novo</span>
+                            <img src="./assets/imovel.jpg" alt="Imagens">
+                        </div>
+                        <div class="property_info">
+                            <span>Casa</span>
+                            <strong>Rua Felipe Simas...</strong>
+                            <p>Jardim Andere, Varginha-MG</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="property_midia">
+                            <span>Novo</span>
+                            <img src="./assets/imovel.jpg" alt="Imagens">
+                        </div>
+                        <div class="property_info">
+                            <span>Casa</span>
+                            <strong>Rua Felipe Simas...</strong>
+                            <p>Jardim Andere, Varginha-MG</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="property_midia">
+                            <span>Novo</span>
+                            <img src="./assets/imovel.jpg" alt="Imagens">
+                        </div>
+                        <div class="property_info">
+                            <span>Casa</span>
+                            <strong>Rua Felipe Simas...</strong>
+                            <p>Jardim Andere, Varginha-MG</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="nearby">
+                <h2>O que há nas proximidades</h2>
+                <ul>
+                    <li>
+                        <map name="wizzer_map"></map>
+                        <div class="nearby_info">
+                            <strong> <img src="./assets/Escolas.svg" alt="Escolas"> Escolas </strong>
+                            <p>1 Escola</p>
+                            <p>1 Faculdade</p>
+                        </div>
+                    </li>
+                    <li>
+                        <map name="wizzer_map"></map>
+                        <div class="nearby_info">
+                            <strong> <img src="./assets/Compras.svg" alt="Compras"> Compras</strong>
+                            <p>3 Farmácias</p>
+                            <p>1 Mercado</p>
+                        </div>
+                    </li>
+                    <li>
+                        <map name="wizzer_map"></map>
+                        <div class="nearby_info">
+                            <strong> <img src="./assets/Transporte+Público.svg" alt="Transporte Publico"> Transporte Público </strong>
+                            <p>3 pontos do Ônibus</p>
+                        </div>
+                    </li>
+                    <li>
+                        <map name="wizzer_map"></map>
+                        <div class="nearby_info">
+                            <strong> <img src="./assets/Entretenimento.svg" alt=""> Entreterimento</strong>
+                            <p>1 Shopping</p>
+                            <p>1 Cinemas</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="about_neigborhood">
+                <h2>Bairros Próximos</h2>
+                <ul>
+                    <li>Damasco</li>
+                    <li>Sion</li>
+                    <li>Santa Monica</li>
+                    <li>Carvalhos</li>
+                    <li>Centro</li>
+                </ul>
+                <h2>Outros bairros</h2>
+                <ul>
+                    <li>Damasco</li>
+                    <li>Sion</li>
+                    <li>Santa Monica</li>
+                    <li>Carvalhos</li>
+                    <li>Centro</li>
+                </ul>
+                <a href="#">Conheça mais sobre Centenário</a>
+            </div>
+
+        </div>
+    </main>
+    <footer>
+        <div class="footer-wizzer">
+            <div class="left-side">
+                <div class="brand">
+                    <img src="assets/footer-logo.svg" alt="LOGO">
+                </div>
+                <div class="lista-lp">
+                    <ul>
+                        <li><a href="#">Seja um Corretor</a></li>
+                        <li><a href="#">Seja Inquilino </a></li>
+                        <li><a href="#">Seja Proprietário</a></li>
+
+                    </ul>
+                    <ul>
+                        <li><a href="#">Regiões Antendidas</a></li>
+                        <li><a href="#">Conheça a Wizzer</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="right-side">
+                <p>
+                    Acreditamos em poder modernizar a vida de milhares que estão em um processo de decisão de comprar sua nova moradia, seu lar.
+                </p>
+                <h4>W.Digital Serviços de Internet LTDA, - 31.822.245/0001-28</h4>
+                <a href="#">Termos de Uso e Política de Privacidade</a>
+                <h3>Siga-nos</h3>
+                <ul>
+                    <li>
+                        <a href="https://www.linkedin.com/company/wizzer-imoveis/" target="blank">
+                            <img src="./assets/linkedin.png" alt="Linkedin" title="Linkedin Wizzer">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://blog.wizzer.com.br/" target="blank">
+                            <img src="./assets/behance.png" alt="Blog" title="Blog Wizzer">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/wizzer.imoveis/" target="blank">
+                            <img src="./assets/facebook.png" alt="Facebook" title="Facebook Wizzer">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/wizzerimoveis/" target="blank">
+                            <img src="./assets/instagram.png" alt="Instagram" title="Instagram Wizzer">
+                        </a>
+                    </li>
+                </ul>
+                <div class="contact">
+                    <div class="location">
+                        <ul>
+                            <li>Endereço</li>
+                            <li>Av. Princesa do Sul - 890, Varginha - MG</li>
+                        </ul>
+                    </div>
+                    <div class="number">
+                        <ul>
+                            <li>Contato</li>
+                            <li><img src="./assets/phone.svg" alt="phone">(35) 9992-3456</li>
+                            <li><img src="./assets/e-mail.svg" alt="email">suporte@wizzer.com.br</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
