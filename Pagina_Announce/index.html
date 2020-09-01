@@ -38,6 +38,10 @@
             </div>
          </nav>
       </header>
+      <div id="fixed">
+        <button>Agendar Visita</button>
+        <button><img src="./assets/vetores/mdi_share.svg" alt="Compartilhar" /></button>
+      </div>
       <main>
          <div id="main-header">
             <a href="#">
@@ -46,16 +50,20 @@
                </svg>
                Voltar aos anúncios
             </a>
+         <div class="left_btn">
             <span>Novo</span>
+             <button><img src="./assets/vetores/mdi_share_blue.svg" alt="Compartilhar" />Compartilhar</button> 
+         </div>
          </div>
          <div id="gallery">
-         <div class="arrows">
-            <button><img src="assets/vetores/VectorB.svg" alt="Seta" /></button>
-            <button><img src="assets/vetores/VectorA.svg" alt="Seta" /></button>
-         </div>
-         <div class="photos">
-            <img src="assets/images/sadallo.png" alt="Foto do Imóvel Wizzer" />
-            <span>20 fotos</span>
+            <div class="arrows">
+               <button><img src="assets/vetores/VectorB.svg" alt="Seta" /></button>
+               <button><img src="assets/vetores/VectorA.svg" alt="Seta" /></button>
+            </div>
+            <div class="photos">
+               <img src="assets/images/sadallo.png" alt="Foto do Imóvel Wizzer" />
+               <span>20 fotos</span>
+            </div>
          </div>
          <div id="actions_btn">
             <button><img src="./assets/vetores/pointer.svg" alt="Ponteiro" /> Ver Mapa</button>
@@ -116,37 +124,92 @@
                   <span>
                   <img src="./assets/vetores/mdi_how_to_reg.svg" alt="Corretor" /> Corretor Responsável 
                   </span>
-                  <div class="broker"> 
-                   <div class="profile">
-                    <img src="./assets/images/geraldo.jpg" alt="Corretor" />
-                   </div>
-                   <div class="infos">
-                    <strong>Antônio Corretor</strong>
-                    <small>
-                      Corretor Responsável
-                    </small>
-                     <small>
-                      (35) 99708-1186
-                    </small>
-                   </div>
-                    <button class="whatasapp" href="">
-                      <img src="./assets/vetores/Whatsapp.png" alt="Corretor" />
-                    </button>
+                  <div class="broker">
+                     <div class="response">
+                        <div class="profile">
+                           <img src="./assets/images/geraldo.jpg" alt="Corretor" />
+                        </div>
+                        <div class="infos">
+                           <strong>Antônio Corretor</strong>
+                           <small>
+                           Corretor Responsável
+                           </small>
+                           <small>
+                           (35) 99708-1186
+                           </small>
+                        </div>
+                     </div>
+                     <a class="whatasapp" href="">
+                     <img src="./assets/vetores/Whatsapp.png" alt="Corretor" />
+                     </a>
                   </div>
                </div>
             </div>
+            <div class="schalude">
+             
+            </div>
          </div>
          <div id="description">
-          <span>
+            <span>
             <img src="./assets/vetores/mdi_description.svg" alt="Descrição" /> Descrição
-          </span>
-          <h1>Sobre este Imóvel</h1>   
-          <p>
-            Apartamento alto padrão, amplo, aconchegante, sendo uma unidade por andar. Localizado no coração de Varginha, próximo a igreja matriz. 
-            Um edifício seguro, com monitoramento 24 horas, hall de entrada, salão de festas com playground, cozinha, banheiros e área aberta. 
-            O edifício possui 22 andares, considerado uma das referências em edificações da cidade. Venha conhecer!
-          </p>
-        </div>
+            </span>
+            <h1>Sobre este Imóvel</h1>
+            <p>
+               Apartamento alto padrão, amplo, aconchegante, sendo uma unidade por andar. Localizado no coração de Varginha, próximo a igreja matriz. 
+               Um edifício seguro, com monitoramento 24 horas, hall de entrada, salão de festas com playground, cozinha, banheiros e área aberta. 
+               O edifício possui 22 andares, considerado uma das referências em edificações da cidade. Venha conhecer!
+            </p>
+         </div>
+         <div id="map_section">
+            <span>
+            <img src="./assets/vetores/location.svg" alt="Localização" /> Mapa 
+            </span>
+            <map>
+            <img src="./assets/images/map.png" alt="Map" />
+            </map>
+         </div>
+         <div id="benefits_section">
+         <div id="benefits">
+            <h2>Quer saber quais são os benefícios de alugar com a gente?</h2>
+            <ul>
+            <li>
+               <h3><img src="./assets/vetores/mdi_nature_people.svg" alt="Nature" /> Não precisa de fiador</h3>
+               <p>Encontrar um fiador é difícil pois envolve muitas regras. Com a Wizzer, alugue com segurança, porque nós garantimos a fiança do local.</p>
+            </li>
+            <li>
+               <h3><img src="./assets/vetores/mdi_description_green.svg" alt="Burocracia" />Sem burocracia</h3>
+               <p>Sem papelada e sem processos demorados. Sem idas ao cartório, banco, imobiliária e sem longas listas de documentos e requisitos para preencher.</p>
+            </li>
+            <li>
+               <h3><img src="./assets/vetores/mdi_calendar_today.svg" alt="Visita" />Visita ao Imóvel</h3>
+               <p>A visita em todos os imóveis é acompanhada presencialmente por um consultor imobiliário mediante a um agendamento.</p>
+            </li>
+            <ul>
+         </div>
+         <div id="about_broker">
+            <span>
+            <img src="./assets/vetores/mdi_how_to_reg.svg" alt="Corretor" /> Corretor Responsável 
+            </span>
+            <h2>Sobre o corretor</h2>
+            <div id="about_broker_infos">
+               <a href="" class="profile_whatsapp">
+                  <div class="profile">
+                     <img src="./assets/images/geraldo.jpg" alt="Corretor" />
+                  </div>
+                  <button class="whatasapp" href="">
+                  <img src="./assets/vetores/Whatsapp.png" alt="Corretor" />
+                  </button>
+               </a>
+               <div class="text">
+                  <p>
+                     Geraldo Mendes é um corretor carismático e dedicado e extremamente profissional além de ser um pessoa metódica e transparente.
+                     Sendo uns dos líderes da Wizzer, Geraldo sempre irá fazer o possível para proporcionar para você a melhor experiência no seu processo de aluguel.
+                  </p>
+                  <a href="#">Seja corretor parceiro <img src="./assets/vetores/mdi_arrow_forward.svg" alt="Seta"></a>
+               </div>
+            </div>
+         </div>
+         </div>
       </main>
       <footer></footer>
    </body>

@@ -182,10 +182,33 @@ nav ul li a {
 	}
 }
 
+#fixed{
+		bottom: 24px;
+		right: 24px;
+		position: fixed; 
+		z-index: 99999999999999999;
+		display: flex;
+		align-items: center;
+		button{
+		padding: 12px 24px;
+		border-radius: 24px;
+		color: white;
+		font-size: 16px;
+		color: #fff;
+		background-color: #055eff;
+		filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.25));
+		&:last-child{
+			    padding: 8px;
+				margin-left: 16px;
+		}
+		}
+	}
+
 //MAIN STYLES
 main {
 	display: flex;
 	flex-direction: column;
+	
 	#main-header {
 		display: flex;
 		justify-content: space-between;
@@ -215,6 +238,23 @@ main {
 			color: #09BA7F;
 			font-size: 12px;
 			font-weight: bold;
+		}
+		button{
+			background: transparent;
+			display: none;
+			align-items: center;
+			color: #055eff;
+			
+			img{
+				margin-right: 8px;
+			}
+		}
+		.left_btn{
+			display: flex;
+			align-items: center;
+			span{
+				margin-right: 16px;
+			}
 		}
 	}
 	#gallery {
@@ -287,7 +327,7 @@ main {
 		}
 	}
 	#specifications {
-		margin: 24px;
+        margin: 24px 24px 0;
 		display: flex;
 		flex-direction: column;
 		.left-side {
@@ -438,6 +478,9 @@ main {
                 .broker{
                     display: flex;
                     justify-content: space-between;
+					.response{
+						display: flex;
+					}
                     .profile{
                         width: 64px;
                         height: 64px;
@@ -473,6 +516,14 @@ main {
                 }
             }
         }
+		.schalude{
+			box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.25);
+            border-radius: 8px;
+			width: 340px;
+            height: 461px;
+			display: none;
+			margin-left: 24px;
+		}
 	}
     #description {
         margin: 24px;
@@ -482,6 +533,7 @@ main {
 					font-size: 12px;
 					line-height: 150%;
 					color: #C4C4C4;
+					margin-bottom: 16px;
                     
 					img {
 						margin-right: 8px;
@@ -495,10 +547,290 @@ main {
 
                 }
                 p{
-                    font-size: 12px;
+                    font-size: 16px;
                     line-height: 140%;
                      color: #353d40;
 
                 }
     }
+	#map_section {
+		display: flex;
+		margin: 24px;
+		flex-direction: column;
+		 span {
+			display: flex;
+			align-items: center;
+			font-size: 12px;
+			line-height: 150%;
+			color: #C4C4C4;
+                    
+			img {
+				margin-right: 8px;
+			}
+		}
+		map{
+			margin: 24px 0;
+			height: 40vh;
+			border: 1px solid #E0E0E0;
+			width: 100%;
+			img{  
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+		}
+
+	}
+	#benefits{
+		display: flex;
+		margin: 24px;
+		flex-direction: column;
+		border-bottom: 1px solid rgba(228, 228, 228, 0.5);
+
+		h2{
+			font-size: 16px;
+			font-weight: bold;
+			color: #353d40;
+			margin-bottom: 16px;
+			line-height: 140%;
+		}
+
+		ul{
+			li{
+				margin-bottom: 16px;
+				h3{
+					font-size: 16px;
+			        font-weight: 12px;
+			        font-weight: 500;
+			        color: #353d40;
+			        margin-bottom: 16px;
+					line-height: 140%;
+					display: flex; 
+					align-items: center;
+					img{
+						margin-right: 8px;
+					}
+				}
+				p{
+					font-size: 16px;
+			        font-weight: 12px;
+			        font-weight: 300;
+			        color: #353d40;
+			        margin-bottom: 16px;
+					line-height: 140%;
+				}
+			}
+		}
+
+	}
+	#about_broker{
+		margin: 0 24px; 
+		padding-bottom: 24px;
+        border-bottom: 1px solid rgba(228, 228, 228, 0.5);
+		span {
+			display: flex;
+			align-items: center;
+			font-size: 12px;
+			line-height: 150%;
+			color: #C4C4C4;
+			img {
+				margin-right: 8px;
+			}
+		}
+		h2 {
+			font-size: 16px;
+			font-weight: bold;
+			color: #353d40;
+			margin: 16px 0;
+			line-height: 140%;
+		}
+	}
+	#about_broker_infos{
+	  display: flex;
+	  padding-bottom: 24px;
+      border-bottom: 1px solid rgba(228, 228, 228, 0.5);
+      .profile_whatsapp{
+		   position: relative;
+		   width: 64px;
+           height: 64px;
+		   margin-right: 16px;
+		  .profile{
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 32px;
+                    margin-right: 16px;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    border-radius: 32px;
+                }
+            }
+			.whatasapp{
+                background: transparent;
+				position: absolute;
+                cursor: pointer;
+				width: 24px;
+				height: 24px;
+				top: 0;
+				z-index: 99999;
+				right:0;
+				img{
+				  width: 100%;
+				  height: 100%;
+				}
+            }
+	  }
+	  .text{
+		  flex: 1;
+		  p{
+			  font-size: 12px;
+			  color: #353d40;
+			  line-height: 140%;
+			  font-weight: 300;
+		  }
+		  a{
+			  margin-top: 24px;
+			  text-decoration: none;
+			  color: #055eff;
+			  display: flex;
+			  align-items: center;
+			  img{
+				  margin-left: 8px
+			  }
+		  }
+	  }
+	}
+}
+//MEDIA QUERIES
+
+@media screen and (min-width: 425px) {
+main #gallery .photos{
+	height: 45vh;
+}
+}
+
+@media screen and (min-width: 768px) {
+    main #gallery{
+      margin: 0 24px;
+      border-radius: 8px;
+    }    
+	main #gallery .photos img{
+		border-radius: 8px;
+	}
+}
+
+
+@media screen and (min-width: 1024px) {
+ main #gallery .photos{
+	height: 50vh;
+ }
+ main #gallery .arrows{
+	top: 45%;
+ }
+ main #description p{
+	width: 67%;
+}
+main #description h1, main #benefits h2, main #about_broker h2{
+	font-size: 24px;
+	    margin: 0 0 24px 0;
+
+}
+}
+
+@media screen and (min-width: 1140px) {
+	#fixed{
+		display: none;
+	}
+main{
+	display: grid;
+	grid-template-columns: 1fr 1140px 1fr;
+	#main-header{
+		grid-column-start: 2;
+		grid-column-end: 3;
+		margin: 24px 0;
+	}
+    #gallery {
+		grid-column-start: 2;
+		grid-column-end: 3;
+		margin: 0;
+		.photos{
+			height: 500px;
+		}
+	}
+	#actions_btn{
+		grid-column-start: 2;
+		grid-column-end: 3;
+		margin: 24px 0;
+	}
+	#specifications {
+		grid-column-start: 2;
+		grid-column-end: 3;
+		margin: 0;
+		flex-direction: row;
+		.left-side{
+			margin-right: 32px;
+			flex: 1;
+			& *{
+				border-bottom: 1px solid transparent;
+			}
+		}
+		.right-side {
+			flex: 1;
+			 #values {
+				padding-top: 0; 
+                padding-bottom: 0; 
+			}
+			& *{
+				border-bottom: 1px solid transparent;
+			}
+		}
+	}
+	#description {
+		grid-column-start: 2;
+		grid-column-end: 3;
+		margin: 0;
+		margin-bottom: 24px;
+	}
+	#map_section,  {
+	    grid-column-start: 2;
+		grid-column-end: 3;
+		margin: 0;	
+	}	
+	#benefits_section{
+		grid-column-start: 2;
+		grid-column-end: 3;
+		margin: 0;
+		display: flex;
+		#benefits{
+			flex: 1;
+			margin: 0;
+		}
+		#about_broker{
+			flex: 1;
+		}
+	}
+}
+
+main #about_broker_infos .text p{
+	font-size: 16px;
+}
+
+main #about_broker span{
+	display: none;
+}
+
+main #specifications .left-side #about_property, main #specifications .left-side #location, main #specifications .right-side #values, main #specifications .right-side #broker_response{
+	border-bottom: 1px solid transparent;
+}
+
+main #specifications .schalude{
+	display: flex;
+}
+
+
+
+main #main-header button{
+	display: flex;
+}
 }
