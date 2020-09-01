@@ -502,7 +502,7 @@ main #specifications .right-side #broker_response .broker .infos small {
   line-height: 140%;
   color: #353d40;
 }
-main #specifications .right-side #broker_response .broker .whatasapp {
+main #specifications .right-side #broker_response .broker .whatsapp {
   background: transparent;
   cursor: pointer;
 }
@@ -554,13 +554,13 @@ main #map_section span {
 main #map_section span img {
   margin-right: 8px;
 }
-main #map_section map {
+main #map_section .map {
   margin: 24px 0;
   height: 40vh;
   border: 1px solid #E0E0E0;
   width: 100%;
 }
-main #map_section map img {
+main #map_section .map img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -647,7 +647,7 @@ main #about_broker_infos .profile_whatsapp .profile img {
   object-fit: cover;
   border-radius: 32px;
 }
-main #about_broker_infos .profile_whatsapp .whatasapp {
+main #about_broker_infos .profile_whatsapp .whatsapp {
   background: transparent;
   position: absolute;
   cursor: pointer;
@@ -657,7 +657,7 @@ main #about_broker_infos .profile_whatsapp .whatasapp {
   z-index: 99999;
   right: 0;
 }
-main #about_broker_infos .profile_whatsapp .whatasapp img {
+main #about_broker_infos .profile_whatsapp .whatsapp img {
   width: 100%;
   height: 100%;
 }
